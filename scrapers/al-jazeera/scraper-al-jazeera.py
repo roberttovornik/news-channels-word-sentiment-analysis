@@ -73,7 +73,10 @@ class AL_JAZEERA_SCRAPER():
             soup = BeautifulSoup(html, "lxml")
 
             if soup.find("div", {"id":"ensNotifyBanner"}):
-                driver.find_element_by_id("ensCloseBanner").click()
+                try:
+                    driver.find_element_by_id("ensCloseBanner").click()
+                except:
+                    pass
 
             time.sleep(1)
             # time.sleep(3)
@@ -85,6 +88,7 @@ class AL_JAZEERA_SCRAPER():
 
             while True:
 
+                wait = WebDriverWait(driver, 3)
                 html = driver.page_source
                 soup = BeautifulSoup(html, "lxml")
                 page_articles_list = soup.find_all("a", {"ctype":"c"}, href=True)
