@@ -4,16 +4,11 @@ import os
 import requests
 import time
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
-# from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-class BBC_UK_SCRAPER():
 
-    def __init__(self, base_url, search_url, driver_path, search_keywords=[], max_articles=1):
+class PBS_SCRAPER():
+
+    def __init__(self, base_url, search_url, search_keywords=[], max_articles=1):
         self.url = base_url
         self.search_url = search_url
         self.news_pages = []
@@ -32,8 +27,6 @@ class BBC_UK_SCRAPER():
         self.failed_articles = []
         self.failed_article_body = []
 
-        # selenium requirement
-        self.web_driver = driver_path
 
     def check_request_status(self):
         """ Connection test method. Sends request to the server, expecting a success message 200 on return.
@@ -49,78 +42,65 @@ class BBC_UK_SCRAPER():
 
     def gather_news_links(self):
 
-       # setup chromium driver
-        driver = webdriver.Chrome(self.web_driver)  
+        article_limit_reached = False
 
         for keyword in self.search_keywords:
 
             page_num = 0
             self.news_articles.append({})
 
-            bbc_uk_search_url = self.search_url + keyword
-            driver.get(bbc_uk_search_url)
-            wait = WebDriverWait(driver, 10)
-            time.sleep(3)
+            for i in range(1, 51):
+                print("Checking page ", str(i),"...")
+                url_search = self.search_url + keyword + "&pnb="+str(i)
+                # print("SEARCH URL: ", url_search)
+                r = requests.get(url_search)
 
-            while True:
+                soup = BeautifulSoup(r.content, "lxml")
+                page_articles_list = soup.find_all("h4", {"class":"search-result__title"})
 
-                time.sleep(1.5)
-                html = driver.page_source
-                soup = BeautifulSoup(html, "lxml")
+                if len(page_articles_list) > 0:
 
-                if soup.find("nav", {"class":"pagination"}):
+                    self.news_pages.append(url_search)
+
+                    for article in page_articles_list:
+                        article_link = article.a.get('href')
+                        if article_link not in self.news_articles[-1] and article_link not in self.articles_href:
+                            self.news_articles[-1][article_link] = self.time_stamp.strftime("%Y-%m-%d %H:%M")
+                            self.num_articles += 1
+                            self.articles_href.append(article_link)
+
+                        if self.num_articles > self.max_articles:
+                            article_limit_reached = True
+                            break
+
                     page_num += 1
-                    driver.find_element_by_xpath("""//*[@id="search-content"]/nav[1]/a""").click()
-
-                if soup.find("section", {"id":"search-content"}):   
-                    seach_res = soup.find("section", {"id":"search-content"})
-                    num_search_res = len(seach_res.find_all("ol", {"class":"search-results results"}))
-                    self.news_pages.append(bbc_uk_search_url+"#page="+str(page_num))
-
-                    if num_search_res == (page_num-1):
-                        break
-
-                    if len(soup.find_all("h1", {"itemprop":"headline"})) > self.max_articles:
-                        break
-
                 else:
+                    break      
+
+                if article_limit_reached:
                     break
 
-            page_articles_list = soup.find_all("h1", {"itemprop":"headline"})
+                time.sleep(2.5)  
 
-            for article in page_articles_list:
-                article_link = article.a.get('href')
-                if article_link not in self.news_articles[-1] and article_link not in self.articles_href:
-                    self.news_articles[-1][article_link] = self.time_stamp.strftime("%Y-%m-%d %H:%M")
-                    self.num_articles += 1
-                    print(article_link)
-                    self.articles_href.append(article_link)
-
-                if self.num_articles > self.max_articles:
-                    article_limit_reached = True
-                    break
             
-        print("Search results contained ", page_num, " page(s).")
-        print("Search results contained ", self.num_articles, " article(s).")
-        driver.quit()
+            if article_limit_reached:
+                break
+
+        print("Search results contained ", page_num, " page(s).")        
 
 
     def scrape_news(self):
 
-              
-
         for key_i, keyword in enumerate(self.search_keywords):
 
-            csv_dir = os.path.join(keyword)
-            
-            if not os.path.exists(csv_dir):
-                os.makedirs(csv_dir)
+            if not os.path.exists(keyword):
+                os.makedirs(keyword)
 
-            csv_name = "scraped_bbc-uk-" + keyword + "_news.csv"
-            csv_path = os.path.join(csv_dir, csv_name)
+            csv_name = "scraped_pbs-"+ keyword + "_news.csv"
+            csv_path = os.path.join(keyword, csv_name)
 
-            with open(csv_path, 'w') as f1:
-                writer=csv.writer(f1)
+            with open(csv_path,'w') as f1:
+                writer=csv.writer(f1)  
                 row = ["href", "keyword", "word_count", "info", "author", "headline", "article_text"]          
                 writer.writerow(row)
                 counter = 1
@@ -133,10 +113,10 @@ class BBC_UK_SCRAPER():
                     headline = "None"
                     info = "None"
                     author = "None"
-                    article_text = "None"
-                    word_count = 0              
+                    article_text = "None"              
+                    word_count = 0
                     article_url = news_article
-                    print("Article: ", article_url)
+                    print(article_url)
 
                     r = None
                     num_reconnect = 0
@@ -153,6 +133,7 @@ class BBC_UK_SCRAPER():
                             num_reconnect += 1
                             if num_reconnect > 10:
                                 print("SERVER IS REFUSING CONNECTION AT THIS TIME, TRY SKIPPING ARTICLE.")
+                                # exit(-1)
                                 skip_article = True
                                 num_skipped += 1
                                 break
@@ -160,12 +141,12 @@ class BBC_UK_SCRAPER():
 
                     if num_skipped > 10:
                         print("SERVER IS REFUSING CONNECTION AT THIS TIME, TRY AGAIN LATER.")
-                        exit(-1)
+                        exit(-1)  
                     if skip_article:
                         continue
 
                     soup = BeautifulSoup(r.content, "lxml")
-                    article_body = soup.find("div", {"class":"story-body"})
+                    article_body = soup.find("article", {"class":"post__article"})
 
                     if not article_body:
                         self.failed_articles.append(article_url)
@@ -173,16 +154,16 @@ class BBC_UK_SCRAPER():
                         counter += 1
                         continue
 
-                    if article_body.find("h1", {"class":"story-body__h1"}):
-                        headline = article_body.find("h1", {"class":"story-body__h1"}).text
-                    if article_body.find("div", {"class":"date"}):
-                        info = article_body.find("div", {"class":"date"}).get("data-datetime")
-                    if article_body.find("span", {"class":"byline__name"}):
-                        author = article_body.find("span", {"class":"byline__name"}).text
-                    if article_body.find("div", {"class":"story-body__inner"}):
+                    if article_body.find("h1", {"class":"post__title"}):
+                        headline = article_body.find("h1", {"class":"post__title"}).text
+                    if article_body.find("time", {"class":"post__date"}):
+                        info = article_body.find("time", {"class":"post__date"}).get("content")
+                    if article_body.find("span", {"itemprop":"name"}):
+                        author = article_body.find("span", {"itemprop":"name"}).text
+                    if article_body.find("article", {"itemprop":"articleBody"}):
+                        article_body = article_body.find("article", {"itemprop":"articleBody"})
                         article_text = ""
-                        text_body = article_body.find("div", {"class":"story-body__inner"})
-                        for p in text_body.find_all("p"):
+                        for p in article_body.find_all("p"):
                             article_text += p.text + "\n"
 
                         article_text = clean_text(article_text)
@@ -192,7 +173,8 @@ class BBC_UK_SCRAPER():
                     writer.writerow(row)
                     print("Keyword: " + keyword + " Writing ", str(counter), " of ", str_num_all, "...")
                     counter += 1
-                    time.sleep(1)
+
+                    time.sleep(2) 
 
     def report_problems(self):
 
@@ -215,25 +197,20 @@ def clean_text(article):
 
 def main():
 
+    base_url = "https://www.pbs.org"
+    search_url = "https://www.pbs.org/newshour/search-results?q="
 
-    base_url = "https://www.bbc.co.uk/"
-    search_url = "https://www.bbc.co.uk/search?filter=news&q="
-    web_driver_path = "/usr/lib/chromium-browser/chromedriver"
+    pbs_scraper = PBS_SCRAPER(base_url, search_url, ["refugee", "migrant", "asylum seeker"], 10000)
+    # pbs_scraper = PBS_SCRAPER(base_url, search_url, ["migrantje"], 10000) # better for testing purpose - single page
+    pbs_scraper.check_request_status()
+    pbs_scraper.gather_news_links()
 
-    bbc_uk_scraper = BBC_UK_SCRAPER(base_url, search_url, web_driver_path, ["refugee", "migrant", "asylum seeker"], 10000)
-    
-    bbc_uk_scraper.check_request_status()
-    bbc_uk_scraper.gather_news_links()
-
-    
-    for colleciton in bbc_uk_scraper.news_articles:
-        for k, v in colleciton.items():
+    for collection in pbs_scraper.news_articles:
+        for k, v in collection.items():
             print("UPDATED: ", v," - ", k)
 
-    print(" FOUND ", bbc_uk_scraper.num_articles, " articles.")
-    # exit()
-    bbc_uk_scraper.scrape_news()
-    bbc_uk_scraper.report_problems()
+    pbs_scraper.scrape_news()
+    pbs_scraper.report_problems()
 
 if __name__ == "__main__": 
     main()
