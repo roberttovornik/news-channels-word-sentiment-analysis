@@ -227,20 +227,20 @@ def main():
     search_url = "https://www.aljazeera.com/Search/?q="
     web_driver_path = "/usr/lib/chromium-browser/chromedriver"
 
-    the_local_scraper = AL_JAZEERA_SCRAPER(base_url, search_url, web_driver_path, ["refugee"], 1000)
+    al_jazeera_scraper = AL_JAZEERA_SCRAPER(base_url, search_url, web_driver_path, ["refugee"], 1000)
     
-    the_local_scraper.check_request_status()
-    the_local_scraper.gather_news_links()
+    al_jazeera_scraper.check_request_status()
+    al_jazeera_scraper.gather_news_links()
 
     
-    for colleciton in the_local_scraper.news_articles:
+    for colleciton in al_jazeera_scraper.news_articles:
         for k, v in colleciton.items():
             print("UPDATED: ", v," - ", k)
 
-    print(" FOUND ", the_local_scraper.num_articles, " articles.")
+    print(" FOUND ", al_jazeera_scraper.num_articles, " articles.")
     # exit()
-    the_local_scraper.scrape_news()
-    the_local_scraper.report_problems()
+    al_jazeera_scraper.scrape_news()
+    al_jazeera_scraper.report_problems()
 
 if __name__ == "__main__": 
     main()
