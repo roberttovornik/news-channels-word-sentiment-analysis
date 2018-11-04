@@ -223,7 +223,7 @@ class THE_LOCAL_SCRAPER():
 
                     row = [article_url, keyword, word_count, info, author, headline, article_text]
                     writer.writerow(row)
-                    print("Writing ", str(counter), " of ", str_num_all, "...")
+                    print("Keyword: " + keyword + " Writing ", str(counter), " of ", str_num_all, "...")
                     counter += 1
                     time.sleep(.500) 
 
