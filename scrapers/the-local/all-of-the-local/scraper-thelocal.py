@@ -17,6 +17,7 @@ class THE_LOCAL_SCRAPER():
         self.search_url = search_url
         self.news_pages = []
         self.news_articles = []
+        self.articles_href = []
         self.search_keywords = search_keywords
         self.max_articles = max_articles
         self.num_articles = 0
@@ -113,10 +114,11 @@ class THE_LOCAL_SCRAPER():
 
                     for article in page_articles_list:
                         article_link = article.get('href')
-                        if article_link not in self.news_articles[-1]:
+                        if article_link not in self.news_articles[-1] and article_link not in self.articles_href:
                             self.news_articles[-1][article_link] = self.time_stamp.strftime("%Y-%m-%d %H:%M")
                             self.num_articles += 1
                             print(article_link)
+                            self.articles_href.append(article_link)
 
                         if self.num_articles > self.max_articles:
                             article_limit_reached = True
@@ -155,7 +157,7 @@ class THE_LOCAL_SCRAPER():
 
             with open(csv_path, 'w') as f1:
                 writer=csv.writer(f1)
-                row = ["href", "keyword", "info", "author", "headline", "article_text"]          
+                row = ["href", "keyword", "word_count", "info", "author", "headline", "article_text"]          
                 writer.writerow(row)
                 counter = 1
                 str_num_all = str(len(self.news_articles[key_i]))
@@ -167,7 +169,8 @@ class THE_LOCAL_SCRAPER():
                     headline = "None"
                     info = "None"
                     author = "None"
-                    article_text = "None"              
+                    article_text = "None"
+                    word_count = 0              
                     article_url = news_article
                     print("Article: ", article_url)
 
@@ -215,7 +218,10 @@ class THE_LOCAL_SCRAPER():
                     if article_body.find("div", {"id":"article-description"}) and article_body.find("div", {"id":"article-body"}):
                         article_text = article_body.find("div", {"id":"article-description"}).text + "\n" + article_body.find("div", {"id":"article-body"}).text
 
-                    row = [article_url, keyword, info, author, headline, article_text]
+                        article_text = clean_text(article_text)
+                        word_count = len(article_text.split())
+
+                    row = [article_url, keyword, word_count, info, author, headline, article_text]
                     writer.writerow(row)
                     print("Writing ", str(counter), " of ", str_num_all, "...")
                     counter += 1
@@ -233,6 +239,12 @@ class THE_LOCAL_SCRAPER():
                 print(self.failed_article_body[i])
                 print("==========================================")
                 print()
+                
+def clean_text(article):
+    paragraphs = article.split("\n")    
+    paragraphs = [ ' '.join(x.split()) for x in paragraphs if len(x.strip()) > 0]
+
+    return '\n'.join(paragraphs)
 
 def main():
 
@@ -248,7 +260,7 @@ def main():
         search_url = "https://www.thelocal."+the_local_sources_tag[i]+"/search/?q="
         web_driver_path = "/usr/lib/chromium-browser/chromedriver"
 
-        the_local_scraper = THE_LOCAL_SCRAPER(base_url, search_url, the_local_sources[i], the_local_sources_tag[i], web_driver_path, ["refugee"], 100000)
+        the_local_scraper = THE_LOCAL_SCRAPER(base_url, search_url, the_local_sources[i], the_local_sources_tag[i], web_driver_path, ["refugee", "migrant", "asylum seeker"], 100000)
         
         the_local_scraper.check_request_status()
         the_local_scraper.gather_news_links()

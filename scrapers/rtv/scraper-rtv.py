@@ -13,6 +13,7 @@ class RTV_MMC_SCRAPER():
         self.search_url = search_url
         self.news_pages = []
         self.news_articles = []
+        self.articles_href = []
         self.search_keywords = search_keywords
         self.max_articles = max_articles
         self.num_articles = 0
@@ -62,9 +63,10 @@ class RTV_MMC_SCRAPER():
 
                     for article in page_articles_list:
                         article_link = article.a.get('href')
-                        if article_link not in self.news_articles[-1]:
+                        if article_link not in self.news_articles[-1] and article_link not in self.articles_href:
                             self.news_articles[-1][article_link] = self.time_stamp.strftime("%Y-%m-%d %H:%M")
                             self.num_articles += 1
+                            self.articles_href.append(article_link)
 
                         if self.num_articles > self.max_articles:
                             article_limit_reached = True
@@ -96,7 +98,7 @@ class RTV_MMC_SCRAPER():
 
             with open(csv_path,'w') as f1:
                 writer=csv.writer(f1)  
-                row = ["href", "keyword", "info", "author", "headline", "article_text"]          
+                row = ["href", "keyword", "word_count", "info", "author", "headline", "article_text"]          
                 writer.writerow(row)
                 counter = 1
                 str_num_all = str(len(self.news_articles))
@@ -109,7 +111,7 @@ class RTV_MMC_SCRAPER():
                     info = "None"
                     author = "None"
                     article_text = "None"              
-
+                    word_count = 0
                     article_url = self.url+news_article
                     
 
@@ -160,7 +162,10 @@ class RTV_MMC_SCRAPER():
                         for p in article_body.find_all("p"):
                             article_text += p.text + "\n"
 
-                    row = [article_url, keyword, info, author, headline, article_text]
+                        article_text = clean_text(article_text)
+                        word_count = len(article_text.split())
+
+                    row = [article_url, keyword, word_count, info, author, headline, article_text]
                     writer.writerow(row)
                     print("Writing ", str(counter), " of ", str_num_all, "...")
                     counter += 1
@@ -180,12 +185,18 @@ class RTV_MMC_SCRAPER():
                 print("==========================================")
                 print()
 
+def clean_text(article):
+    paragraphs = article.split("\n")    
+    paragraphs = [ ' '.join(x.split()) for x in paragraphs if len(x.strip()) > 0]
+
+    return '\n'.join(paragraphs)
+
 def main():
 
     base_url = "http://www.rtvslo.si"
     search_url = "http://www.rtvslo.si/iskalnik?group=1&type=4&sort=1&q="
 
-    rtv_scraper = RTV_MMC_SCRAPER(base_url, search_url, ["prebežniki"], 100000)
+    rtv_scraper = RTV_MMC_SCRAPER(base_url, search_url, ["prebežnik", "migrant", "azilant"], 100000)
     # rtv_scraper = RTV_MMC_SCRAPER(base_url, search_url, ["migrantje"], 10000) # better for testing purpose - single page
     rtv_scraper.check_request_status()
     rtv_scraper.gather_news_links()
