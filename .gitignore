@@ -98,7 +98,12 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
+
 /site
 
 # mypy
 .mypy_cache/
+
+################ START HERE
+data_modeling/models/*
+pre_processing/data/*
