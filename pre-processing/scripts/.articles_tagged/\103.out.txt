@@ -1,0 +1,756 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<text>
+		<body>
+			<p>
+				<s>
+					<w msd="Sometn" lemma="il">il</w>
+					<S/>
+					<w msd="Rsn" lemma="ministro">ministro</w>
+					<S/>
+					<w msd="Ggdd-mm" lemma="deči">degli</w>
+					<S/>
+					<w msd="Ppnzet" lemma="ester">esteri</w>
+					<S/>
+					<w msd="Sozet" lemma="italiana">italiano</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="enzo">enzo</w>
+					<S/>
+					<w msd="Slmei" lemma="moavero">moavero</w>
+					<S/>
+					<w msd="Slmei" lemma="milanesi">milanesi</w>
+					<c>,</c>
+					<S/>
+					<w msd="Sozet" lemma="dopa">dopo</w>
+					<S/>
+					<w msd="Slmei" lemma="un">un</w>
+					<S/>
+					<w msd="Rsn" lemma="incontro">incontro</w>
+					<S/>
+					<w msd="Sozet" lemma="avvenuta">avvenuto</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Sozet" lemma="berlina">berlino</w>
+					<S/>
+					<w msd="N" lemma="con">con</w>
+					<S/>
+					<w msd="Sometn" lemma="il">il</w>
+					<S/>
+					<w msd="Ggnste" lemma="collegati">collega</w>
+					<S/>
+					<w msd="Slmei" lemma="tedesco">tedesco</w>
+					<S/>
+					<w msd="Rsn" lemma="heiko">heiko</w>
+					<S/>
+					<w msd="Rsn" lemma="maas">maas</w>
+					<c>,</c>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
+					<w msd="Sometd" lemma="è">è</w>
+					<S/>
+					<w msd="Somei" lemma="detto">detto</w>
+					<S/>
+					<w msd="Somer" lemma="ottimist">ottimista</w>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Slmei" lemma="nel">nel</w>
+					<S/>
+					<w msd="Slmei" lemma="giro">giro</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Slmei" lemma="qualche">qualche</w>
+					<S/>
+					<w msd="Pdnzei" lemma="settiman">settimana</w>
+					<S/>
+					<w msd="Gp-sde-n" lemma="biti">si</w>
+					<S/>
+					<w msd="Rsn" lemma="arriverà">arriverà</w>
+					<S/>
+					<w msd="Slmer" lemma="all">alla</w>
+					<S/>
+					<w msd="Slmer" lemma="modifico">modifica</w>
+					<S/>
+					<w msd="Slmmt" lemma="dell">delle</w>
+					<S/>
+					<w msd="Sozer" lemma="regola">regole</w>
+					<S/>
+					<w msd="Slmer" lemma="dell">della</w>
+					<S/>
+					<w msd="Sozer" lemma="missiona">missione</w>
+					<S/>
+					<w msd="Sozer" lemma="militara">militare</w>
+					<S/>
+					<w msd="Slzei" lemma="sophia">sophia</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Rsn" lemma="porrà">porrà</w>
+					<S/>
+					<w msd="Ppnzer" lemma="fin">fine</w>
+					<S/>
+					<w msd="Slmei" lemma="allo">allo</w>
+					<S/>
+					<w msd="Slmei" lemma="sbarco">sbarco</w>
+					<S/>
+					<w msd="Somei" lemma="solo">solo</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzei" lemma="italia">italia</w>
+					<S/>
+					<w msd="Sommi" lemma="deo">dei</w>
+					<S/>
+					<w msd="Sommi" lemma="migrant">migranti</w>
+					<S/>
+					<w msd="Sozed" lemma="salvata">salvati</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzer" lemma="mara">mare</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Rsn" lemma="ministro">ministro</w>
+					<S/>
+					<w msd="Ggdd-mm" lemma="deči">degli</w>
+					<S/>
+					<w msd="Slmei" lemma="esteri">esteri</w>
+					<S/>
+					<w msd="Slmei" lemma="italiano">italiano</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="enzo">enzo</w>
+					<S/>
+					<w msd="Slmei" lemma="moavero">moavero</w>
+					<S/>
+					<w msd="Slmei" lemma="milanesi">milanesi</w>
+					<c>,</c>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzei" lemma="una">una</w>
+					<S/>
+					<w msd="Slmer" lemma="conferenz">conferenza</w>
+					<S/>
+					<w msd="N" lemma="stampa">stampa</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Sozet" lemma="berlina">berlino</w>
+					<c>,</c>
+					<S/>
+					<w msd="Sozet" lemma="dopa">dopo</w>
+					<S/>
+					<w msd="Somei" lemma="aver">aver</w>
+					<S/>
+					<w msd="Somei" lemma="auspicato">auspicato</w>
+					<S/>
+					<w msd="Ppnzer" lemma="nuov">nuove</w>
+					<S/>
+					<w msd="Slzet" lemma="regole">regole</w>
+					<S/>
+					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Slmei" lemma="missione">missione</w>
+					<S/>
+					<w msd="Slzei" lemma="sophia">sophia</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="ha">ha</w>
+					<S/>
+					<w msd="Slmei" lemma="anche">anche</w>
+					<S/>
+					<w msd="Slmei" lemma="assicurato">assicurato</w>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Slmei" lemma="l'italia">l'italia</w>
+					<S/>
+					<w msd="Rsn" lemma="garantirà">garantirà</w>
+					<S/>
+					<w msd="Rsn" lemma="l'approdo">l'approdo</w>
+					<S/>
+					<w msd="Ppnmmi" lemma="nei">nei</w>
+					<S/>
+					<w msd="Sommi" lemma="proper">propri</w>
+					<S/>
+					<w msd="Sommi" lemma="port">porti</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Slmer" lemma="tutta">tutte</w>
+					<S/>
+					<w msd="L" lemma="le">le</w>
+					<S/>
+					<w msd="Sozer" lemma="persona">persone</w>
+					<S/>
+					<w msd="Ggdsdm" lemma="salvati">salvate</w>
+					<c>.</c>
+					<S/>
+					<w msd="Somei" lemma="ha">ha</w>
+					<S/>
+					<w msd="Somei" lemma="inoltre">inoltre</w>
+					<S/>
+					<w msd="Rsn" lemma="ribadito">ribadito</w>
+					<S/>
+					<w msd="Somei" lemma="che">che</w>
+					<S/>
+					<w msd="Sommt" lemma="servo">serve</w>
+					<S/>
+					<w msd="Somer" lemma="un">una</w>
+					<S/>
+					<w msd="Rsn" lemma="responsabilità">responsabilità</w>
+					<S/>
+					<w msd="Somer" lemma="condivis">condivisa</w>
+					<S/>
+					<w msd="Slmei" lemma="quando">quando</w>
+					<S/>
+					<w msd="L" lemma="le">le</w>
+					<S/>
+					<w msd="Sozer" lemma="persona">persone</w>
+					<S/>
+					<w msd="Rsn" lemma="vengono">vengono</w>
+					<S/>
+					<w msd="Ppnzmi" lemma="salvat">salvate</w>
+					<c>,</c>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="monte">monte</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Slmei" lemma="chi">chi</w>
+					<S/>
+					<w msd="Somei" lemma="abbia">abbia</w>
+					<S/>
+					<w msd="Dm" lemma="o">o</w>
+					<S/>
+					<w msd="Sozet" lemma="mena">meno</w>
+					<S/>
+					<w msd="Rsn" lemma="diritto">diritto</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Soset" lemma="asilo">asilo</w>
+					<S/>
+					<w msd="Slzmr" lemma="eda">ed</w>
+					<S/>
+					<w msd="Somei" lemma="ha">ha</w>
+					<S/>
+					<w msd="Slmei" lemma="quindi">quindi</w>
+					<S/>
+					<w msd="Slmei" lemma="aggiunto">aggiunto</w>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
+					<w msd="Rsn" lemma="dovrà">dovrà</w>
+					<S/>
+					<w msd="Ppnzer" lemma="affrontar">affrontare</w>
+					<S/>
+					<w msd="Slmei" lemma="un">un</w>
+					<S/>
+					<w msd="Slmei" lemma="lavoro">lavoro</w>
+					<S/>
+					<w msd="Slmei" lemma="complesso">complesso</w>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Sozmt" lemma="richieda">richiede</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Ppnmmt" lemma="spostar">spostare</w>
+					<S/>
+					<w msd="Sommt" lemma="l'attenzion">l'attenzione</w>
+					<S/>
+					<w msd="Ggdd-em" lemma="dati">dal</w>
+					<S/>
+					<w msd="Sozet" lemma="momenta">momento</w>
+					<S/>
+					<w msd="Rsn" lemma="dell'arrivo">dell'arrivo</w>
+					<S/>
+					<w msd="Slmei" lemma="al">al</w>
+					<S/>
+					<w msd="Slmei" lemma="momento">momento</w>
+					<S/>
+					<w msd="Slmmt" lemma="dell">delle</w>
+					<S/>
+					<w msd="Sozer" lemma="partenza">partenze</w>
+					<S/>
+					<w msd="Slmei" lemma="dei">dei</w>
+					<S/>
+					<w msd="Slmei" lemma="luoghi">luoghi</w>
+					<S/>
+					<w msd="Sommt" lemma="d'origin">d'origine</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somer" lemma="all">alla</w>
+					<S/>
+					<w msd="Sommt" lemma="sorgent">sorgente</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Sozmr" lemma="nona">non</w>
+					<S/>
+					<w msd="Somei" lemma="solo">solo</w>
+					<S/>
+					<w msd="Slmer" lemma="all">alla</w>
+					<S/>
+					<w msd="Sozer" lemma="foca">foce</w>
+					<c>,</c>
+					<S/>
+					<w msd="Sozei" lemma="intervenendo">intervenendo</w>
+					<S/>
+					<w msd="Sozer" lemma="ne">nei</w>
+					<S/>
+					<w msd="Sozem" lemma="paesa">paesi</w>
+					<S/>
+					<w msd="Psnzer" lemma="dov">dove</w>
+					<S/>
+					<w msd="Rsn" lemma="partono">partono</w>
+					<c>,</c>
+					<S/>
+					<w msd="Sozmi" lemma="agira">agire</w>
+					<S/>
+					<w msd="N" lemma="sui">sui</w>
+					<S/>
+					<w msd="Rsn" lemma="tragitti">tragitti</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Ppnzed" lemma="quest">questi</w>
+					<S/>
+					<w msd="Sozem" lemma="tragica">tragici</w>
+					<S/>
+					<w msd="Slmei" lemma="spostamenti">spostamenti</w>
+					<S/>
+					<w msd="Slmei" lemma="per">per</w>
+					<S/>
+					<w msd="Slmei" lemma="lottare">lottare</w>
+					<S/>
+					<w msd="Slmei" lemma="contro">contro</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
+					<w msd="Sommo" lemma="trafficant">trafficanti</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="oltre">oltre</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="continuare">continuare</w>
+					<S/>
+					<w msd="N" lemma="ad">ad</w>
+					<S/>
+					<w msd="Sozer" lemma="operara">operare</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
+					<w msd="Slmei" lemma="salvataggi">salvataggi</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzer" lemma="mara">mare</w>
+					<c>.</c>
+					<S/>
+					<w msd="Sozei" lemma="sulla">sulla</w>
+					<S/>
+					<w msd="Somer" lemma="stess">stessa</w>
+					<S/>
+					<w msd="Sozei" lemma="linea">linea</w>
+					<S/>
+					<w msd="Slmei" lemma="anche">anche</w>
+					<S/>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Slmei" lemma="presidente">presidente</w>
+					<S/>
+					<w msd="Slmer" lemma="dell">della</w>
+					<S/>
+					<w msd="Slzei" lemma="camera">camera</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="roberto">roberto</w>
+					<S/>
+					<w msd="Slmei" lemma="fico">fico</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="Somei" lemma="ha">ha</w>
+					<S/>
+					<w msd="N" lemma="sottolineato">sottolineato</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Slmei" lemma="necessità">necessità</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Rsn" lemma="una">una</w>
+					<S/>
+					<w msd="Rsn" lemma="politica">politica</w>
+					<S/>
+					<w msd="Rsn" lemma="molto">molto</w>
+					<S/>
+					<w msd="Ggnste" lemma="piùti">più</w>
+					<S/>
+					<w msd="Sommt" lemma="lungimirant">lungimirante</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slzei" lemma="seria">seria</w>
+					<S/>
+					<w msd="N" lemma="con">con</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Slzei" lemma="libia">libia</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="perché">perché</w>
+					<S/>
+					<w msd="Rsn" lemma="la">la</w>
+					<S/>
+					<w msd="Rsn" lemma="libia">libia</w>
+					<S/>
+					<w msd="Sozmr" lemma="nona">non</w>
+					<S/>
+					<w msd="Sometd" lemma="è">è</w>
+					<S/>
+					<w msd="Slmei" lemma="né">né</w>
+					<S/>
+					<w msd="Slmei" lemma="un">un</w>
+					<S/>
+					<w msd="Slmei" lemma="paese">paese</w>
+					<S/>
+					<w msd="Slmei" lemma="né">né</w>
+					<S/>
+					<w msd="Slmei" lemma="un">un</w>
+					<S/>
+					<w msd="Slmei" lemma="porto">porto</w>
+					<S/>
+					<w msd="Somei" lemma="sicuro">sicuro</w>
+					<c>.</c>
+					<S/>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Slmei" lemma="primo">primo</w>
+					<S/>
+					<w msd="Somei" lemma="punto">punto</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="per">per</w>
+					<S/>
+					<w msd="Rsn" lemma="fico">fico</w>
+					<c>,</c>
+					<S/>
+					<w msd="Sometd" lemma="è">è</w>
+					<S/>
+					<w msd="Sozer" lemma="salvara">salvare</w>
+					<S/>
+					<w msd="Slzer" lemma="vita">vite</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzer" lemma="mara">mare</w>
+					<S/>
+					<w msd="N" lemma="sempre">sempre</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="comunque">comunque</w>
+					<c>.</c>
+					<S/>
+					<w msd="Ggdvdm" lemma="poi">poi</w>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
+					<w msd="Sozer" lemma="deva">deve</w>
+					<S/>
+					<w msd="Sozer" lemma="imparara">imparare</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Sozer" lemma="gestira">gestire</w>
+					<S/>
+					<w msd="Somer" lemma="l'accoglienz">l'accoglienza</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="l'integrazione">l'integrazione</w>
+					<S/>
+					<c>.</c>
+					<S/>
+					<w msd="Sozet" lemma="intanta">intanto</w>
+					<S/>
+					<w msd="N" lemma="continua">continua</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Sozei" lemma="polemica">polemica</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Somer" lemma="distanz">distanza</w>
+					<S/>
+					<w msd="Slzei" lemma="tra">tra</w>
+					<S/>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Rsn" lemma="ministro">ministro</w>
+					<S/>
+					<w msd="Rsn" lemma="dell'interno">dell'interno</w>
+					<S/>
+					<w msd="Slmei" lemma="matteo">matteo</w>
+					<S/>
+					<w msd="Somer" lemma="salvian">salvini</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Sozmr" lemma="opna">open</w>
+					<S/>
+					<w msd="Slmei" lemma="arms">arms</w>
+					<c>.</c>
+					<S/>
+					<w msd="Sozet" lemma="dopa">dopo</w>
+					<S/>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Slmei" lemma="caso">caso</w>
+					<S/>
+					<w msd="N" lemma="del">del</w>
+					<S/>
+					<w msd="Slmei" lemma="salvataggio">salvataggio</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Slmer" lemma="josef">josefa</w>
+					<S/>
+					<w msd="Somei" lemma="nel">nel</w>
+					<S/>
+					<w msd="Slmei" lemma="mediterraneo">mediterraneo</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="l'annunciata">l'annunciata</w>
+					<S/>
+					<c>-</c>
+					<S/>
+					<w msd="Slmei" lemma="poi">poi</w>
+					<S/>
+					<w msd="Ggnstd" lemma="smentiti">smentita</w>
+					<S/>
+					<c>-</c>
+					<S/>
+					<w msd="Slzei" lemma="denuncia">denuncia</w>
+					<S/>
+					<w msd="Slmei" lemma="dell'ong">dell'ong</w>
+					<S/>
+					<w msd="Slmer" lemma="all">alla</w>
+					<S/>
+					<w msd="Slzei" lemma="guardia">guardia</w>
+					<S/>
+					<w msd="Slmer" lemma="costier">costiera</w>
+					<S/>
+					<w msd="Slzei" lemma="italiana">italiana</w>
+					<S/>
+					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="omicidio">omicidio</w>
+					<S/>
+					<w msd="Slmei" lemma="colposo">colposo</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="omissione">omissione</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Slmei" lemma="soccorso">soccorso</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="il">il</w>
+					<S/>
+					<w msd="Slmei" lemma="leader">leader</w>
+					<S/>
+					<w msd="Slmer" lemma="dell">della</w>
+					<S/>
+					<w msd="Ggnste" lemma="legati">lega</w>
+					<S/>
+					<w msd="Somei" lemma="ha">ha</w>
+					<S/>
+					<w msd="Rsn" lemma="attaccato">attaccato</w>
+					<S/>
+					<w msd="Slmei" lemma="l'organizzazione">l'organizzazione</w>
+					<S/>
+					<w msd="Somer" lemma="spagnol">spagnola</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="utilizzando">utilizzando</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
+					<w msd="N" lemma="social">social</w>
+					<S/>
+					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="coinvolgere">coinvolgere</w>
+					<S/>
+					<w msd="N" lemma="le">le</w>
+					<S/>
+					<w msd="Slmei" lemma="migliaia">migliaia</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="migliaia">migliaia</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Sozer" lemma="persona">persone</w>
+					<S/>
+					<w msd="Slmei" lemma="che">che</w>
+					<S/>
+					<w msd="N" lemma="lo">lo</w>
+					<S/>
+					<w msd="Rsn" lemma="seguono">seguono</w>
+					<S/>
+					<w msd="N" lemma="su">su</w>
+					<S/>
+					<w msd="Somei" lemma="facebook">facebook</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="N" lemma="twitter.prima">twitter.prima</w>
+					<S/>
+					<w msd="Slmer" lemma="dell">della</w>
+					<S/>
+					<w msd="Sozei" lemma="polemica">polemica</w>
+					<S/>
+					<w msd="N" lemma="con">con</w>
+					<S/>
+					<w msd="Sozmr" lemma="opna">open</w>
+					<S/>
+					<w msd="Slmei" lemma="arms">arms</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="inoltre">inoltre</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="il">il</w>
+					<S/>
+					<w msd="Rsn" lemma="ministro">ministro</w>
+					<S/>
+					<w msd="Rsn" lemma="dell'interno">dell'interno</w>
+					<S/>
+					<w msd="Zp------k" lemma="se">se</w>
+					<S/>
+					<w msd="Ppnzei" lemma="l'er">l'era</w>
+					<S/>
+					<w msd="Somer" lemma="pres">presa</w>
+					<S/>
+					<w msd="N" lemma="con">con</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Ggnstm" lemma="turchiati">turchia</w>
+					<c>:</c>
+					<S/>
+					<w msd="N" lemma="da">da</w>
+					<S/>
+					<w msd="Slmei" lemma="inizio">inizio</w>
+					<S/>
+					<w msd="Slzet" lemma="anna">anno</w>
+					<S/>
+					<w msd="Sozet" lemma="sona">sono</w>
+					<S/>
+					<w msd="Slmei" lemma="sbarcati">sbarcati</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzei" lemma="italia">italia</w>
+					<S/>
+					<w msd="Kag" lemma="1.200">1.200</w>
+					<S/>
+					<w msd="Rsn" lemma="immigrati">immigrati</w>
+					<S/>
+					<w msd="Sommi" lemma="arrivat">arrivati</w>
+					<S/>
+					<w msd="Slzei" lemma="via">via</w>
+					<S/>
+					<w msd="Slzer" lemma="mara">mare</w>
+					<S/>
+					<w msd="Somer" lemma="dall">dalla</w>
+					<S/>
+					<w msd="Slzei" lemma="turchia">turchia</w>
+					<S/>
+					<c>-</c>
+					<S/>
+					<w msd="Slmei" lemma="aveva">aveva</w>
+					<S/>
+					<w msd="Slmei" lemma="scritto">scritto</w>
+					<S/>
+					<w msd="N" lemma="su">su</w>
+					<S/>
+					<w msd="Slmei" lemma="twitter">twitter</w>
+					<S/>
+					<c>-</c>
+					<S/>
+					<w msd="Slmei" lemma="ma">ma</w>
+					<S/>
+					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="controllare">controllare</w>
+					<S/>
+					<w msd="N" lemma="l'immigrazione">l'immigrazione</w>
+					<S/>
+					<w msd="N" lemma="la">la</w>
+					<S/>
+					<w msd="Slmei" lemma="ue">ue</w>
+					<S/>
+					<w msd="Gp-std-n" lemma="biti">sta</w>
+					<S/>
+					<w msd="Slmei" lemma="regalando">regalando</w>
+					<S/>
+					<w msd="Slmer" lemma="all">alla</w>
+					<S/>
+					<w msd="Slmei" lemma="turchia">turchia</w>
+					<S/>
+					<w msd="Kag" lemma="6">6</w>
+					<S/>
+					<w msd="Sozdt" lemma="miliarda">miliardi</w>
+					<S/>
+					<w msd="N" lemma="di">di</w>
+					<S/>
+					<w msd="Slmei" lemma="euro">euro</w>
+					<S/>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slmmt" lemma="david">davide</w>
+					<S/>
+					<w msd="Slmei" lemma="fifaco">fifaco</w>
+				</s>
+			</p>
+		</body>
+	</text>
+</TEI>
