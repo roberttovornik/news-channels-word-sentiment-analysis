@@ -8,6 +8,9 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 from nltk.tokenize import RegexpTokenizer
 from nltk import pos_tag
+import xml.etree.ElementTree as ET
+from lxml import etree
+from collections import Counter
 
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
@@ -19,7 +22,25 @@ def get_wordnet_pos(treebank_tag):
     elif treebank_tag.startswith('R'):
         return wordnet.ADV
     else:
-        return wordnet.NOUN
+        #return wordnet.NOUN
+        return '_'
+
+def extract_pos_constructs(obeliks_xml):
+    root = ET.fromstring(obeliks_xml)
+    stavki = root.findall(".//{http://www.tei-c.org/ns/1.0}s")
+    stavcne_strukture = []
+    #besedilo_tokens = Counter()
+    lemmatized_article=[]
+    pos_tagged_article=[]
+
+    for stavek in stavki:
+        stavcna_struktura = ''
+        lemmatized_sentence = [x.attrib['lemma'] if 'lemma' in x.attrib else '_' for x in stavek ]
+        lemmatized_article = lemmatized_article + lemmatized_sentence
+        pos_tagged_sentence = [x.attrib['msd'] if 'msd' in x.attrib else '_' for x in stavek]
+        pos_tagged_article = pos_tagged_article + pos_tagged_sentence
+    return (' '.join(lemmatized_article),' '.join(pos_tagged_article))
+
 
 def lemmatize_slovenian(article_iterator):
     input_article_directory_name = '.articles/'
@@ -41,23 +62,48 @@ def lemmatize_slovenian(article_iterator):
     #sudo apt install mono-devel
     os.system('exec mono obeliks/PosTaggerTag.exe -lem:obeliks/LemmatizerModel.bin -v -o -t "' + input_article_directory_name + '*" obeliks/TaggerModel.bin ' + output_article_directory_name)
     output_article_directory = os.fsencode(output_article_directory_name)
-    data_content=[]
+    data_content_lemma = []
+    data_content_pos = []
     data_indices=[]
     for file in os.listdir(output_article_directory):
         filename = os.fsdecode(file)
         with open(output_article_directory_name + filename, 'r') as the_file:
             content = the_file.read()
+            lemmatized_string,pos_string=extract_pos_constructs(content)
         idx = int(filename[1:filename.find('.out')])
         data_indices.append(idx)
-        data_content.append(content)
+        data_content_lemma.append(lemmatized_string)
+        data_content_pos.append(pos_string)
 
-    return pd.Series(data=data_content,index=data_indices)
+    return (pd.Series(data=data_content_lemma,index=data_indices),pd.Series(data=data_content_pos,index=data_indices))
 
 def lemmatize_english(article_iterator):
     wordnet_lemmatizer = WordNetLemmatizer()
     tokenizer = RegexpTokenizer(r'\w+')
-    data_lemmatized=article_iterator.apply(lambda a:' '.join([wordnet_lemmatizer.lemmatize(word,pos=get_wordnet_pos(tag)) for word,tag in pos_tag(tokenizer.tokenize(a))]) if not isinstance(a, float) else a)
-    return data_lemmatized
+    #data_lemmatized=article_iterator.apply(lambda a:' '.join([wordnet_lemmatizer.lemmatize(word,pos=get_wordnet_pos(tag) if not get_wordnet_pos(tag) == '_' else  wordnet.NOUN) for word,tag in pos_tag(tokenizer.tokenize(a))]) if not isinstance(a, float) else a)
+
+    data_content_lemma = []
+    data_content_pos = []
+    data_indices = []
+
+    for idx,content in article_iterator.iteritems():
+        data_indices.append(idx)
+        content_pos_tmp = []
+        content_lemma_tmp = []
+        if isinstance(content, float):
+            data_content_lemma.append(content)
+            data_content_pos.append(content)
+            continue
+        else:
+            tokens=tokenizer.tokenize(content)
+            for word,tag in pos_tag(tokens):
+                lemma=wordnet_lemmatizer.lemmatize(word,pos=get_wordnet_pos(tag) if not get_wordnet_pos(tag) == '_' else  wordnet.NOUN)
+                content_pos_tmp.append(str(tag))
+                content_lemma_tmp.append(lemma)
+        data_content_lemma.append(' '.join(content_lemma_tmp))
+        data_content_pos.append(' '.join(content_pos_tmp))
+
+    return (pd.Series(data=data_content_lemma,index=data_indices),pd.Series(data=data_content_pos,index=data_indices))
 
 def basic_preprocessing(article):
     if not isinstance(article, float):
@@ -139,9 +185,10 @@ for region,df in geoRegional_data.items():
     print('\t\t...done.')
     print('\t\tPOS tagging and lemmatization...')
     if region=='Slovenia':
-        geoRegional_data[region]['article_text_processed_lemmatized']=lemmatize_slovenian(df['article_text_processed'])
+        #df=df.copy(deep=True)[:5]
+        df['article_text_processed_lemmatized'], df['article_text_processed_POS'] = lemmatize_slovenian(df['article_text_processed'].copy(deep=True))
     else:
-        geoRegional_data[region]['article_text_processed_lemmatized'] = lemmatize_english(df['article_text_processed'])
+        df['article_text_processed_lemmatized'], df['article_text_processed_POS'] = lemmatize_english(df['article_text_processed'].copy(deep=True))
     print('\t\t...done.')
     df_save_file_path='../data/'+region+'.pkl'
     print('\t\tSaving dataframe to:',df_save_file_path)
