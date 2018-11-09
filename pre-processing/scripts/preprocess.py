@@ -45,12 +45,10 @@ def extract_pos_constructs(obeliks_xml):
 def lemmatize_slovenian(article_iterator):
     input_article_directory_name = '.articles/'
     output_article_directory_name = '.articles_tagged/'
-    '''
     if os.path.exists(input_article_directory_name) and os.path.isdir(input_article_directory_name):
         shutil.rmtree(input_article_directory_name)
     if os.path.exists(output_article_directory_name) and os.path.isdir(output_article_directory_name):
         shutil.rmtree(output_article_directory_name)    
-    '''
     os.makedirs(input_article_directory_name, exist_ok=True)
     os.makedirs(output_article_directory_name, exist_ok=True)
     latest_processed_file = max([int(f[1:f.index('.out')]) for f in os.listdir(output_article_directory_name)]) if len(os.listdir(output_article_directory_name)) > 0 else None
