@@ -1,0 +1,931 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<text>
+		<body>
+			<p>
+				<s>
+					<w msd="Slzei" lemma="austria">austria</w>
+					<S/>
+					<w msd="Ppnzer" lemma="deployed">deployed</w>
+					<S/>
+					<w msd="Sozer" lemma="polica">police</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="soldiers">soldiers</w>
+					<S/>
+					<w msd="N" lemma="and">and</w>
+					<S/>
+					<w msd="Slmei" lemma="black">black</w>
+					<S/>
+					<w msd="N" lemma="hawk">hawk</w>
+					<S/>
+					<w msd="N" lemma="military">military</w>
+					<S/>
+					<w msd="Slmei" lemma="helicopters">helicopters</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
+					<w msd="Slmei" lemma="tuesday">tuesday</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="an">an</w>
+					<S/>
+					<w msd="N" lemma="exercise">exercise</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="overseen">overseen</w>
+					<S/>
+					<w msd="N" lemma="by">by</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Somei" lemma="far">far</w>
+					<c>-</c>
+					<w msd="Slmei" lemma="right">right</w>
+					<S/>
+					<w msd="Slmei" lemma="interior">interior</w>
+					<S/>
+					<w msd="Somei" lemma="minister">minister</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="which">which</w>
+					<S/>
+					<w msd="N" lemma="enacted">enacted</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="arrival">arrival</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="hundreds">hundreds</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="migrants">migrants</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
+					<w msd="N" lemma="its">its</w>
+					<S/>
+					<w msd="N" lemma="border">border</w>
+					<S/>
+					<w msd="N" lemma="with">with</w>
+					<S/>
+					<w msd="Slzei" lemma="slovenia">slovenia</w>
+					<c>.</c>
+					<S/>
+					<w msd="Slzei" lemma="slovenia">slovenia</w>
+					<S/>
+					<w msd="Slmei" lemma="said">said</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="drill">drill</w>
+					<S/>
+					<w msd="N" lemma="exaggerated">exaggerated</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="risk">risk</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="another">another</w>
+					<S/>
+					<w msd="N" lemma="influx">influx</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="drill">drill</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="designed">designed</w>
+					<S/>
+					<w msd="Zk-sei" lemma="ta">to</w>
+					<S/>
+					<w msd="Somei" lemma="show">show</w>
+					<S/>
+					<w msd="Slmei" lemma="austria's">austria's</w>
+					<S/>
+					<w msd="N" lemma="preparedness">preparedness</w>
+					<S/>
+					<w msd="N" lemma="for">for</w>
+					<S/>
+					<w msd="N" lemma="any">any</w>
+					<S/>
+					<w msd="N" lemma="repeat">repeat</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="europe's">europe's</w>
+					<S/>
+					<w msd="N" lemma="migration">migration</w>
+					<S/>
+					<w msd="Slmei" lemma="crisis">crisis</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="dovetailed">dovetailed</w>
+					<S/>
+					<w msd="N" lemma="with">with</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="right">right</w>
+					<c>-</c>
+					<w msd="N" lemma="wing">wing</w>
+					<S/>
+					<w msd="N" lemma="government's">government's</w>
+					<S/>
+					<w msd="N" lemma="efforts">efforts</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="discourage">discourage</w>
+					<S/>
+					<w msd="N" lemma="migrants">migrants</w>
+					<S/>
+					<w msd="N" lemma="from">from</w>
+					<S/>
+					<w msd="N" lemma="setting">setting</w>
+					<S/>
+					<w msd="N" lemma="off">off</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="find">find</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="home">home</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="central">central</w>
+					<S/>
+					<w msd="Slmei" lemma="europe">europe</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slzei" lemma="austria">austria</w>
+					<S/>
+					<w msd="Slmei" lemma="took">took</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slmei" lemma="more">more</w>
+					<S/>
+					<w msd="Slmei" lemma="than">than</w>
+					<S/>
+					<w msd="Kag" lemma="1">1</w>
+					<S/>
+					<w msd="Somei" lemma="percent">percent</w>
+					<S/>
+					<w msd="Slmei" lemma="of">of</w>
+					<S/>
+					<w msd="Slmei" lemma="its">its</w>
+					<S/>
+					<w msd="Slmei" lemma="population">population</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slmei" lemma="asylum">asylum</w>
+					<S/>
+					<w msd="N" lemma="seekers">seekers</w>
+					<S/>
+					<w msd="N" lemma="during">during</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Kag" lemma="2015">2015</w>
+					<c>-</c>
+					<w msd="Kag" lemma="2016">2016</w>
+					<S/>
+					<w msd="Slmei" lemma="migration">migration</w>
+					<S/>
+					<w msd="Slmei" lemma="crisis">crisis</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="and">and</w>
+					<S/>
+					<w msd="Slmei" lemma="chancellor">chancellor</w>
+					<S/>
+					<w msd="Slmei" lemma="sebastian">sebastian</w>
+					<S/>
+					<w msd="Slmei" lemma="kurz's">kurz's</w>
+					<S/>
+					<w msd="Slmei" lemma="conservatives">conservatives</w>
+					<S/>
+					<w msd="Slmei" lemma="won">won</w>
+					<S/>
+					<w msd="Sozei" lemma="last">last</w>
+					<S/>
+					<w msd="Slmei" lemma="year's">year's</w>
+					<S/>
+					<w msd="Slmei" lemma="election">election</w>
+					<S/>
+					<w msd="Slmei" lemma="pledging">pledging</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Slmei" lemma="prevent">prevent</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="repeat">repeat</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="that">that</w>
+					<S/>
+					<w msd="N" lemma="influx">influx</w>
+					<c>.</c>
+					<S/>
+					<w msd="Slmei" lemma="they">they</w>
+					<S/>
+					<w msd="Slmei" lemma="govern">govern</w>
+					<S/>
+					<w msd="N" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="coalition">coalition</w>
+					<S/>
+					<w msd="N" lemma="with">with</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Somei" lemma="far">far</w>
+					<c>-</c>
+					<w msd="N" lemma="right">right</w>
+					<S/>
+					<w msd="N" lemma="freedom">freedom</w>
+					<S/>
+					<w msd="N" lemma="party">party</w>
+					<c>.</c>
+					<S/>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="state">state</w>
+					<S/>
+					<w msd="N" lemma="that">that</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="worst">worst</w>
+					<S/>
+					<w msd="Slmei" lemma="case">case</w>
+					<S/>
+					<w msd="Slmei" lemma="cannot">cannot</w>
+					<S/>
+					<w msd="Slmei" lemma="protect">protect</w>
+					<S/>
+					<w msd="Slmei" lemma="its">its</w>
+					<S/>
+					<w msd="Slmei" lemma="borders">borders</w>
+					<S/>
+					<w msd="Slmei" lemma="loses">loses</w>
+					<S/>
+					<w msd="Slmei" lemma="its">its</w>
+					<S/>
+					<w msd="Slmei" lemma="credibility">credibility</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="interior">interior</w>
+					<S/>
+					<w msd="Somei" lemma="minister">minister</w>
+					<S/>
+					<w msd="Slmei" lemma="herbert">herbert</w>
+					<S/>
+					<w msd="Slmei" lemma="kickl">kickl</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="freedom">freedom</w>
+					<S/>
+					<w msd="N" lemma="party">party</w>
+					<S/>
+					<w msd="Slmei" lemma="told">told</w>
+					<S/>
+					<w msd="Slmei" lemma="reporters">reporters</w>
+					<c>.</c>
+					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
+					<w msd="N" lemma="am">am</w>
+					<S/>
+					<w msd="N" lemma="determined">determined</w>
+					<S/>
+					<w msd="N" lemma="that">that</w>
+					<S/>
+					<w msd="N" lemma="events">events</w>
+					<S/>
+					<w msd="Slzer" lemma="lika">like</w>
+					<S/>
+					<w msd="Slzer" lemma="those">those</w>
+					<S/>
+					<w msd="Slmei" lemma="of">of</w>
+					<S/>
+					<w msd="Kag" lemma="2015">2015</w>
+					<S/>
+					<w msd="Somei" lemma="must">must</w>
+					<S/>
+					<w msd="Sozmr" lemma="nota">not</w>
+					<S/>
+					<w msd="N" lemma="occur">occur</w>
+					<S/>
+					<w msd="N" lemma="again">again</w>
+					<c>.</c>
+					<S/>
+					<w msd="N" lemma="and">and</w>
+					<S/>
+					<w msd="N" lemma="that">that</w>
+					<S/>
+					<w msd="N" lemma="is">is</w>
+					<S/>
+					<w msd="N" lemma="exactly">exactly</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="message">message</w>
+					<S/>
+					<w msd="N" lemma="we">we</w>
+					<S/>
+					<w msd="N" lemma="want">want</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="send">send</w>
+					<S/>
+					<w msd="N" lemma="from">from</w>
+					<S/>
+					<w msd="N" lemma="here">here</w>
+					<c>.</c>
+					<S/>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Somei" lemma="neighbouring">neighbouring</w>
+					<S/>
+					<w msd="Slzei" lemma="slovenia">slovenia</w>
+					<S/>
+					<w msd="Slmei" lemma="however">however</w>
+					<S/>
+					<w msd="Slmei" lemma="said">said</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="drill">drill</w>
+					<S/>
+					<w msd="N" lemma="exaggerated">exaggerated</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="risk">risk</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="another">another</w>
+					<S/>
+					<w msd="N" lemma="influx">influx</w>
+					<c>.</c>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="exercise">exercise</w>
+					<S/>
+					<w msd="N" lemma="is">is</w>
+					<S/>
+					<w msd="Sozmr" lemma="nota">not</w>
+					<S/>
+					<w msd="Somei" lemma="needed">needed</w>
+					<c>.</c>
+					<S/>
+					<w msd="Somei" lemma="i">i</w>
+					<S/>
+					<w msd="Slmei" lemma="see">see</w>
+					<S/>
+					<w msd="Somei" lemma="it">it</w>
+					<S/>
+					<w msd="Slmei" lemma="even">even</w>
+					<S/>
+					<w msd="Somei" lemma="as">as</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Somei" lemma="little">little</w>
+					<S/>
+					<w msd="Sozer" lemma="provocativa">provocative</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="slovenian">slovenian</w>
+					<S/>
+					<w msd="Ggdste" lemma="prijeti">prime</w>
+					<S/>
+					<w msd="Somei" lemma="minister">minister</w>
+					<S/>
+					<w msd="Slmei" lemma="miro">miro</w>
+					<S/>
+					<w msd="Slmei" lemma="cerar">cerar</w>
+					<S/>
+					<w msd="Slmei" lemma="was">was</w>
+					<S/>
+					<w msd="Slmei" lemma="quoted">quoted</w>
+					<S/>
+					<w msd="Somei" lemma="as">as</w>
+					<S/>
+					<w msd="N" lemma="saying">saying</w>
+					<S/>
+					<w msd="N" lemma="by">by</w>
+					<S/>
+					<w msd="Slmei" lemma="national">national</w>
+					<S/>
+					<w msd="Slmei" lemma="news">news</w>
+					<S/>
+					<w msd="N" lemma="agency">agency</w>
+					<S/>
+					<w msd="N" lemma="sta">sta</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="exercise">exercise</w>
+					<S/>
+					<w msd="N" lemma="was">was</w>
+					<S/>
+					<w msd="Slmei" lemma="carried">carried</w>
+					<S/>
+					<w msd="N" lemma="out">out</w>
+					<S/>
+					<w msd="N" lemma="at">at</w>
+					<S/>
+					<w msd="Slmei" lemma="spielfeld">spielfeld</w>
+					<c>,</c>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="crossing">crossing</w>
+					<S/>
+					<w msd="Somei" lemma="where">where</w>
+					<S/>
+					<w msd="Slzei" lemma="austria">austria</w>
+					<S/>
+					<w msd="Somei" lemma="set">set</w>
+					<S/>
+					<w msd="Somei" lemma="up">up</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Sommt" lemma="largo">large</w>
+					<S/>
+					<w msd="Slsei" lemma="crowd">crowd</w>
+					<c>-</c>
+					<w msd="Somei" lemma="management">management</w>
+					<S/>
+					<w msd="Slmei" lemma="system">system</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slmei" lemma="early">early</w>
+					<S/>
+					<w msd="Kag" lemma="2016">2016</w>
+					<S/>
+					<w msd="Somei" lemma="designed">designed</w>
+					<S/>
+					<w msd="Zk-sei" lemma="ta">to</w>
+					<S/>
+					<w msd="Sozet" lemma="handle">handle</w>
+					<S/>
+					<w msd="Somei" lemma="up">up</w>
+					<S/>
+					<w msd="Zk-sei" lemma="ta">to</w>
+					<S/>
+					<w msd="Kag" lemma="11,000">11,000</w>
+					<S/>
+					<w msd="N" lemma="people">people</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="day">day</w>
+					<c>,</c>
+					<S/>
+					<w msd="N" lemma="only">only</w>
+					<S/>
+					<w msd="N" lemma="for">for</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="number">number</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="arrivals">arrivals</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="collapse">collapse</w>
+					<S/>
+					<w msd="Slmei" lemma="soon">soon</w>
+					<S/>
+					<w msd="Slmei" lemma="afterwards">afterwards</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Somei" lemma="contrast">contrast</w>
+					<S/>
+					<w msd="Zk-sei" lemma="ta">to</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Somei" lemma="smaller">smaller</w>
+					<S/>
+					<w msd="Slmei" lemma="exercise">exercise</w>
+					<S/>
+					<w msd="Slmei" lemma="held">held</w>
+					<S/>
+					<w msd="Slmei" lemma="under">under</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Slmei" lemma="previous">previous</w>
+					<S/>
+					<w msd="Slmei" lemma="government">government</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="tuesday's">tuesday's</w>
+					<S/>
+					<w msd="Slmei" lemma="drill">drill</w>
+					<S/>
+					<w msd="Slmei" lemma="did">did</w>
+					<S/>
+					<w msd="Sozmr" lemma="nota">not</w>
+					<S/>
+					<w msd="Slmei" lemma="involve">involve</w>
+					<S/>
+					<w msd="Slmei" lemma="migrants">migrants</w>
+					<S/>
+					<w msd="Slmei" lemma="being">being</w>
+					<S/>
+					<w msd="Slmei" lemma="violent">violent</w>
+					<S/>
+					<w msd="N" lemma="or">or</w>
+					<S/>
+					<w msd="Slmei" lemma="any">any</w>
+					<S/>
+					<w msd="Slmei" lemma="arrests">arrests</w>
+					<c>.</c>
+					<S/>
+					<w msd="Slmei" lemma="but">but</w>
+					<S/>
+					<w msd="Slmei" lemma="five">five</w>
+					<S/>
+					<w msd="Slmei" lemma="military">military</w>
+					<S/>
+					<w msd="Slmei" lemma="helicopters">helicopters</w>
+					<c>,</c>
+					<S/>
+					<w msd="Slmei" lemma="including">including</w>
+					<S/>
+					<w msd="Slmei" lemma="two">two</w>
+					<S/>
+					<w msd="Slmei" lemma="black">black</w>
+					<S/>
+					<w msd="Slzed" lemma="hawks">hawks</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="hovered">hovered</w>
+					<S/>
+					<w msd="Somei" lemma="overhead">overhead</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slmei" lemma="two">two</w>
+					<S/>
+					<w msd="Somei" lemma="hundred">hundred</w>
+					<S/>
+					<w msd="Sozer" lemma="trainea">trainee</w>
+					<S/>
+					<w msd="Sozer" lemma="polica">police</w>
+					<S/>
+					<w msd="N" lemma="officers">officers</w>
+					<S/>
+					<w msd="N" lemma="acted">acted</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Somei" lemma="part">part</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="migrants">migrants</w>
+					<S/>
+					<w msd="N" lemma="seeking">seeking</w>
+					<S/>
+					<w msd="N" lemma="entry">entry</w>
+					<c>.</c>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Slmei" lemma="peaceful">peaceful</w>
+					<S/>
+					<w msd="Slmei" lemma="crowds">crowds</w>
+					<S/>
+					<w msd="N" lemma="were">were</w>
+					<S/>
+					<w msd="Slmetn" lemma="hemmed">hemmed</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="by">by</w>
+					<S/>
+					<w msd="Slmei" lemma="security">security</w>
+					<S/>
+					<w msd="Slmei" lemma="forces">forces</w>
+					<S/>
+					<w msd="N" lemma="and">and</w>
+					<S/>
+					<w msd="N" lemma="fed">fed</w>
+					<S/>
+					<w msd="N" lemma="through">through</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="Slmei" lemma="system">system</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="fences">fences</w>
+					<S/>
+					<w msd="N" lemma="and">and</w>
+					<S/>
+					<w msd="N" lemma="other">other</w>
+					<S/>
+					<w msd="Slmei" lemma="barriers">barriers</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slmei" lemma="migration">migration</w>
+					<S/>
+					<w msd="N" lemma="has">has</w>
+					<S/>
+					<w msd="N" lemma="returned">returned</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="top">top</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="political">political</w>
+					<S/>
+					<w msd="Sozei" lemma="agenda">agenda</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slmei" lemma="europe">europe</w>
+					<S/>
+					<w msd="Slmei" lemma="after">after</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Slmei" lemma="bavarian">bavarian</w>
+					<S/>
+					<w msd="Slmei" lemma="sister">sister</w>
+					<S/>
+					<w msd="N" lemma="party">party</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Slmei" lemma="german">german</w>
+					<S/>
+					<w msd="Slmei" lemma="chancellor">chancellor</w>
+					<S/>
+					<w msd="Slmer" lemma="angelo">angela</w>
+					<S/>
+					<w msd="Slmei" lemma="merkel's">merkel's</w>
+					<S/>
+					<w msd="Slmei" lemma="christian">christian</w>
+					<S/>
+					<w msd="Slmei" lemma="democrats">democrats</w>
+					<S/>
+					<w msd="Sozei" lemma="last">last</w>
+					<S/>
+					<w msd="Somei" lemma="week">week</w>
+					<S/>
+					<w msd="Ggnste" lemma="gavedeti">gave</w>
+					<S/>
+					<w msd="Somei" lemma="her">her</w>
+					<S/>
+					<w msd="N" lemma="an">an</w>
+					<S/>
+					<w msd="N" lemma="ultimatum">ultimatum</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Somei" lemma="broker">broker</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="european">european</w>
+					<S/>
+					<w msd="N" lemma="immigration">immigration</w>
+					<S/>
+					<w msd="N" lemma="deal">deal</w>
+					<c>.</c>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="issue">issue</w>
+					<S/>
+					<w msd="N" lemma="threatens">threatens</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Slmei" lemma="wreck">wreck</w>
+					<S/>
+					<w msd="N" lemma="her">her</w>
+					<S/>
+					<w msd="Slmei" lemma="coalition">coalition</w>
+					<S/>
+					<w msd="Slmei" lemma="government">government</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Slmei" lemma="after">after</w>
+					<S/>
+					<w msd="N" lemma="meeting">meeting</w>
+					<S/>
+					<w msd="Slmei" lemma="germany's">germany's</w>
+					<S/>
+					<w msd="Slmei" lemma="bavarian">bavarian</w>
+					<S/>
+					<w msd="Slmei" lemma="interior">interior</w>
+					<S/>
+					<w msd="Somei" lemma="minister">minister</w>
+					<S/>
+					<w msd="Slmei" lemma="this">this</w>
+					<S/>
+					<w msd="Slmei" lemma="month">month</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="kurz">kurz</w>
+					<S/>
+					<w msd="N" lemma="called">called</w>
+					<S/>
+					<w msd="N" lemma="for">for</w>
+					<S/>
+					<w msd="N" lemma="an">an</w>
+					<S/>
+					<w msd="N" lemma="axis">axis</w>
+					<S/>
+					<w msd="N" lemma="of">of</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="willing">willing</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
+					<w msd="N" lemma="illegal">illegal</w>
+					<S/>
+					<w msd="N" lemma="immigration">immigration</w>
+					<S/>
+					<w msd="Slmei" lemma="including">including</w>
+					<S/>
+					<w msd="Slmei" lemma="italy">italy</w>
+					<c>,</c>
+					<S/>
+					<w msd="Somei" lemma="where">where</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="Somei" lemma="far">far</w>
+					<S/>
+					<w msd="Slmei" lemma="right">right</w>
+					<S/>
+					<w msd="N" lemma="is">is</w>
+					<S/>
+					<w msd="Slmei" lemma="also">also</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Somei" lemma="government">government</w>
+					<c>.</c>
+				</s>
+			</p>
+			<p>
+				<s>
+					<w msd="Sozmi" lemma="ha">he</w>
+					<S/>
+					<w msd="N" lemma="is">is</w>
+					<S/>
+					<w msd="N" lemma="pushing">pushing</w>
+					<S/>
+					<w msd="N" lemma="for">for</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="european">european</w>
+					<S/>
+					<w msd="N" lemma="union">union</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Somei" lemma="set">set</w>
+					<S/>
+					<w msd="Somei" lemma="up">up</w>
+					<S/>
+					<w msd="Somei" lemma="centres">centres</w>
+					<S/>
+					<w msd="Slmei" lemma="outside">outside</w>
+					<S/>
+					<w msd="Slmei" lemma="its">its</w>
+					<S/>
+					<w msd="Slmei" lemma="territory">territory</w>
+					<S/>
+					<w msd="Somei" lemma="where">where</w>
+					<S/>
+					<w msd="N" lemma="asylum">asylum</w>
+					<S/>
+					<w msd="N" lemma="claims">claims</w>
+					<S/>
+					<w msd="N" lemma="can">can</w>
+					<S/>
+					<w msd="N" lemma="be">be</w>
+					<S/>
+					<w msd="N" lemma="processed">processed</w>
+					<c>.</c>
+					<S/>
+					<w msd="Sozmi" lemma="ha">he</w>
+					<S/>
+					<w msd="N" lemma="also">also</w>
+					<S/>
+					<w msd="N" lemma="wants">wants</w>
+					<S/>
+					<w msd="N" lemma="migrants">migrants</w>
+					<S/>
+					<w msd="N" lemma="rescued">rescued</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="the">the</w>
+					<S/>
+					<w msd="N" lemma="mediterranean">mediterranean</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="be">be</w>
+					<S/>
+					<w msd="N" lemma="taken">taken</w>
+					<S/>
+					<w msd="Sozmr" lemma="backa">back</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="Slmei" lemma="africa">africa</w>
+					<S/>
+					<w msd="Slmei" lemma="rather">rather</w>
+					<S/>
+					<w msd="N" lemma="than">than</w>
+					<S/>
+					<w msd="N" lemma="transported">transported</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="europe">europe</w>
+					<c>.</c>
+				</s>
+			</p>
+		</body>
+	</text>
+</TEI>
