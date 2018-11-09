@@ -6,6 +6,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from itertools import combinations,chain
 from sklearn.manifold import TSNE
+from googletrans import Translator #pip3 install git+https://github.com/BoseCorp/py-googletrans.git --upgrade
+
 
 
 
@@ -36,8 +38,13 @@ def load_sentiWordNet(file_path='../external_data_sources/SentiWordNet_3.0.0_201
     return pd.read_csv(file_path,delimiter='\t',comment='#')
 
 def slo_to_eng(slo_word_list):
+    '''
     slo2eng_dict = {'azilant': 'asylum seeker', 'migrant': 'migrant', 'prebežnik': 'refugee'}
     return [slo2eng_dict[x[0]] for x in slo_word_list]
+    '''
+    translator = Translator()
+    translations = translator.translate(slo_word_list,src='sl',dest='en')
+    return [translation.text for translation in translations if len(translation.text.split())==1] #REMOVE CONDITION WHEN WORKING WITH PHRASES
 
 def label_point(x, y, val, ax):
     a = pd.concat({'x': x, 'y': y, 'val': val}, axis=1)
@@ -70,10 +77,6 @@ model_dir='../../data_modeling/models/'
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
-
-        if region_name in regions_slovene:
-            continue
-
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
         print('***Article analysis for region:', region_name)
@@ -94,10 +97,9 @@ for filename in os.listdir(model_dir):
 
             print('\tWords closest to:',words_of_interest_combo,'are:')
             similar_words = model.wv.most_similar(words_of_interest_combo, topn=100)
-            similar_words_with_sentiWord_score=[x for x in (slo_to_eng(similar_words) if region_name in regions_slovene else similar_words) if x[0] in list(sentiWordNet['SynsetTerms'])]
-            similar_adjectives_with_sentiWord_score = [x for x in similar_words_with_sentiWord_score if (region_name in regions_slovene and 'P' in words2pos[x[0]]) or (region_name not in regions_slovene and 'J' in words2pos[x[0]])]
+            similar_words_in_english=slo_to_eng([x[0] for x in similar_words]) if region_name in regions_slovene else [x[0] for x in similar_words]
+            similar_adjectives_with_sentiWord_score = [similar_words[x] for x in range(len(similar_words_in_english)) if (region_name in regions_slovene and 'P' in words2pos[similar_words[x][0]]) or (region_name not in regions_slovene and 'J' in words2pos[similar_words[x][0]])]
             similar_adjectives_with_sentiWord_score_str='\t\t'+'\n\t\t'.join([str(x) for x in similar_adjectives_with_sentiWord_score])
-            #objective_scores=[sentiWordNet[sentiWordNet['SynsetTerms']==x],'PosScore']+sentiWordNet['SynsetTerms']==x],'NegScore']
             sentiWordNet_relevant_rows=sentiWordNet[(sentiWordNet['SynsetTerms'].isin([x[0] for x in similar_adjectives_with_sentiWord_score])) & (sentiWordNet['POS']=='a')]
             objective_score_mean=np.mean(sentiWordNet_relevant_rows['objectiveScore'])
             print(similar_adjectives_with_sentiWord_score_str)
