@@ -2,7 +2,11 @@ import os
 import gensim
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 from itertools import combinations,chain
+from sklearn.manifold import TSNE
+
 
 
 def list_word_pos(df):
@@ -33,7 +37,28 @@ def load_sentiWordNet(file_path='../external_data_sources/SentiWordNet_3.0.0_201
 
 def slo_to_eng(slo_word_list):
     slo2eng_dict = {'azilant': 'asylum seeker', 'migrant': 'migrant', 'prebežnik': 'refugee'}
-    return [slo2eng_dict[x] for x in slo_word_list]
+    return [slo2eng_dict[x[0]] for x in slo_word_list]
+
+def label_point(x, y, val, ax):
+    a = pd.concat({'x': x, 'y': y, 'val': val}, axis=1)
+    for i, point in a.iterrows():
+        ax.text(point['x']+.02, point['y'], str(point['val']))
+
+def visualise_model(model,output_file_path):
+    vocab = list(model.wv.vocab)
+    X = model[vocab]
+    tsne = TSNE(n_components=2)
+    X_tsne = tsne.fit_transform(X)
+    df = pd.DataFrame({'x':X_tsne[:,0],'y':X_tsne[:,1],'vocab':vocab}, index=vocab)
+    ax = sns.lmplot('x',
+                    'y',
+                    data=df,  # Data source
+                    fit_reg=False,  # Don't fix a regression line
+                    size=10,
+                    aspect=2)  # size and dimension
+    label_point(df['x'], df['y'], df['vocab'], plt.gca())
+    #plt.show()
+    plt.savefig(output_file_path,dpi=600)
 
 words_of_interest_slovene=['azilant','migrant','prebežnik']
 words_of_interest_english=['asylum','seeker','migrant','refugee']
@@ -45,12 +70,21 @@ model_dir='../../data_modeling/models/'
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
+
+        if region_name in regions_slovene:
+            continue
+
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
         print('***Article analysis for region:', region_name)
         print('\tRestoring model from file:', model_file_path)
         model=gensim.models.Word2Vec.load(model_file_path)
         print('\t...done.')
+        print('\tVisualising model..')
+        if not os.path.exists('../models_scatter_plots'):
+            os.makedirs('../models_scatter_plots')
+        visualise_model(model,'../models_scatter_plots/'+region_name+'.png')
+        print('...done.')
         words_of_interest=words_of_interest_slovene if region_name in regions_slovene else words_of_interest_english
         combinations_of_words_of_interest=list(chain.from_iterable([combinations(words_of_interest,i) for i in range(1,len(words_of_interest))]))
         print('combos:',combinations_of_words_of_interest)
