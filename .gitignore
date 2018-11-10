@@ -106,4 +106,5 @@ venv.bak/
 
 ################ START HERE
 data_modeling/models/*
-pre_processing/data/*
+data_modeling/zip-models/models-unzipped/*
+# pre_processing/data/*
