@@ -1,0 +1,21 @@
+0. Povzetek
+1. Uvod
+	Opis problema (popularen zaradi migrantskega vala / razlicne drzave razlicno odzvale / razlika v mnenjih).
+	Opis dela in osnovnih predpostavk (npr. medijska hisa, ki deluje v neki drzavi predstavlja mnenje drzave).
+	Pokritost dveh jezikov SLO in ANG
+2. Podatki
+	Izbor reprezentativnih drzav / regij (zakaj ravno te)
+	Izbor virov podatkov/strani (zakaj lahko the Local reprezentira toliko razlicnih drzav --> locene ekipe)
+	Zbiranje podatkov / scrapanje (problemi in omejitve, uporabljene tehnologije ...)
+	Pregled statistik zbranih podatkov in komentar (stevilo clankov/ regijo, povprecno stevilo unikatnih besed,...)
+	Predprocesiranje podatkov (lowercase, odstranjevanje dobesednega navajanja oz. zgolj " , poenotenje zapisa krajsav..
+	Lemmatizacija
+	(uporabljena orodja in pristopi  SLO vs ANG)
+3. Analiza sentimenta
+	Opis pristopa (iskanje podobnih besed (pridevniki) + povprecen sentiment)
+	Uporabljena metoda za vektorizacijo in njeni parametri (word2vec) + vizualizacija
+	Uporaba SentiWordNeta za oceno sentimenta
+4. Sklepne ugotovitve
+	Primerjava sentimenta med drzavami
+	Mozne izboljsave
+	

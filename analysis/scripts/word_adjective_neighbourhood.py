@@ -101,7 +101,7 @@ for filename in os.listdir(model_dir):
             similar_adjectives_with_sentiWord_score = [similar_words[x] for x in range(len(similar_words_in_english)) if (region_name in regions_slovene and 'P' in words2pos[similar_words[x][0]]) or (region_name not in regions_slovene and 'J' in words2pos[similar_words[x][0]])]
             similar_adjectives_with_sentiWord_score_str='\t\t'+'\n\t\t'.join([str(x) for x in similar_adjectives_with_sentiWord_score])
             sentiWordNet_relevant_rows=sentiWordNet[(sentiWordNet['SynsetTerms'].isin([x[0] for x in similar_adjectives_with_sentiWord_score])) & (sentiWordNet['POS']=='a')]
-            objective_score_mean=np.mean(sentiWordNet_relevant_rows['objectiveScore'])
+            objective_score_mean=np.nanmean(sentiWordNet_relevant_rows['objectiveScore'])
             print(similar_adjectives_with_sentiWord_score_str)
             print('\t\t\tMEAN OBJECTIVE SCORE:',objective_score_mean)
             file.write('\nWords closest to: '+str(words_of_interest_combo)+' are:\n'+similar_adjectives_with_sentiWord_score_str+'\n\t\tMEAN OBJECTIVE SCORE:'+str(objective_score_mean))
