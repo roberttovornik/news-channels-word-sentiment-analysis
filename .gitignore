@@ -105,6 +105,6 @@ venv.bak/
 .mypy_cache/
 
 ################ START HERE
-data_modeling/models/*
+data_modeling/models/*.model
 data_modeling/zip-models/models-unzipped/*
 # pre_processing/data/*
