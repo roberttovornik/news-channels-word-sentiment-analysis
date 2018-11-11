@@ -177,13 +177,13 @@ def basic_preprocessing(article):
 def article_preprocessing(article, region=None):
     if not isinstance(article, float):
 
-        # remove TitleCase and camelCase
+        # split TitleCase and camelCase
         article = re.sub('(?!^)([A-Z][a-z]+)', r' \1', article)
 
-        # normalization - easier filtering	
+        # normalization - to lowercase
         article = article.lower() 
 
-        # remove ENGLISH apostrophes - e.g.: can't -> cannot
+        # replace ENGLISH apostrophes - e.g.: can't -> cannot
         if region != "Slovenia":
             # list https://drive.google.com/file/d/0B1yuv8YaUVlZZ1RzMFJmc1ZsQmM/view
             words = article.split()
@@ -197,21 +197,13 @@ def article_preprocessing(article, region=None):
         article = article.replace('\n', ' ').replace('\r', '') # eliminate any remaining newlines
         article = re.sub(r'[^\w\s]',' ', article)   # remove any punctuations, special chars
         
-        # remove TitleCase and camelCase
-        # article = re.sub('(?!^)([A-Z][a-z]+)', r' \1', article)  # already in lowercase
-
-        # simple tokenization for stopwords removal 
+        # numberic removal 
         if region != "Slovenia":
             tokens = word_tokenize(article)
-            stop_words = stopwords.words('english')
         else:
             tokens = article.split()
-            stop_words = slo_stopwords
 
-        # strip stopwords
-        stop_stripped = [word for word in tokens if word not in stop_words]
-        # strip numbers ( carry no to minor sentimental value )
-        num_stripped = [word for word in stop_stripped if word.isalpha() ] 
+        num_stripped = [word for word in tokens if word.isalpha() ] 
 
         # join list back to article
         article = " ".join(num_stripped)
@@ -231,7 +223,7 @@ geoRegional_data_dir_paths={'UK':['../../corpus/scrapers/bbc-co-uk/'],
                   'Spain':['../../corpus/scrapers/the-local/spain/'],
                   'Sweden':['../../corpus/scrapers/the-local/sweden/'],
                   'Switzerland':['../../corpus/scrapers/the-local/switzerland/'],
-                  'other':['../../corpus/scrapers/positive-news']}
+                  'positive-news':['../../corpus/scrapers/positive-news']}
 
 geoRegional_data={}
 
