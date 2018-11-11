@@ -168,28 +168,39 @@ def lemmatize_english(article_iterator):
 
     return (pd.Series(data=data_content_lemma,index=data_indices),pd.Series(data=data_content_pos,index=data_indices))
 
-def basic_preprocessing(article, region=None):
+def basic_preprocessing(article):
     if not isinstance(article, float):
-        print(" UNPROCESSED ")
-        print("================================================================")
-        print(article)
+        article=article.lower()
+        article=article.replace('"',' ')
+    return article
 
-        article = article.lower()  # normalization - easier filtering
+def article_preprocessing(article, region=None):
+    if not isinstance(article, float):
 
+        # remove TitleCase and camelCase
+        article = re.sub('(?!^)([A-Z][a-z]+)', r' \1', article)
+
+        # normalization - easier filtering	
+        article = article.lower() 
+
+        # remove ENGLISH apostrophes - e.g.: can't -> cannot
         if region != "Slovenia":
             # list https://drive.google.com/file/d/0B1yuv8YaUVlZZ1RzMFJmc1ZsQmM/view
             words = article.split()
             reformed = [appos[word] if word in appos else word for word in words]
-            article = " ".join(reformed)
+            article = " ".join(reformed) # also removes multiple whitespaces
 
         # remove url links, tweets, etc HERE .. 
         article = re.sub(r"http\S+", "", article)
 
-        # remove redundant chars
+        # remove redundant chars and whitespaces ( punctuations, hashtags, etc .. )
         article = article.replace('\n', ' ').replace('\r', '') # eliminate any remaining newlines
-        article = re.sub(r'[^\w\s]','', article)   # remove any punctuations, special chars
+        article = re.sub(r'[^\w\s]',' ', article)   # remove any punctuations, special chars
+        
+        # remove TitleCase and camelCase
+        # article = re.sub('(?!^)([A-Z][a-z]+)', r' \1', article)  # already in lowercase
 
-        # simple tokenization and remove stopwords 
+        # simple tokenization for stopwords removal 
         if region != "Slovenia":
             tokens = word_tokenize(article)
             stop_words = stopwords.words('english')
@@ -197,16 +208,13 @@ def basic_preprocessing(article, region=None):
             tokens = article.split()
             stop_words = slo_stopwords
 
+        # strip stopwords
+        stop_stripped = [word for word in tokens if word not in stop_words]
+        # strip numbers ( carry no to minor sentimental value )
+        num_stripped = [word for word in stop_stripped if word.isalpha() ] 
 
-        stop_stripped = [word for word in tokens if word not in stop_words] # remove stopwords
-        num_stripped = [word for word in stop_stripped if word.isalpha() ]  # remove numbers
-
+        # join list back to article
         article = " ".join(num_stripped)
-        
-        print("----------------------------------------------------------")
-        print(article)
-        print("================================================================================")
-
 
     return article
 
@@ -224,6 +232,7 @@ geoRegional_data_dir_paths={'UK':['../../corpus/scrapers/bbc-co-uk/'],
                   'Sweden':['../../corpus/scrapers/the-local/sweden/'],
                   'Switzerland':['../../corpus/scrapers/the-local/switzerland/'],
                   'other':['../../corpus/scrapers/positive-news']}
+
 geoRegional_data={}
 
 #========== LOAD DATA ==========
@@ -276,21 +285,19 @@ ax.set(xlabel='stevilo unikatnih besed')
 plt.savefig('../../HISTOGRAM_article_uniqueWordCount_raw.png', bbox_inches='tight')
 plt.close()
 print('...done.')
+
+
 #========== PROCESS DATA ==========
-counter = 0
-n = 3
+
 print('\n***Processing data...')
 for region,df in geoRegional_data.items():
-    counter += 1
+    
     print('\tProcessing articles for region:',region)
     print('\t\tApplying basic pre-processing..')
-    df['article_text_processed']=df['article_text'].apply(basic_preprocessing, region=region)
+    # df['article_text_processed']=df['article_text'].apply(basic_preprocessing)
+    df['article_text_processed']=df['article_text'].apply(article_preprocessing, region=region)
     print('\t\t...done.')
 
-    if counter > n:
-        exit()
-    continue
-    
     print('\t\tPOS tagging and lemmatization...')
     if region=='Slovenia':
         #df=df.copy(deep=True)[:5]
@@ -298,6 +305,7 @@ for region,df in geoRegional_data.items():
     else:
         df['article_text_processed_lemmatized'], df['article_text_processed_POS'] = lemmatize_english(df['article_text_processed'].copy(deep=True))
     print('\t\t...done.')
+    
     df_save_file_path='../data/'+region+'.pkl'
     print('\t\tSaving dataframe to:',df_save_file_path)
     df.to_pickle(df_save_file_path)
