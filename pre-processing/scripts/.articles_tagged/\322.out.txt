@@ -27,9 +27,11 @@
 					<S/>
 					<w msd="Slzei" lemma="una">una</w>
 					<S/>
-					<w msd="Sozet" lemma="rielezione">rielezione</w>
+					<w msd="Somei" lemma="rielezione">rielezione</w>
 					<S/>
-					<w msd="Sozer" lemma="presidenziala">presidenziale</w>
+					<w msd="Somei" lemma="presidenziale">presidenziale</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slzei" lemma="una">una</w>
 					<S/>
@@ -47,15 +49,17 @@
 					<S/>
 					<w msd="Slzei" lemma="italiana">italiana</w>
 					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 					<S/>
 					<w msd="Krg" lemma="ci">ci</w>
 					<S/>
-					<w msd="Ppnzem" lemma="siam">siamo</w>
+					<w msd="Rsn" lemma="siamo">siamo</w>
 					<S/>
 					<w msd="Ppnmeid" lemma="trastullat">trastullati</w>
 					<S/>
-					<w msd="Slmei" lemma="anche">anche</w>
+					<w msd="Somei" lemma="anche">anche</w>
 					<S/>
 					<w msd="N" lemma="con">con</w>
 					<S/>
@@ -65,11 +69,13 @@
 					<S/>
 					<w msd="Slmer" lemma="dell">della</w>
 					<S/>
-					<w msd="Somei" lemma="settimana">settimana</w>
+					<w msd="Ppnzer" lemma="settiman">settimana</w>
 					<S/>
 					<w msd="Ppnzer" lemma="deportar">deportare</w>
 					<S/>
 					<w msd="Sozer" lemma="oppura">oppure</w>
+					<S/>
+					<w msd="L" lemma="no">no</w>
 					<S/>
 					<w msd="Slmei" lemma="il">il</w>
 					<S/>
@@ -89,9 +95,13 @@
 					<S/>
 					<w msd="Slzei" lemma="croazia">croazia</w>
 					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 					<S/>
-					<w msd="Psnzer" lemma="dov">dove</w>
+					<w msd="Sozmt" lemma="dova">dove</w>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
 					<S/>
 					<w msd="Somer" lemma="trov">trova</w>
 					<S/>
@@ -117,9 +127,11 @@
 					<S/>
 					<w msd="Rsn" lemma="ministero">ministero</w>
 					<S/>
-					<w msd="Pdnmeid" lemma="degel">degli</w>
+					<w msd="Pdnmetd" lemma="degel">degli</w>
 					<S/>
-					<w msd="Ppnmeid" lemma="interen">interni</w>
+					<w msd="Ppnmmi" lemma="interen">interni</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Sommt" lemma="bas">base</w>
 					<S/>
@@ -153,11 +165,13 @@
 					<S/>
 					<w msd="Slmei" lemma="caso">caso</w>
 					<S/>
+					<w msd="Gp-std-n" lemma="biti">sta</w>
+					<S/>
 					<w msd="Slmei" lemma="provocando">provocando</w>
 					<S/>
 					<w msd="Slmei" lemma="un">un</w>
 					<S/>
-					<w msd="Ppnzet" lemma="terremot">terremoto</w>
+					<w msd="Sozet" lemma="terremota">terremoto</w>
 					<S/>
 					<w msd="Sozet" lemma="politica">politico</w>
 					<S/>
@@ -175,9 +189,11 @@
 					<S/>
 					<w msd="Rsn" lemma="ventilato">ventilato</w>
 					<S/>
-					<w msd="Ggnste" lemma="ipotesiti">ipotesi</w>
+					<w msd="Somei" lemma="l">l</w>
 					<S/>
-					<w msd="Sommt" lemma="successivament">successivamente</w>
+					<w msd="Slmei" lemma="ipotesi">ipotesi</w>
+					<S/>
+					<w msd="Somei" lemma="successivamente">successivamente</w>
 					<S/>
 					<w msd="Somer" lemma="scartat">scartata</w>
 					<S/>
@@ -187,7 +203,11 @@
 					<S/>
 					<w msd="Sozer" lemma="restara">restare</w>
 					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Sommt" lemma="bas">base</w>
 					<S/>
@@ -219,11 +239,13 @@
 					<S/>
 					<w msd="Slmei" lemma="nei">nei</w>
 					<S/>
-					<w msd="Ppnmeid" lemma="confront">confronti</w>
+					<w msd="Sozem" lemma="confronta">confronti</w>
 					<S/>
 					<w msd="Somei" lemma="del">del</w>
 					<S/>
 					<w msd="Somei" lemma="premier">premier</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
 					<w msd="Sozer" lemma="parta">parte</w>
 					<S/>
@@ -245,7 +267,9 @@
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
-					<w msd="Sozei" lemma="sfiducia">sfiducia</w>
+					<w msd="Slmer" lemma="sfiducia">sfiducia</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
 					<w msd="Sozer" lemma="parta">parte</w>
 					<S/>
@@ -265,7 +289,9 @@
 					<S/>
 					<w msd="Ppnmmi" lemma="interen">interni</w>
 					<S/>
-					<w msd="Sometn" lemma="caso">caso</w>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Rsn" lemma="caso">caso</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
@@ -293,6 +319,8 @@
 					<S/>
 					<w msd="Slmei" lemma="tristemente">tristemente</w>
 					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
 					<w msd="Slmei" lemma="secondo">secondo</w>
 					<S/>
 					<w msd="Somei" lemma="piano">piano</w>
@@ -313,7 +341,11 @@
 					<S/>
 					<w msd="Slmei" lemma="un">un</w>
 					<S/>
+					<w msd="Dm" lemma="po">po</w>
+					<S/>
 					<w msd="Sozem" lemma="straniera">stranieri</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Ppnzei" lemma="quest">questa</w>
 					<S/>

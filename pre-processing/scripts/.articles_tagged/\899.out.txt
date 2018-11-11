@@ -5,6 +5,10 @@
 				<s>
 					<w msd="Sommi" lemma="policist">policisti</w>
 					<S/>
+					<w msd="Gp-stm-n" lemma="biti">so</w>
+					<S/>
+					<w msd="Dm" lemma="na">na</w>
+					<S/>
 					<w msd="Sosem" lemma="območje">območju</w>
 					<S/>
 					<w msd="Slzer" lemma="osilnica">osilnice</w>
@@ -19,7 +23,11 @@
 					<S/>
 					<w msd="Slzer" lemma="sirija">sirije</w>
 					<S/>
-					<w msd="Sozed" lemma="izsleditev">izsleditvi</w>
+					<w msd="Dm" lemma="po">po</w>
+					<S/>
+					<w msd="Sozem" lemma="izsleditev">izsleditvi</w>
+					<S/>
+					<w msd="Gp-stm-n" lemma="biti">so</w>
 					<S/>
 					<w msd="Sommi" lemma="policist">policisti</w>
 					<S/>
@@ -27,7 +35,9 @@
 					<S/>
 					<w msd="Sommt" lemma="postopek">postopke</w>
 					<S/>
-					<w msd="Pdnzmt" lemma="povezan">povezane</w>
+					<w msd="Pdnzmi" lemma="povezan">povezane</w>
+					<S/>
+					<w msd="Do" lemma="z">z</w>
 					<S/>
 					<w msd="Soseo" lemma="ugotavljanje">ugotavljanjem</w>
 					<S/>
@@ -35,9 +45,13 @@
 					<S/>
 					<w msd="Somer" lemma="prehod">prehoda</w>
 					<S/>
+					<w msd="Dt" lemma="čez">čez</w>
+					<S/>
 					<w msd="Ppnzet" lemma="državen">državno</w>
 					<S/>
 					<w msd="Sozet" lemma="meja">mejo</w>
+					<S/>
+					<w msd="Dr" lemma="z">s</w>
 					<S/>
 					<w msd="Ppnzer" lemma="policijski">policijske</w>
 					<S/>
@@ -45,15 +59,27 @@
 					<S/>
 					<w msd="Slzei" lemma="ljubljana">ljubljana</w>
 					<S/>
+					<w msd="Gp-stm-n" lemma="biti">so</w>
+					<S/>
 					<w msd="Ggdd-mm" lemma="sporočiti">sporočili</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
+					<S/>
+					<w msd="Gp-ptm-n" lemma="biti">bodo</w>
+					<S/>
+					<w msd="Rsr" lemma="več">več</w>
 					<S/>
 					<w msd="Sozmr" lemma="informacija">informacij</w>
 					<S/>
 					<w msd="Ggvd-mm" lemma="posredovati">posredovali</w>
 					<S/>
+					<w msd="Vd" lemma="ko">ko</w>
+					<S/>
+					<w msd="Gp-ptm-n" lemma="biti">bodo</w>
+					<S/>
 					<w msd="Sommi" lemma="postopek">postopki</w>
 					<S/>
-					<w msd="Pdnzem" lemma="končan">končani</w>
+					<w msd="Pdnmmi" lemma="končan">končani</w>
 				</s>
 			</p>
 		</body>

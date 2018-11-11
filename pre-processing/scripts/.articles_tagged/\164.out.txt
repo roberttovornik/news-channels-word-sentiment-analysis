@@ -19,6 +19,8 @@
 					<S/>
 					<w msd="Slmei" lemma="per">per</w>
 					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="Somei" lemma="rom">rom</w>
 					<S/>
 					<w msd="Somer" lemma="avanzat">avanzata</w>
@@ -39,9 +41,11 @@
 					<S/>
 					<w msd="Slmei" lemma="salvini">salvini</w>
 					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
 					<w msd="Somer" lemma="carmagnol">carmagnola</w>
 					<S/>
-					<w msd="Slmei" lemma="nei">nei</w>
+					<w msd="Sozer" lemma="ne">nei</w>
 					<S/>
 					<w msd="Ggnste" lemma="pressiti">pressi</w>
 					<S/>
@@ -67,13 +71,15 @@
 					<S/>
 					<w msd="Slzei" lemma="casa">casa</w>
 					<S/>
-					<w msd="Ggnste" lemma="abusivati">abusiva</w>
+					<w msd="Sosmt" lemma="abusivo">abusiva</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slmei" lemma="un">un</w>
 					<S/>
 					<w msd="Slzei" lemma="campo">campo</w>
 					<S/>
-					<w msd="Sozem" lemma="sinta">sinti</w>
+					<w msd="Sommi" lemma="sint">sinti</w>
 					<S/>
 					<w msd="Sozmr" lemma="nona">non</w>
 					<S/>
@@ -89,7 +95,9 @@
 					<S/>
 					<w msd="Sozem" lemma="libera">liberi</w>
 					<S/>
-					<w msd="Sommi" lemma="ugual">uguali</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Ggdd-em" lemma="uguati">uguali</w>
 					<S/>
 					<w msd="Slmei" lemma="roberto">roberto</w>
 					<S/>
@@ -145,6 +153,8 @@
 					<S/>
 					<w msd="N" lemma="social">social</w>
 					<S/>
+					<w msd="Somei" lemma="l">l</w>
+					<S/>
 					<w msd="Slmei" lemma="abbattimento">abbattimento</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
@@ -162,6 +172,8 @@
 					<w msd="N" lemma="di">di</w>
 					<S/>
 					<w msd="Slmei" lemma="torino">torino</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slmei" lemma="un">un</w>
 					<S/>
@@ -195,6 +207,8 @@
 					<S/>
 					<w msd="Slmei" lemma="ferro">ferro</w>
 					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
 					<w msd="Sozet" lemma="dopa">dopo</w>
 					<S/>
 					<w msd="Slmei" lemma="il">il</w>
@@ -211,29 +225,39 @@
 					<S/>
 					<w msd="Slmer" lemma="dell">della</w>
 					<S/>
-					<w msd="Slzer" lemma="nava">nave</w>
+					<w msd="Sozer" lemma="nava">nave</w>
 					<S/>
 					<w msd="Slmei" lemma="aquarius">aquarius</w>
 					<S/>
 					<w msd="Slzei" lemma="ora">ora</w>
 					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
 					<w msd="Slzei" lemma="scaglia">scaglia</w>
 					<S/>
-					<w msd="Slmei" lemma="contro">contro</w>
+					<w msd="Sozet" lemma="contra">contro</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
 					<S/>
 					<w msd="Slmei" lemma="rom">rom</w>
 					<S/>
 					<w msd="Slzmr" lemma="eda">ed</w>
 					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="Slmei" lemma="sinti">sinti</w>
 					<S/>
 					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
 					<S/>
 					<w msd="Slmei" lemma="quali">quali</w>
 					<S/>
 					<w msd="Sozei" lemma="aveva">aveva</w>
 					<S/>
-					<w msd="Somer" lemma="precedenz">precedenza</w>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Sozei" lemma="precedenza">precedenza</w>
 					<S/>
 					<w msd="Slmei" lemma="annunciato">annunciato</w>
 					<S/>
@@ -249,11 +273,13 @@
 					<S/>
 					<w msd="Rsn" lemma="quale">quale</w>
 					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
 					<w msd="Sometd" lemma="è">è</w>
 					<S/>
-					<w msd="Somer" lemma="dett">detta</w>
+					<w msd="Ggnste" lemma="dettati">detta</w>
 					<S/>
-					<w msd="Sozer" lemma="favorevola">favorevole</w>
+					<w msd="Sommt" lemma="favorevol">favorevole</w>
 					<S/>
 					<w msd="Slmei" lemma="anche">anche</w>
 					<S/>
@@ -265,15 +291,19 @@
 					<S/>
 					<w msd="Slmei" lemma="fratelli">fratelli</w>
 					<S/>
+					<w msd="Somei" lemma="d">d</w>
+					<S/>
 					<w msd="Slzei" lemma="italia">italia</w>
 					<S/>
-					<w msd="Slmei" lemma="polemiche">polemiche</w>
+					<w msd="L" lemma="le">le</w>
 					<S/>
-					<w msd="Slmei" lemma="sollevate">sollevate</w>
+					<w msd="Rsn" lemma="polemiche">polemiche</w>
 					<S/>
-					<w msd="Slmei" lemma="dalle">dalle</w>
+					<w msd="Sozer" lemma="sollevata">sollevate</w>
 					<S/>
-					<w msd="Slmei" lemma="dichiarazioni">dichiarazioni</w>
+					<w msd="Rsn" lemma="dalle">dalle</w>
+					<S/>
+					<w msd="Sommi" lemma="dichiarazion">dichiarazioni</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
@@ -295,7 +325,11 @@
 					<S/>
 					<w msd="Sozem" lemma="libera">liberi</w>
 					<S/>
-					<w msd="Sozer" lemma="ugual">uguali</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="uguali">uguali</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Sozer" lemma="denunciara">denunciare</w>
 					<S/>
@@ -326,6 +360,8 @@
 					<w msd="Rsn" lemma="bastano">bastano</w>
 					<S/>
 					<w msd="Ggnste" lemma="piùti">più</w>
+					<S/>
+					<w msd="L" lemma="le">le</w>
 					<S/>
 					<w msd="Sozer" lemma="parola">parole</w>
 					<S/>
@@ -359,17 +395,21 @@
 					<S/>
 					<w msd="Slmei" lemma="mancino">mancino</w>
 					<S/>
-					<w msd="Somei" lemma="del">del</w>
+					<w msd="N" lemma="del">del</w>
 					<S/>
 					<w msd="Slmei" lemma="che">che</w>
 					<S/>
 					<w msd="Somer" lemma="sanzion">sanziona</w>
 					<S/>
-					<w msd="Slzei" lemma="condanna">condanna</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmer" lemma="condann">condanna</w>
 					<S/>
 					<w msd="Sozem" lemma="gesta">gesti</w>
 					<S/>
-					<w msd="Sommi" lemma="azion">azioni</w>
+					<w msd="Somer" lemma="azioan">azioni</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Somei" lemma="slogan">slogan</w>
 					<S/>
@@ -381,11 +421,15 @@
 					<S/>
 					<w msd="Somer" lemma="nazifascist">nazifascista</w>
 					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
 					<w msd="Slmei" lemma="aventi">aventi</w>
 					<S/>
 					<w msd="Slmei" lemma="per">per</w>
 					<S/>
 					<w msd="Rsn" lemma="scopo">scopo</w>
+					<S/>
+					<w msd="Somei" lemma="l">l</w>
 					<S/>
 					<w msd="Ppnmer" lemma="incitazione">incitazione</w>
 					<S/>
@@ -393,7 +437,9 @@
 					<S/>
 					<w msd="Somer" lemma="violenz">violenza</w>
 					<S/>
-					<w msd="Slmer" lemma="all">alla</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Somer" lemma="all">alla</w>
 					<S/>
 					<w msd="Slmei" lemma="discriminazione">discriminazione</w>
 					<S/>
@@ -401,13 +447,15 @@
 					<S/>
 					<w msd="Sommi" lemma="motiv">motivi</w>
 					<S/>
-					<w msd="Ppnzed" lemma="razziali">razziali</w>
+					<w msd="Ggnd-mm" lemma="razziati">razziali</w>
 					<S/>
 					<w msd="Sozem" lemma="etnica">etnici</w>
 					<S/>
 					<w msd="Sozer" lemma="religios">religiosi</w>
 					<S/>
-					<w msd="Sozer" lemma="nazional">nazionali</w>
+					<w msd="Dm" lemma="o">o</w>
+					<S/>
+					<w msd="Sozem" lemma="nazionala">nazionali</w>
 					<S/>
 					<w msd="Slmei" lemma="il">il</w>
 					<S/>
@@ -455,6 +503,8 @@
 					<S/>
 					<w msd="Slmei" lemma="anche">anche</w>
 					<S/>
+					<w msd="Zp------k" lemma="se">se</w>
+					<S/>
 					<w msd="Rsn" lemma="interferire">interferire</w>
 					<S/>
 					<w msd="Pdnmeid" lemma="negel">negli</w>
@@ -469,17 +519,21 @@
 					<S/>
 					<w msd="Slmei" lemma="paese">paese</w>
 					<S/>
-					<w msd="Slmei" lemma="commentare">commentare</w>
+					<w msd="Slzer" lemma="commentare">commentare</w>
 					<S/>
-					<w msd="Slmei" lemma="questa">questa</w>
+					<w msd="Ggnste" lemma="questati">questa</w>
+					<S/>
+					<w msd="Somei" lemma="o">o</w>
 					<S/>
 					<w msd="Slmei" lemma="quell">quell</w>
 					<S/>
-					<w msd="Ppnmmt" lemma="altra">altra</w>
+					<w msd="Ppnzer" lemma="altra">altra</w>
 					<S/>
-					<w msd="Rsn" lemma="dichiarazione">dichiarazione</w>
+					<w msd="N" lemma="dichiarazione">dichiarazione</w>
 					<S/>
 					<w msd="Rsn" lemma="scioccante">scioccante</w>
+					<S/>
+					<w msd="Dm" lemma="o">o</w>
 					<S/>
 					<w msd="Rsn" lemma="raggelante">raggelante</w>
 					<S/>
@@ -487,15 +541,17 @@
 					<S/>
 					<w msd="Sozer" lemma="essera">essere</w>
 					<S/>
-					<w msd="Rsn" lemma="una">una</w>
+					<w msd="Slzei" lemma="una">una</w>
 					<S/>
 					<w msd="Rsn" lemma="tentazione">tentazione</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Rsn" lemma="cui">cui</w>
 					<S/>
 					<w msd="Sometd" lemma="è">è</w>
 					<S/>
-					<w msd="Slmei" lemma="difficile">difficile</w>
+					<w msd="Sozer" lemma="difficila">difficile</w>
 					<S/>
 					<w msd="Sozer" lemma="resisti">resistere</w>
 					<S/>
@@ -515,13 +571,17 @@
 					<S/>
 					<w msd="Rsn" lemma="eserciterà">eserciterà</w>
 					<S/>
-					<w msd="Ppnzer" lemma="regol">regole</w>
+					<w msd="L" lemma="le">le</w>
 					<S/>
-					<w msd="Sozer" lemma="comun">comuni</w>
+					<w msd="Ppnzmt" lemma="regol">regole</w>
+					<S/>
+					<w msd="Sozed" lemma="comuna">comuni</w>
 					<S/>
 					<w msd="Slmei" lemma="anche">anche</w>
 					<S/>
-					<w msd="Slmei" lemma="materia">materia</w>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slzei" lemma="materia">materia</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
@@ -533,9 +593,11 @@
 					<S/>
 					<w msd="Slmei" lemma="che">che</w>
 					<S/>
-					<w msd="Slmei" lemma="vanno">vanno</w>
+					<w msd="Rsn" lemma="vanno">vanno</w>
 					<S/>
-					<w msd="Slmei" lemma="rispettate">rispettate</w>
+					<w msd="Ggdsdm" lemma="rispettati">rispettate</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
 					<w msd="Slmed" lemma="tutta">tutti</w>
 					<S/>
@@ -549,7 +611,9 @@
 					<S/>
 					<w msd="Ggdd-em" lemma="dati">dal</w>
 					<S/>
-					<w msd="Ppnzem" lemma="mali">mali</w>
+					<w msd="Ppnmeid" lemma="mali">mali</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="beneficiari">beneficiari</w>
 					<S/>
@@ -569,7 +633,9 @@
 					<S/>
 					<w msd="N" lemma="richiedenti">richiedenti</w>
 					<S/>
-					<w msd="N" lemma="asilo">asilo</w>
+					<w msd="Somer" lemma="asilo">asilo</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Ppnmeid" lemma="rifugiat">rifugiati</w>
 					<S/>
@@ -595,13 +661,15 @@
 					<S/>
 					<w msd="Ggnn" lemma="stati">stati</w>
 					<S/>
-					<w msd="Sozer" lemma="raggiunt">raggiunti</w>
+					<w msd="Sommi" lemma="raggiunt">raggiunti</w>
 					<S/>
-					<w msd="Sozer" lemma="colp">colpi</w>
+					<w msd="Vd" lemma="da">da</w>
+					<S/>
+					<w msd="Sommi" lemma="colp">colpi</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
-					<w msd="Somer" lemma="pistol">pistola</w>
+					<w msd="Sozei" lemma="pistola">pistola</w>
 					<S/>
 					<w msd="Somei" lemma="ad">ad</w>
 					<S/>
@@ -625,15 +693,19 @@
 					<S/>
 					<w msd="Slmei" lemma="secondo">secondo</w>
 					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="Ggnste" lemma="raccontiti">racconti</w>
 					<S/>
-					<w msd="Sommi" lemma="deo">dei</w>
+					<w msd="Slmei" lemma="dei">dei</w>
 					<S/>
 					<w msd="Slmei" lemma="due">due</w>
 					<S/>
-					<w msd="N" lemma="sarebbe">sarebbe</w>
+					<w msd="Zp---d--k" lemma="se">si</w>
 					<S/>
-					<w msd="Slmei" lemma="trattato">trattato</w>
+					<w msd="Ggdd-em" lemma="sarebbe">sarebbe</w>
+					<S/>
+					<w msd="Sozet" lemma="trattata">trattato</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
@@ -641,7 +713,9 @@
 					<S/>
 					<w msd="Rsn" lemma="agguato">agguato</w>
 					<S/>
-					<w msd="Sozet" lemma="sfonda">sfondo</w>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Rsn" lemma="sfondo">sfondo</w>
 					<S/>
 					<w msd="Somer" lemma="razzist">razzista</w>
 					<S/>
@@ -653,9 +727,11 @@
 					<S/>
 					<w msd="Ggnste" lemma="treti">tre</w>
 					<S/>
-					<w msd="Pdnmmi" lemma="giovan">giovani</w>
+					<w msd="Ppnzem" lemma="giovan">giovani</w>
 					<S/>
-					<w msd="Slmmi" lemma="italian">italiani</w>
+					<w msd="Sozem" lemma="italiana">italiani</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Slmei" lemma="bordo">bordo</w>
 					<S/>

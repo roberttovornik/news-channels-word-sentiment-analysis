@@ -203,7 +203,7 @@ def article_preprocessing(article, region=None):
         else:
             tokens = article.split()
 
-        num_stripped = [word for word in tokens if word.isalpha() ] 
+        num_stripped = [ word for word in tokens if word.isalpha() ] 
 
         # join list back to article
         article = " ".join(num_stripped)

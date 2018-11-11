@@ -3,6 +3,8 @@
 		<body>
 			<p>
 				<s>
+					<w msd="Somei" lemma="i">i</w>
+					<S/>
 					<w msd="Sozed" lemma="paesa">paesi</w>
 					<S/>
 					<w msd="Slmer" lemma="dell">della</w>
@@ -15,7 +17,11 @@
 					<S/>
 					<w msd="Slmei" lemma="europea">europea</w>
 					<S/>
-					<w msd="N" lemma="agenzia">agenzia</w>
+					<w msd="N" lemma="e">e</w>
+					<S/>
+					<w msd="Somei" lemma="l">l</w>
+					<S/>
+					<w msd="Slmei" lemma="agenzia">agenzia</w>
 					<S/>
 					<w msd="Slmei" lemma="frontex">frontex</w>
 					<S/>
@@ -45,11 +51,13 @@
 					<S/>
 					<w msd="Sozmr" lemma="šefica">šefic</w>
 					<S/>
-					<w msd="Slmei" lemma="siamo">siamo</w>
+					<w msd="Ggdd-em" lemma="siamo">siamo</w>
 					<S/>
 					<w msd="Slmei" lemma="comunque">comunque</w>
 					<S/>
 					<w msd="Slzei" lemma="ancora">ancora</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Sozet" lemma="grada">grado</w>
 					<S/>
@@ -66,6 +74,8 @@
 					<w msd="Rsn" lemma="rassicurato">rassicurato</w>
 					<S/>
 					<w msd="Sozmr" lemma="nona">non</w>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
 					<S/>
 					<w msd="Somer" lemma="parl">parla</w>
 					<S/>
@@ -123,27 +133,37 @@
 					<S/>
 					<w msd="Sozet" lemma="sona">sono</w>
 					<S/>
-					<w msd="Slmei" lemma="presenti">presenti</w>
+					<w msd="Sommi" lemma="present">presenti</w>
 					<S/>
 					<w msd="Slmei" lemma="al">al</w>
 					<S/>
 					<w msd="Slmei" lemma="momento">momento</w>
 					<S/>
-					<w msd="Ppnsmi" lemma="mil">mila</w>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
-					<w msd="Soser" lemma="milo">mila</w>
+					<w msd="Ppnzei" lemma="mil">mila</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Ppnzei" lemma="mil">mila</w>
 					<S/>
 					<w msd="Sommi" lemma="migrant">migranti</w>
 					<S/>
 					<w msd="Sozet" lemma="sona">sono</w>
 					<S/>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
 					<w msd="Somer" lemma="prevalenz">prevalenza</w>
 					<S/>
 					<w msd="Rsn" lemma="profughi">profughi</w>
 					<S/>
-					<w msd="Sozer" lemma="provenient">provenienti</w>
+					<w msd="Sommi" lemma="provenient">provenienti</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
 					<w msd="Slzei" lemma="siria">siria</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="nord">nord</w>
 					<S/>
@@ -167,15 +187,19 @@
 					<S/>
 					<w msd="Slzei" lemma="macedonia">macedonia</w>
 					<S/>
-					<w msd="Slzei" lemma="serbia">serbia</w>
+					<w msd="Somer" lemma="serbio">serbia</w>
 					<S/>
-					<w msd="Slzei" lemma="croazia">croazia</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="Slmei" lemma="croazia">croazia</w>
 					<S/>
 					<w msd="Rsn" lemma="cercano">cercano</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
 					<w msd="Sozer" lemma="arrivara">arrivare</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 					<S/>
@@ -191,7 +215,11 @@
 					<S/>
 					<w msd="Ggnste" lemma="piùti">più</w>
 					<S/>
-					<w msd="Slmei" lemma="sud">sud</w>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Somei" lemma="sud">sud</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="che">che</w>
 					<S/>
@@ -201,9 +229,13 @@
 					<S/>
 					<w msd="Slmei" lemma="bosnia">bosnia</w>
 					<S/>
-					<w msd="Slzei" lemma="erzegovina">erzegovina</w>
+					<w msd="Somei" lemma="erzegovina">erzegovina</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="montenegro">montenegro</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="che">che</w>
 					<S/>
@@ -253,11 +285,13 @@
 					<S/>
 					<w msd="Slmei" lemma="circa">circa</w>
 					<S/>
+					<w msd="Somei" lemma="l">l</w>
+					<S/>
 					<w msd="Slmei" lemma="percento">percento</w>
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
-					<w msd="Slmei" lemma="quanti">quanti</w>
+					<w msd="Sommo" lemma="quant">quanti</w>
 					<S/>
 					<w msd="Slzet" lemma="hanna">hanno</w>
 					<S/>
@@ -285,9 +319,11 @@
 					<S/>
 					<w msd="Sommt" lemma="attualment">attualmente</w>
 					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
 					<w msd="Rsn" lemma="registrano">registrano</w>
 					<S/>
-					<w msd="Slmei" lemma="circa">circa</w>
+					<w msd="Slzei" lemma="circa">circa</w>
 					<S/>
 					<w msd="Sozem" lemma="arriva">arrivi</w>
 					<S/>
@@ -295,7 +331,9 @@
 					<S/>
 					<w msd="Rsn" lemma="giorno">giorno</w>
 					<S/>
-					<w msd="Rsn" lemma="tra">tra</w>
+					<w msd="Ggnste" lemma="trati">tra</w>
+					<S/>
+					<w msd="L" lemma="le">le</w>
 					<S/>
 					<w msd="Rsn" lemma="fascie">fascie</w>
 					<S/>
@@ -303,9 +341,11 @@
 					<S/>
 					<w msd="Ggnste" lemma="piùti">più</w>
 					<S/>
-					<w msd="Sozer" lemma="oberata">oberate</w>
+					<w msd="Ggnsdm" lemma="oberati">oberate</w>
 					<S/>
 					<w msd="Slzei" lemma="quella">quella</w>
+					<S/>
+					<w msd="Vd" lemma="da">da</w>
 					<S/>
 					<w msd="Ppnzei" lemma="ilirski">ilirska</w>
 					<S/>
@@ -351,7 +391,11 @@
 					<S/>
 					<w msd="N" lemma="con">con</w>
 					<S/>
+					<w msd="Somei" lemma="l">l</w>
+					<S/>
 					<w msd="Slmei" lemma="iran">iran</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="N" lemma="con">con</w>
 					<S/>
@@ -379,9 +423,13 @@
 					<S/>
 					<w msd="Sozer" lemma="arrivara">arrivare</w>
 					<S/>
-					<w msd="Slmei" lemma="regolarmente">regolarmente</w>
+					<w msd="Sommt" lemma="regolarment">regolarmente</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slzei" lemma="europa">europa</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Ggnste" lemma="prevalenzati">prevalenza</w>
 					<S/>
@@ -397,7 +445,9 @@
 					<S/>
 					<w msd="Sommt" lemma="ufficios">ufficiose</w>
 					<S/>
-					<w msd="Ppnzer" lemma="fin">fine</w>
+					<w msd="Vd" lemma="da">da</w>
+					<S/>
+					<w msd="Ppnmmt" lemma="fin">fine</w>
 					<S/>
 					<w msd="Sommt" lemma="april">aprile</w>
 					<S/>
@@ -417,11 +467,13 @@
 					<S/>
 					<w msd="Rsn" lemma="ritorno">ritorno</w>
 					<S/>
-					<w msd="Ggdd-em" lemma="patria">patria</w>
+					<w msd="Vp" lemma="in">in</w>
+					<S/>
+					<w msd="Slmei" lemma="patria">patria</w>
 					<S/>
 					<w msd="Slmei" lemma="delio">delio</w>
 					<S/>
-					<w msd="Sozet" lemma="dessarda">dessardo</w>
+					<w msd="Slmei" lemma="dessardo">dessardo</w>
 				</s>
 			</p>
 		</body>
