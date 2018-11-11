@@ -38,12 +38,19 @@ def load_sentiWordNet(file_path='../external_data_sources/SentiWordNet_3.0.0_201
     return pd.read_csv(file_path,delimiter='\t',comment='#')
 
 def slo_to_eng(slo_word_list):
-    '''
-    slo2eng_dict = {'azilant': 'asylum seeker', 'migrant': 'migrant', 'prebežnik': 'refugee'}
-    return [slo2eng_dict[x[0]] for x in slo_word_list]
-    '''
+    #Reaching API request limit
     translator = Translator()
+    print(slo_word_list)
     translations = translator.translate(slo_word_list,src='sl',dest='en')
+
+    '''
+    #Reaching API request limit
+    #https://stackoverflow.com/questions/49497391/googletrans-api-error-expecting-value-line-1-column-1-char-0?fbclid=IwAR1Av8FtpIiBaTfJaesyR7-Jk63aNp0_JHPU-a6VdvcxZcXkDCZQn3neW0s
+    translations=[]
+    for w in slo_word_list:
+        translator = Translator()
+        translations.append(translator.translate(w,src='sl',dest='en'))
+    '''
     return [translation.text for translation in translations if len(translation.text.split())==1] #REMOVE CONDITION WHEN WORKING WITH PHRASES
 
 def label_point(x, y, val, ax):
@@ -86,7 +93,11 @@ for filename in os.listdir(model_dir):
         print('\tVisualising model..')
         if not os.path.exists('../models_scatter_plots'):
             os.makedirs('../models_scatter_plots')
-        visualise_model(model,'../models_scatter_plots/'+region_name+'.png')
+
+        if region_name in regions_slovene:
+            continue
+        #visualise_model(model,'../models_scatter_plots/'+region_name+'.png')
+
         print('...done.')
         words_of_interest=words_of_interest_slovene if region_name in regions_slovene else words_of_interest_english
         combinations_of_words_of_interest=list(chain.from_iterable([combinations(words_of_interest,i) for i in range(1,len(words_of_interest))]))
@@ -98,10 +109,15 @@ for filename in os.listdir(model_dir):
             print('\tWords closest to:',words_of_interest_combo,'are:')
             similar_words = model.wv.most_similar(words_of_interest_combo, topn=100)
             similar_words_in_english=slo_to_eng([x[0] for x in similar_words]) if region_name in regions_slovene else [x[0] for x in similar_words]
+            #similar_words_with_sentiWord_score = [similar_words[x] for x in range(len(similar_words_in_english)) if similar_words_in_english[x] in sentiWordNet['SynsetTerms']]
             similar_adjectives_with_sentiWord_score = [similar_words[x] for x in range(len(similar_words_in_english)) if (region_name in regions_slovene and 'P' in words2pos[similar_words[x][0]]) or (region_name not in regions_slovene and 'J' in words2pos[similar_words[x][0]])]
             similar_adjectives_with_sentiWord_score_str='\t\t'+'\n\t\t'.join([str(x) for x in similar_adjectives_with_sentiWord_score])
             sentiWordNet_relevant_rows=sentiWordNet[(sentiWordNet['SynsetTerms'].isin([x[0] for x in similar_adjectives_with_sentiWord_score])) & (sentiWordNet['POS']=='a')]
             objective_score_mean=np.nanmean(sentiWordNet_relevant_rows['objectiveScore'])
+
+            print('CALCULATE MEAN OF THIS COL:',sentiWordNet_relevant_rows['objectiveScore'])
+            print('SIMILAR START')
+
             print(similar_adjectives_with_sentiWord_score_str)
             print('\t\t\tMEAN OBJECTIVE SCORE:',objective_score_mean)
             file.write('\nWords closest to: '+str(words_of_interest_combo)+' are:\n'+similar_adjectives_with_sentiWord_score_str+'\n\t\tMEAN OBJECTIVE SCORE:'+str(objective_score_mean))
