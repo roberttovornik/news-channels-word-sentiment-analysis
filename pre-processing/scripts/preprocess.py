@@ -5,12 +5,77 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import shutil
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import wordnet
-from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import wordnet, stopwords
+from nltk.tokenize import RegexpTokenizer, word_tokenize
 from nltk import pos_tag
 import xml.etree.ElementTree as ET
 from lxml import etree
 from collections import Counter
+import re
+
+appos = {
+"aren't" : "are not",
+"can't" : "cannot",
+"couldn't" : "could not",
+"didn't" : "did not",
+"doesn't" : "does not",
+"don't" : "do not",
+"hadn't" : "had not",
+"hasn't" : "has not",
+"haven't" : "have not",
+"he'd" : "he would",
+"he'll" : "he will",
+"he's" : "he is",
+"i'd" : "I would",
+"i'd" : "I had",
+"i'll" : "I will",
+"i'm" : "I am",
+"isn't" : "is not",
+"it's" : "it is",
+"it'll":"it will",
+"i've" : "I have",
+"let's" : "let us",
+"mightn't" : "might not",
+"mustn't" : "must not",
+"shan't" : "shall not",
+"she'd" : "she would",
+"she'll" : "she will",
+"she's" : "she is",
+"shouldn't" : "should not",
+"that's" : "that is",
+"there's" : "there is",
+"they'd" : "they would",
+"they'll" : "they will",
+"they're" : "they are",
+"they've" : "they have",
+"we'd" : "we would",
+"we're" : "we are",
+"weren't" : "were not",
+"we've" : "we have",
+"what'll" : "what will",
+"what're" : "what are",
+"what's" : "what is",
+"what've" : "what have",
+"where's" : "where is",
+"who'd" : "who would",
+"who'll" : "who will",
+"who're" : "who are",
+"who's" : "who is",
+"who've" : "who have",
+"won't" : "will not",
+"wouldn't" : "would not",
+"you'd" : "you would",
+"you'll" : "you will",
+"you're" : "you are",
+"you've" : "you have",
+"'re": " are",
+"wasn't": "was not",
+"we'll":" will",
+"didn't": "did not"
+}
+
+slo_stopwords = ["a","ali","april","avgust","b","bi","bil","bila","bile","bili","bilo","biti","blizu","bo","bodo","bojo","bolj","bom","bomo","boste","bova","boš","brez","c","cel","cela","celi","celo","d","da","daleč","dan","danes","datum","december","deset","deseta","deseti","deseto","devet","deveta","deveti","deveto","do","dober","dobra","dobri","dobro","dokler","dol","dolg","dolga","dolgi","dovolj","drug","druga","drugi","drugo","dva","dve","e","eden","en","ena","ene","eni","enkrat","eno","etc.","f","februar","g","g.","ga","ga.","gor","gospa","gospod","h","halo","i","idr.","ii","iii","in","iv","ix","iz","j","januar","jaz","je","ji","jih","jim","jo","julij","junij","jutri","k","kadarkoli","kaj","kajti","kako","kakor","kamor","kamorkoli","kar","karkoli","katerikoli","kdaj","kdo","kdorkoli","ker","ki","kje","kjer","kjerkoli","ko","koder","koderkoli","koga","komu","kot","kratek","kratka","kratke","kratki","l","lahka","lahke","lahki","lahko","le","lep","lepa","lepe","lepi","lepo","leto","m","maj","majhen","majhna","majhni","malce","malo","manj","marec","me","med","medtem","mene","mesec","mi","midva","midve","mnogo","moj","moja","moje","mora","morajo","moram","moramo","morate","moraš","morem","mu","n","na","nad","naj","najina","najino","najmanj","naju","največ","nam","narobe","nas","nato","nazaj","naš","naša","naše","ne","nedavno","nedelja","nek","neka","nekaj","nekatere","nekateri","nekatero","nekdo","neke","nekega","neki","nekje","neko","nekoga","nekoč","ni","nikamor","nikdar","nikjer","nikoli","nič","nje","njega","njegov","njegova","njegovo","njej","njemu","njen","njena","njeno","nji","njih","njihov","njihova","njihovo","njiju","njim","njo","njun","njuna","njuno","no","nocoj","november","npr.","o","ob","oba","obe","oboje","od","odprt","odprta","odprti","okoli","oktober","on","onadva","one","oni","onidve","osem","osma","osmi","osmo","oz.","p","pa","pet","peta","petek","peti","peto","po","pod","pogosto","poleg","poln","polna","polni","polno","ponavadi","ponedeljek","ponovno","potem","povsod","pozdravljen","pozdravljeni","prav","prava","prave","pravi","pravo","prazen","prazna","prazno","prbl.","precej","pred","prej","preko","pri","pribl.","približno","primer","pripravljen","pripravljena","pripravljeni","proti","prva","prvi","prvo","r","ravno","redko","res","reč","s","saj","sam","sama","same","sami","samo","se","sebe","sebi","sedaj","sedem","sedma","sedmi","sedmo","sem","september","seveda","si","sicer","skoraj","skozi","slab","smo","so","sobota","spet","sreda","srednja","srednji","sta","ste","stran","stvar","sva","t","ta","tak","taka","take","taki","tako","takoj","tam","te","tebe","tebi","tega","težak","težka","težki","težko","ti","tista","tiste","tisti","tisto","tj.","tja","to","toda","torek","tretja","tretje","tretji","tri","tu","tudi","tukaj","tvoj","tvoja","tvoje","u","v","vaju","vam","vas","vaš","vaša","vaše","ve","vedno","velik","velika","veliki","veliko","vendar","ves","več","vi","vidva","vii","viii","visok","visoka","visoke","visoki","vsa","vsaj","vsak","vsaka","vsakdo","vsake","vsaki","vsakomur","vse","vsega","vsi","vso","včasih","včeraj","x","z","za","zadaj","zadnji","zakaj","zaprta","zaprti","zaprto","zdaj","zelo","zunaj","č","če","često","četrta","četrtek","četrti","četrto","čez","čigav","š","šest","šesta","šesti","šesto","štiri","ž","že"]
+
 
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
@@ -109,6 +174,42 @@ def basic_preprocessing(article):
         article=article.replace('"',' ')
     return article
 
+def article_preprocessing(article, region=None):
+    if not isinstance(article, float):
+
+        # split TitleCase and camelCase
+        article = re.sub('(?!^)([A-Z][a-z]+)', r' \1', article)
+
+        # normalization - to lowercase
+        article = article.lower() 
+
+        # replace ENGLISH apostrophes - e.g.: can't -> cannot
+        if region != "Slovenia":
+            # list https://drive.google.com/file/d/0B1yuv8YaUVlZZ1RzMFJmc1ZsQmM/view
+            words = article.split()
+            reformed = [appos[word] if word in appos else word for word in words]
+            article = " ".join(reformed) # also removes multiple whitespaces
+
+        # remove url links, tweets, etc HERE .. 
+        article = re.sub(r"http\S+", "", article)
+
+        # remove redundant chars and whitespaces ( punctuations, hashtags, etc .. )
+        article = article.replace('\n', ' ').replace('\r', '') # eliminate any remaining newlines
+        article = re.sub(r'[^\w\s]',' ', article)   # remove any punctuations, special chars
+        
+        # numberic removal 
+        if region != "Slovenia":
+            tokens = word_tokenize(article)
+        else:
+            tokens = article.split()
+
+        num_stripped = [word for word in tokens if word.isalpha() ] 
+
+        # join list back to article
+        article = " ".join(num_stripped)
+
+    return article
+
 
 geoRegional_data_dir_paths={'UK':['../../corpus/scrapers/bbc-co-uk/'],
                   'Slovenia':['../../corpus/scrapers/rtv/'],
@@ -121,7 +222,9 @@ geoRegional_data_dir_paths={'UK':['../../corpus/scrapers/bbc-co-uk/'],
                   'Norway':['../../corpus/scrapers/the-local/norway/'],
                   'Spain':['../../corpus/scrapers/the-local/spain/'],
                   'Sweden':['../../corpus/scrapers/the-local/sweden/'],
-                  'Switzerland':['../../corpus/scrapers/the-local/switzerland/']}
+                  'Switzerland':['../../corpus/scrapers/the-local/switzerland/'],
+                  'positive-news':['../../corpus/scrapers/positive-news']}
+
 geoRegional_data={}
 
 #========== LOAD DATA ==========
@@ -174,13 +277,19 @@ ax.set(xlabel='stevilo unikatnih besed')
 plt.savefig('../../HISTOGRAM_article_uniqueWordCount_raw.png', bbox_inches='tight')
 plt.close()
 print('...done.')
+
+
 #========== PROCESS DATA ==========
+
 print('\n***Processing data...')
 for region,df in geoRegional_data.items():
+    
     print('\tProcessing articles for region:',region)
     print('\t\tApplying basic pre-processing..')
-    df['article_text_processed']=df['article_text'].apply(basic_preprocessing)
+    # df['article_text_processed']=df['article_text'].apply(basic_preprocessing)
+    df['article_text_processed']=df['article_text'].apply(article_preprocessing, region=region)
     print('\t\t...done.')
+
     print('\t\tPOS tagging and lemmatization...')
     if region=='Slovenia':
         #df=df.copy(deep=True)[:5]
@@ -188,6 +297,7 @@ for region,df in geoRegional_data.items():
     else:
         df['article_text_processed_lemmatized'], df['article_text_processed_POS'] = lemmatize_english(df['article_text_processed'].copy(deep=True))
     print('\t\t...done.')
+    
     df_save_file_path='../data/'+region+'.pkl'
     print('\t\tSaving dataframe to:',df_save_file_path)
     df.to_pickle(df_save_file_path)
