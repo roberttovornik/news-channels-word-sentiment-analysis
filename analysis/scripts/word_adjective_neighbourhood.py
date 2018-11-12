@@ -87,7 +87,7 @@ def visualise_model(model,output_file_path, label_points=True,additional_data=No
                     size=10,
                     aspect=2)  # size and dimension
     if label_points:
-        df=df[df['word class']!='DISTANT']
+        df=df[df['word class']!='other']
         label_point(df['x'], df['y'], df['vocab'], plt.gca())
     #plt.show()
     plt.savefig(output_file_path)
@@ -109,6 +109,10 @@ tmp={'REGION':[],'WORD':[],'SENTIMENT':[]}
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
+
+        if region_name not in ['Austria']:
+            continue
+
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
         print('***Article analysis for region:', region_name)

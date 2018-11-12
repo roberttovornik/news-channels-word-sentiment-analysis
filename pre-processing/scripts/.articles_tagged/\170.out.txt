@@ -53,7 +53,9 @@
 					<S/>
 					<w msd="Slmei" lemma="separare">separare</w>
 					<S/>
-					<w msd="Slmei" lemma="genitori">genitori</w>
+					<w msd="Sommi" lemma="genitor">genitori</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="bambini">bambini</w>
 					<S/>
@@ -82,6 +84,8 @@
 					<w msd="Slmei" lemma="loro">loro</w>
 					<S/>
 					<w msd="Slmei" lemma="famiglie">famiglie</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Somer" lemma="sper">spera</w>
 					<S/>
@@ -135,17 +139,19 @@
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
-					<w msd="Slmetd" lemma="tolleranz">tolleranza</w>
+					<w msd="Slmer" lemma="tolleranz">tolleranza</w>
 					<S/>
 					<w msd="N" lemma="zero">zero</w>
 					<S/>
-					<w msd="Slmetd" lemma="mess">messa</w>
+					<w msd="Slmer" lemma="mess">messa</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Sozet" lemma="capa">capo</w>
 					<S/>
 					<w msd="Ggdd-em" lemma="dati">dal</w>
 					<S/>
-					<w msd="Somei" lemma="presidente">presidente</w>
+					<w msd="Sozet" lemma="presidente">presidente</w>
 					<S/>
 					<w msd="Slmer" lemma="us">usa</w>
 					<S/>
@@ -159,11 +165,15 @@
 					<S/>
 					<w msd="Sozed" lemma="quasa">quasi</w>
 					<S/>
-					<w msd="Somer" lemma="duemile">duemila</w>
+					<w msd="Ggnste" lemma="duemilati">duemila</w>
 					<S/>
 					<w msd="Sozem" lemma="bambina">bambini</w>
 					<S/>
+					<w msd="Vd" lemma="da">da</w>
+					<S/>
 					<w msd="Sommt" lemma="april">aprile</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Ppnzer" lemma="fin">fine</w>
 					<S/>
@@ -175,17 +185,19 @@
 					<S/>
 					<w msd="Sommi" lemma="separat">separati</w>
 					<S/>
-					<w msd="Somei" lemma="dai">dai</w>
+					<w msd="Rsn" lemma="dai">dai</w>
 					<S/>
-					<w msd="Slmei" lemma="loro">loro</w>
+					<w msd="Rsn" lemma="loro">loro</w>
 					<S/>
-					<w msd="Slmei" lemma="genitori">genitori</w>
+					<w msd="Sommi" lemma="genitor">genitori</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Slmei" lemma="farle">farle</w>
 					<S/>
 					<w msd="Slmei" lemma="eco">eco</w>
 					<S/>
-					<w msd="Slmei" lemma="anche">anche</w>
+					<w msd="N" lemma="anche">anche</w>
 					<S/>
 					<w msd="N" lemma="la">la</w>
 					<S/>
@@ -215,6 +227,8 @@
 					<S/>
 					<w msd="Slmei" lemma="denuncia">denuncia</w>
 					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="Psnmmi" lemma="bambin">bambini</w>
 					<S/>
 					<w msd="Sommi" lemma="separat">separati</w>
@@ -228,6 +242,8 @@
 					<w msd="Rsn" lemma="sono">sono</w>
 					<S/>
 					<w msd="Ppnmmi" lemma="bloccat">bloccati</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slmei" lemma="gabbie">gabbie</w>
 					<S/>
@@ -277,13 +293,17 @@
 					<S/>
 					<w msd="Slmei" lemma="adottato">adottato</w>
 					<S/>
+					<w msd="Vd" lemma="da">da</w>
+					<S/>
 					<w msd="Slmei" lemma="trump">trump</w>
 					<S/>
 					<w msd="Slmei" lemma="contro">contro</w>
 					<S/>
+					<w msd="Somei" lemma="i">i</w>
+					<S/>
 					<w msd="Psnmmi" lemma="clandestin">clandestini</w>
 					<S/>
-					<w msd="Pdnmeid" lemma="sudamerican">sudamericani</w>
+					<w msd="Pdnmmi" lemma="sudamerican">sudamericani</w>
 					<S/>
 					<w msd="Somei" lemma="ha">ha</w>
 					<S/>
@@ -299,17 +319,23 @@
 					<S/>
 					<w msd="Sozem" lemma="repubblicana">repubblicani</w>
 					<S/>
-					<w msd="Somei" lemma="indignazione">indignazione</w>
+					<w msd="Sozet" lemma="indignazione">indignazione</w>
 					<S/>
-					<w msd="Ppnzer" lemma="ter">tra</w>
+					<w msd="Ggnste" lemma="trati">tra</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
 					<S/>
 					<w msd="Sozem" lemma="democratica">democratici</w>
 					<S/>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="Slmei" lemma="leader">leader</w>
 					<S/>
-					<w msd="Rsn" lemma="religiosi">religiosi</w>
+					<w msd="Slmei" lemma="religiosi">religiosi</w>
 					<S/>
-					<w msd="Somei" lemma="nonché">nonché</w>
+					<w msd="N" lemma="nonché">nonché</w>
 					<S/>
 					<w msd="N" lemma="la">la</w>
 					<S/>
@@ -319,11 +345,13 @@
 					<S/>
 					<w msd="N" lemma="dall">dall</w>
 					<S/>
-					<w msd="Slmei" lemma="alto">alto</w>
+					<w msd="N" lemma="alto">alto</w>
 					<S/>
 					<w msd="Slmei" lemma="commissariato">commissariato</w>
 					<S/>
-					<w msd="Slmei" lemma="per">per</w>
+					<w msd="N" lemma="per">per</w>
+					<S/>
+					<w msd="N" lemma="i">i</w>
 					<S/>
 					<w msd="Slmei" lemma="diritti">diritti</w>
 					<S/>
@@ -343,7 +371,9 @@
 					<S/>
 					<w msd="Slmei" lemma="morte">morte</w>
 					<S/>
-					<w msd="Rsn" lemma="diverse">diverse</w>
+					<w msd="Somei" lemma="e">e</w>
+					<S/>
+					<w msd="N" lemma="diverse">diverse</w>
 					<S/>
 					<w msd="Sommt" lemma="alter">altre</w>
 					<S/>
@@ -357,9 +387,11 @@
 					<S/>
 					<w msd="Sozer" lemma="confina">confine</w>
 					<S/>
-					<w msd="Ggnste" lemma="trati">tra</w>
+					<w msd="Slzei" lemma="tra">tra</w>
 					<S/>
 					<w msd="Slmer" lemma="us">usa</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Rsn" lemma="messico">messico</w>
 					<S/>
@@ -393,11 +425,15 @@
 					<S/>
 					<w msd="N" lemma="di">di</w>
 					<S/>
-					<w msd="Rsn" lemma="presunti">presunti</w>
+					<w msd="Ppnzem" lemma="presunt">presunti</w>
 					<S/>
-					<w msd="Rsn" lemma="clandestini">clandestini</w>
+					<w msd="Sozem" lemma="clandestina">clandestini</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Rsn" lemma="bordo">bordo</w>
+					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
 					<S/>
 					<w msd="Sometd" lemma="è">è</w>
 					<S/>
@@ -449,6 +485,8 @@
 					<S/>
 					<w msd="Slmei" lemma="orari">orari</w>
 					<S/>
+					<w msd="Zp---d--k" lemma="se">si</w>
+					<S/>
 					<w msd="Slmei" lemma="ritiene">ritiene</w>
 					<S/>
 					<w msd="Slmei" lemma="che">che</w>
@@ -456,6 +494,8 @@
 					<w msd="Slmei" lemma="il">il</w>
 					<S/>
 					<w msd="Slmei" lemma="conducente">conducente</w>
+					<S/>
+					<w msd="Somei" lemma="e">e</w>
 					<S/>
 					<w msd="Slmei" lemma="un">un</w>
 					<S/>

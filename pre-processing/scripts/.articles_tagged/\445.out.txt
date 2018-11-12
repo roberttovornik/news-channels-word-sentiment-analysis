@@ -11,6 +11,8 @@
 					<S/>
 					<w msd="Slmei" lemma="report">report</w>
 					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 					<S/>
 					<w msd="Slmei" lemma="emphasizes">emphasizes</w>
@@ -20,6 +22,8 @@
 					<w msd="N" lemma="positive">positive</w>
 					<S/>
 					<w msd="Slmei" lemma="news">news</w>
+					<S/>
+					<w msd="N" lemma="in">in</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
@@ -40,6 +44,8 @@
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="N" lemma="right">right</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="N" lemma="water">water</w>
 					<S/>
@@ -75,11 +81,13 @@
 					<S/>
 					<w msd="N" lemma="discrimination">discrimination</w>
 					<S/>
-					<w msd="Slmei" lemma="act">act</w>
+					<w msd="N" lemma="act">act</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="Slmei" lemma="shadow">shadow</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
 					<S/>
 					<w msd="Slmei" lemma="those">those</w>
 					<S/>
@@ -98,6 +106,8 @@
 					<w msd="Slmei" lemma="active">active</w>
 					<S/>
 					<w msd="N" lemma="efforts">efforts</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="Somei" lemma="limit">limit</w>
 					<S/>
@@ -134,6 +144,8 @@
 					<w msd="N" lemma="of">of</w>
 					<S/>
 					<w msd="N" lemma="amendments">amendments</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
@@ -179,21 +191,27 @@
 					<S/>
 					<w msd="N" lemma="as">as</w>
 					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
 					<w msd="N" lemma="safety">safety</w>
 					<S/>
 					<w msd="N" lemma="threat">threat</w>
 					<S/>
-					<w msd="Slmei" lemma="according">according</w>
+					<w msd="N" lemma="according">according</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="Slmei" lemma="ai">ai</w>
 					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 					<S/>
-					<w msd="Slmei" lemma="both">both</w>
+					<w msd="N" lemma="both">both</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="N" lemma="act">act</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
 					<S/>
 					<w msd="Sozer" lemma="polica">police</w>
 					<S/>
@@ -201,9 +219,11 @@
 					<S/>
 					<w msd="N" lemma="and">and</w>
 					<S/>
-					<w msd="Slmei" lemma="act">act</w>
+					<w msd="N" lemma="act">act</w>
 					<S/>
-					<w msd="Somei" lemma="border">border</w>
+					<w msd="N" lemma="on">on</w>
+					<S/>
+					<w msd="N" lemma="border">border</w>
 					<S/>
 					<w msd="Slmei" lemma="control">control</w>
 					<S/>
@@ -243,9 +263,11 @@
 					<S/>
 					<w msd="Slmei" lemma="again">again</w>
 					<S/>
+					<w msd="L" lemma="no">no</w>
+					<S/>
 					<w msd="Somei" lemma="progress">progress</w>
 					<S/>
-					<w msd="Slmei" lemma="was">was</w>
+					<w msd="Somei" lemma="was">was</w>
 					<S/>
 					<w msd="Slmei" lemma="made">made</w>
 					<S/>
@@ -259,15 +281,21 @@
 					<S/>
 					<w msd="Slmei" lemma="has">has</w>
 					<S/>
-					<w msd="Slmei" lemma="become">become</w>
+					<w msd="N" lemma="become">become</w>
 					<S/>
-					<w msd="Slmei" lemma="constant">constant</w>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="constant">constant</w>
+					<S/>
+					<w msd="N" lemma="in">in</w>
 					<S/>
 					<w msd="Slmei" lemma="ai">ai</w>
 					<S/>
 					<w msd="Slmei" lemma="warnings">warnings</w>
 					<S/>
-					<w msd="Slmei" lemma="addressed">addressed</w>
+					<w msd="N" lemma="addressed">addressed</w>
+					<S/>
+					<w msd="Zk-zet" lemma="ta">to</w>
 					<S/>
 					<w msd="Slzei" lemma="slovenia">slovenia</w>
 				</s>

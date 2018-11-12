@@ -17,11 +17,13 @@
 					<S/>
 					<w msd="N" lemma="from">from</w>
 					<S/>
-					<w msd="Slmei" lemma="different">different</w>
+					<w msd="N" lemma="different">different</w>
 					<S/>
-					<w msd="Slmei" lemma="companies">companies</w>
+					<w msd="N" lemma="companies">companies</w>
 					<S/>
-					<w msd="Slmei" lemma="perform">perform</w>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="perform">perform</w>
 					<S/>
 					<w msd="Slmei" lemma="their">their</w>
 					<S/>
@@ -31,11 +33,13 @@
 					<S/>
 					<w msd="Slmei" lemma="many">many</w>
 					<S/>
-					<w msd="N" lemma="of">of</w>
+					<w msd="Slmei" lemma="of">of</w>
 					<S/>
 					<w msd="Slmei" lemma="those">those</w>
 					<S/>
-					<w msd="N" lemma="companies">companies</w>
+					<w msd="Slmei" lemma="companies">companies</w>
+					<S/>
+					<w msd="N" lemma="do">do</w>
 					<S/>
 					<w msd="Slmei" lemma="business">business</w>
 					<S/>
@@ -103,7 +107,9 @@
 					<S/>
 					<w msd="N" lemma="companies">companies</w>
 					<S/>
-					<w msd="N" lemma="however">however</w>
+					<w msd="Slmei" lemma="however">however</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="N" lemma="practice">practice</w>
 					<S/>
@@ -139,17 +145,25 @@
 					<S/>
 					<w msd="N" lemma="norms">norms</w>
 					<S/>
+					<w msd="N" lemma="one">one</w>
+					<S/>
 					<w msd="N" lemma="example">example</w>
 					<S/>
 					<w msd="N" lemma="is">is</w>
 					<S/>
 					<w msd="N" lemma="that">that</w>
 					<S/>
-					<w msd="Slmei" lemma="worker">worker</w>
+					<w msd="N" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="worker">worker</w>
 					<S/>
 					<w msd="N" lemma="is">is</w>
 					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
 					<w msd="N" lemma="receive">receive</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
 					<S/>
 					<w msd="N" lemma="payment">payment</w>
 					<S/>
@@ -175,13 +189,19 @@
 					<S/>
 					<w msd="Slmei" lemma="tells">tells</w>
 					<S/>
+					<w msd="N" lemma="me">me</w>
+					<S/>
+					<w msd="Slmei" lemma="one">one</w>
+					<S/>
 					<w msd="Slmei" lemma="day">day</w>
 					<S/>
-					<w msd="Somei" lemma="or">or</w>
+					<w msd="Ppnmein" lemma="or">or</w>
 					<S/>
 					<w msd="Slmei" lemma="even">even</w>
 					<S/>
 					<w msd="Slzmr" lemma="justa">just</w>
+					<S/>
+					<w msd="Vp" lemma="a">a</w>
 					<S/>
 					<w msd="Slmei" lemma="few">few</w>
 					<S/>
@@ -195,17 +215,29 @@
 					<S/>
 					<w msd="Slmei" lemma="when">when</w>
 					<S/>
+					<w msd="N" lemma="i">i</w>
+					<S/>
 					<w msd="N" lemma="have">have</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="N" lemma="come">come</w>
 					<S/>
-					<w msd="Slmei" lemma="work">work</w>
+					<w msd="N" lemma="to">to</w>
+					<S/>
+					<w msd="N" lemma="work">work</w>
 					<S/>
 					<w msd="N" lemma="says">says</w>
 					<S/>
-					<w msd="Slmei" lemma="worker">worker</w>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="Somei" lemma="worker">worker</w>
 					<S/>
 					<w msd="N" lemma="employed">employed</w>
+					<S/>
+					<w msd="N" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="one">one</w>
 					<S/>
 					<w msd="N" lemma="of">of</w>
 					<S/>
@@ -249,6 +281,8 @@
 					<S/>
 					<w msd="N" lemma="was">was</w>
 					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="N" lemma="day">day</w>
@@ -257,21 +291,25 @@
 					<S/>
 					<w msd="N" lemma="talked">talked</w>
 					<S/>
+					<w msd="N" lemma="to">to</w>
+					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="N" lemma="worker">worker</w>
 					<S/>
 					<w msd="Sozmt" lemma="ha">he</w>
 					<S/>
-					<w msd="Somei" lemma="received">received</w>
+					<w msd="Slmei" lemma="received">received</w>
 					<S/>
-					<w msd="Slmei" lemma="phone">phone</w>
+					<w msd="Vp" lemma="a">a</w>
+					<S/>
+					<w msd="N" lemma="phone">phone</w>
 					<S/>
 					<w msd="Slmei" lemma="call">call</w>
 					<S/>
-					<w msd="Slmei" lemma="telling">telling</w>
+					<w msd="N" lemma="telling">telling</w>
 					<S/>
-					<w msd="Slmei" lemma="him">him</w>
+					<w msd="N" lemma="him">him</w>
 					<S/>
 					<w msd="N" lemma="that">that</w>
 					<S/>
@@ -284,6 +322,10 @@
 					<w msd="N" lemma="at">at</w>
 					<S/>
 					<w msd="N" lemma="work">work</w>
+					<S/>
+					<w msd="N" lemma="in">in</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
 					<S/>
 					<w msd="N" lemma="couple">couple</w>
 					<S/>
@@ -315,6 +357,8 @@
 					<S/>
 					<w msd="N" lemma="talked">talked</w>
 					<S/>
+					<w msd="Zk-sei" lemma="ta">to</w>
+					<S/>
 					<w msd="Slmei" lemma="had">had</w>
 					<S/>
 					<w msd="Slmei" lemma="already">already</w>
@@ -333,7 +377,11 @@
 					<S/>
 					<w msd="Slmei" lemma="hours">hours</w>
 					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
 					<w msd="Slmei" lemma="month">month</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
@@ -358,6 +406,8 @@
 					<w msd="N" lemma="free">free</w>
 					<S/>
 					<w msd="N" lemma="time">time</w>
+					<S/>
+					<w msd="Vp" lemma="in">in</w>
 					<S/>
 					<w msd="Slmei" lemma="between">between</w>
 					<S/>
@@ -401,6 +451,8 @@
 					<S/>
 					<w msd="N" lemma="for">for</w>
 					<S/>
+					<w msd="N" lemma="a">a</w>
+					<S/>
 					<w msd="N" lemma="certain">certain</w>
 					<S/>
 					<w msd="N" lemma="afternoon">afternoon</w>
@@ -421,6 +473,8 @@
 					<S/>
 					<w msd="N" lemma="work">work</w>
 					<S/>
+					<w msd="N" lemma="in">in</w>
+					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
 					<w msd="Slmei" lemma="future">future</w>
@@ -440,6 +494,8 @@
 					<w msd="N" lemma="boss">boss</w>
 					<S/>
 					<w msd="N" lemma="according">according</w>
+					<S/>
+					<w msd="N" lemma="to">to</w>
 					<S/>
 					<w msd="N" lemma="the">the</w>
 					<S/>
@@ -477,13 +533,17 @@
 					<S/>
 					<w msd="Slmei" lemma="salary">salary</w>
 					<S/>
-					<w msd="Somei" lemma="it">it</w>
+					<w msd="Sozei" lemma="it">it</w>
+					<S/>
+					<w msd="Do" lemma="z">s</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
 					<S/>
 					<w msd="N" lemma="common">common</w>
 					<S/>
-					<w msd="Slmei" lemma="practice">practice</w>
+					<w msd="N" lemma="practice">practice</w>
 					<S/>
-					<w msd="Slmei" lemma="elsewhere">elsewhere</w>
+					<w msd="N" lemma="elsewhere">elsewhere</w>
 					<S/>
 					<w msd="Slmei" lemma="as">as</w>
 					<S/>
@@ -515,7 +575,11 @@
 					<S/>
 					<w msd="N" lemma="similar">similar</w>
 					<S/>
-					<w msd="Slmei" lemma="cases">cases</w>
+					<w msd="N" lemma="cases">cases</w>
+					<S/>
+					<w msd="N" lemma="on">on</w>
+					<S/>
+					<w msd="N" lemma="a">a</w>
 					<S/>
 					<w msd="Slmei" lemma="daily">daily</w>
 					<S/>
