@@ -35,9 +35,9 @@ Simple way to install all the packages is to simply import the environement (onj
 
 Use conda environement file (.yml) to create environement from file. The file is located in environment/conda-env/
 To use, run:
-
+```
 conda env create -f onj-env.yml
-
+```
 
 ## Scraping
 
