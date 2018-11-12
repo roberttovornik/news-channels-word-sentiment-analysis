@@ -110,7 +110,7 @@ for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
 
-        if region_name not in ['Austria']:
+        if region_name in ['Slovenia']:
             continue
 
         words2pos = words_to_pos(region_name)
