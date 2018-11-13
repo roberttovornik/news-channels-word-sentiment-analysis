@@ -1,249 +1,1180 @@
 
 Words closest to: ('migrant',) are:
-		('italy', 0.5796268582344055)
-		('greece', 0.5449627637863159)
-		('europe', 0.5317746996879578)
-		('spain', 0.5232449173927307)
-		('route', 0.5120704770088196)
-		('immigrant', 0.5097808837890625)
-		('mediterranean', 0.4952954053878784)
-		('italian', 0.46667981147766113)
-		('central', 0.46129220724105835)
-		('uganda', 0.4582178592681885)
-		('adrift', 0.45395365357398987)
-		('ship', 0.4508476257324219)
-		('danish', 0.4494231343269348)
-		('repressive', 0.44859325885772705)
-		('canada', 0.44768038392066956)
-		('germany', 0.4466170072555542)
-		('balkan', 0.43653231859207153)
-		('european', 0.4310694634914398)
-		('aegean', 0.4202433228492737)
-		('immigration', 0.4164784550666809)
-		('hostile', 0.4157194495201111)
-		('malta', 0.4076380729675293)
-		('somali', 0.4071803689002991)
-		('squat', 0.40640944242477417)
-		('spread', 0.40397965908050537)
-		('rescue', 0.40326058864593506)
-		('port', 0.4003273844718933)
-		('maritime', 0.3969710171222687)
-		('arrival', 0.39288097620010376)
-		('libyan', 0.3884420096874237)
-		('spanish', 0.3844359815120697)
-		('minor', 0.3827265799045563)
-		('aquarius', 0.38072097301483154)
-		('accommodation', 0.38048672676086426)
-		('mainland', 0.3770311772823334)
-		('slave', 0.37200021743774414)
-		('caravan', 0.3696877062320709)
-		('wet', 0.3617691397666931)
-		('unaccompanied', 0.361100971698761)
-		('transit', 0.3609238862991333)
-		('drown', 0.36090904474258423)
-		('contagious', 0.3596349358558655)
-		('lifeline', 0.35948866605758667)
-		('ng', 0.3510679006576538)
-		('sail', 0.34786149859428406)
-		('tunisia', 0.34783196449279785)
-		('saharan', 0.34652045369148254)
-		('vessel', 0.3449849486351013)
-		('limbo', 0.34252893924713135)
-		('mandatory', 0.3411891460418701)
-		('charity', 0.33909860253334045)
-		('leftist', 0.3369012176990509)
-		('africa', 0.33673352003097534)
-		('north', 0.333010733127594)
-		('o', 0.3326018452644348)
-		('desert', 0.33151108026504517)
-		('irregular', 0.3312366008758545)
-		('rough', 0.3295210003852844)
-		('resettlement', 0.32758617401123047)
-		('valletta', 0.3273669183254242)
-		('minded', 0.3253048360347748)
-		('french', 0.32428616285324097)
-		('sentiment', 0.32398420572280884)
-		('slovakia', 0.32382890582084656)
-		('inflatable', 0.3234565556049347)
-		('rescued', 0.3219398558139801)
-		('maltese', 0.3198133409023285)
-		('cuban', 0.3185298442840576)
-		('frontier', 0.31697991490364075)
-		('sicily', 0.3163132965564728)
-		('morocco', 0.31557443737983704)
-		('mistreatment', 0.3135041892528534)
-		('valencia', 0.31269577145576477)
-		('afghan', 0.3118475079536438)
-		('mile', 0.31048262119293213)
-		('unforgiving', 0.31019338965415955)
-		('evict', 0.3096648156642914)
-		('trinidad', 0.3089759647846222)
-		('honduran', 0.30854299664497375)
-		('endangered', 0.30753782391548157)
-		('sicilian', 0.3062683641910553)
-		('macedonian', 0.30552732944488525)
-		('hopeless', 0.3000504672527313)
-		('venezuelan', 0.29895466566085815)
-		('hysterical', 0.29769402742385864)
-		MEAN OBJECTIVE SCORE:-0.20383783783783782
+		central
+		europe
+		hundred
+		germany
+		rough
+		hungary
+		serbia
+		croatia
+		italy
+		balkan
+		greece
+		eu
+		italian
+		european
+		saharan
+		integration
+		ng
+		ngo
+		transit
+		afghan
+		cargo
+		inflatable
+		quota
+		frontier
+		mediterranean
+		dangerous
+		north
+		africa
+		french
+		mandatory
+		libya
+		burden
+		morocco
+		unaccompanied
+		minor
+		wet
+		irregular
+		aegean
+		greek
+		macedonian
+		rescue
+		immigrant
+		stringent
+		perilous
+		immigration
+		immigrant
+		mexico
+		arrival
+		desert
+		route
+		frontier
+		europe
+		italy
+		italian
+		venezuelan
+		mediterranean
+		africa
+		north
+		central
+		eu
+		french
+		european
+		port
+		sail
+		mile
+		ship
+		hundred
+		germany
+		dangerous
+		ngo
+		harassment
+		spread
+		afghan
+		mandatory
+		trinidad
+		guatemala
+		honduras
+		honduran
+		caravan
+		irregular
+		salvini
+		stringent
+		charity
+		ng
+		o
+		unaccompanied
+		minor
+		mistreatment
+		exposed
+		greece
+		lifeline
+		limbo
+		greek
+		lesbos
+		aegean
+		spanish
+		spain
+		rescue
+		wet
+		perilous
+		balkan
+		serbia
+		malta
+		vessel
+		drown
+		maltese
+		naples
+		canada
+		morocco
+		adrift
+		libya
+		aquarius
+		valletta
+		rough
+		libyan
+		saharan
+		portugal
+		maritime
+		hungary
+		poland
+		slovakia
+		repressive
+		tunisia
+		transit
+		uganda
+		mainland
+		accommodation
+		peru
+		slave
+		proactiva
+		evros
+		sentiment
+		soros
+		algeria
+		leftist
+		designated
+		hostile
+		cuban
+		sicilian
+		pozzallo
+		valencia
+		contagious
+		somali
+		refused
+		rescued
+		sicily
+		resettlement
+		danish
+		sahara
+		niger
+		unforgiving
+		lampedusa
+		hopeless
+		hysterical
+		minded
+		evict
+		inflatable
+		muhammadi
+		squat
+		endangered
+		macedonian
+		nenareh
+		laszlo
+		sheryl
+		MEAN OBJECTIVE SCORE:-0.12778461538461539
+Words closest to: ('immigrant',) are:
+		migrant
+		hungarian
+		hungary
+		hardline
+		christian
+		tough
+		anti
+		muslim
+		ban
+		public
+		illegal
+		separate
+		quota
+		legal
+		czech
+		populist
+		individual
+		extreme
+		religious
+		voter
+		undocumented
+		aggressive
+		fit
+		orban
+		xenophobic
+		inhumane
+		racist
+		immigration
+		separate
+		trump
+		american
+		aclu
+		public
+		gelernt
+		enforcement
+		legal
+		undocumented
+		migrant
+		anti
+		adult
+		justice
+		populist
+		executive
+		individual
+		wing
+		aggressive
+		politician
+		widespread
+		propaganda
+		illegal
+		islam
+		unlawful
+		traditional
+		christian
+		democrat
+		backlash
+		progressive
+		hate
+		nationalist
+		semitic
+		religious
+		rhetoric
+		critic
+		harassment
+		trinidad
+		caravan
+		racist
+		antipathy
+		denial
+		challenge
+		ban
+		extreme
+		muslim
+		offshore
+		association
+		faith
+		openly
+		incitement
+		hardline
+		arbitrary
+		canada
+		anger
+		nationalistic
+		xenophobic
+		hungary
+		poland
+		czech
+		slovakia
+		republican
+		tough
+		repressive
+		hungarian
+		protected
+		petty
+		dissent
+		obama
+		discriminatory
+		nonprofit
+		broad
+		orban
+		punitive
+		sentiment
+		voter
+		reproductive
+		soros
+		xenophobia
+		leftist
+		hostile
+		discontent
+		fascist
+		inhumane
+		content
+		nicaraguan
+		civic
+		fit
+		unconstitutional
+		ultra
+		detained
+		ineffective
+		staunch
+		environmental
+		juvenile
+		shenandoah
+		polish
+		osf
+		charlottesville
+		manipulative
+		antifa
+		racial
+		salvadoran
+		daca
+		lgbtqi
+		hateful
+		lautenberg
+		irap
+		islamophobic
+		usa
+		irineo
+		anna
+		regressive
+		perceived
+		lgbtq
+		societal
+		endangered
+		updated
+		frontal
+		lecoyer
+		literary
+		MEAN OBJECTIVE SCORE:-0.09573809523809523
 Words closest to: ('refugee',) are:
-		('greece', 0.40340739488601685)
-		('mainland', 0.4013395309448242)
-		('hostile', 0.39572617411613464)
-		('unregistered', 0.3827836811542511)
-		('arrival', 0.3739040493965149)
-		('living', 0.3532731235027313)
-		('undocumented', 0.34897035360336304)
-		('unaccompanied', 0.34450218081474304)
-		('accommodation', 0.3387552797794342)
-		('sanctuary', 0.3385516107082367)
-		('transit', 0.3311513066291809)
-		('temporary', 0.3304247558116913)
-		('half', 0.3296999931335449)
-		('vast', 0.3263099491596222)
-		('humanitarian', 0.32119691371917725)
-		('resettlement', 0.31045499444007874)
-		('complete', 0.30994176864624023)
-		('africa', 0.30860692262649536)
-		('australia', 0.308046817779541)
-		('limbo', 0.3062443733215332)
-		('informal', 0.30370032787323)
-		('neighbour', 0.30184492468833923)
-		('assist', 0.30144453048706055)
-		('offshore', 0.2944197654724121)
-		('makeshift', 0.2932920455932617)
-		('population', 0.29284557700157166)
-		('haitian', 0.29273486137390137)
-		('pacific', 0.29128122329711914)
-		('euro', 0.28948357701301575)
-		('turkey', 0.28818565607070923)
-		('impossible', 0.282147079706192)
-		('port', 0.27827557921409607)
-		('squalid', 0.2781360149383545)
-		('illegal', 0.2779277265071869)
-		('mediterranean', 0.27728670835494995)
-		('antipathy', 0.27492305636405945)
-		('increase', 0.2737613320350647)
-		('child', 0.27360668778419495)
-		('italy', 0.2734373211860657)
-		('worldwide', 0.27199679613113403)
-		('vain', 0.26808279752731323)
-		('total', 0.2664199471473694)
-		('third', 0.2659117877483368)
-		('germany', 0.2639724016189575)
-		('unhappy', 0.26253578066825867)
-		('languish', 0.26180869340896606)
-		('lebanon', 0.26070350408554077)
-		('evict', 0.26056498289108276)
-		('repressive', 0.2585812509059906)
-		('dignified', 0.2575942873954773)
-		('id', 0.25699639320373535)
-		('relief', 0.24997210502624512)
-		('voluntary', 0.24863991141319275)
-		('stateless', 0.24826857447624207)
-		('spain', 0.24685028195381165)
-		('unspecified', 0.24447977542877197)
-		('route', 0.24390088021755219)
-		('cramped', 0.2434586137533188)
-		('athens', 0.24336284399032593)
-		('aegean', 0.24209024012088776)
-		('orphan', 0.24181224405765533)
-		('donor', 0.24058428406715393)
-		('decent', 0.24004504084587097)
-		('citizen', 0.23927591741085052)
-		('saharan', 0.2373245656490326)
-		('spontaneous', 0.23720794916152954)
-		('malaysia', 0.23678073287010193)
-		('visa', 0.23562020063400269)
-		('poverty', 0.23533469438552856)
-		('asia', 0.23477332293987274)
-		('impending', 0.23356777429580688)
-		('uganda', 0.23318912088871002)
-		MEAN OBJECTIVE SCORE:-0.12310606060606061
+		hundred
+		asylum
+		germany
+		italy
+		arrive
+		greece
+		eu
+		voluntary
+		humanitarian
+		saharan
+		neighbour
+		enter
+		total
+		living
+		transit
+		iraqis
+		third
+		impossible
+		illegal
+		child
+		turkey
+		temporary
+		overcrowded
+		complete
+		visa
+		mediterranean
+		africa
+		decent
+		libya
+		vast
+		burden
+		unaccompanied
+		undocumented
+		aegean
+		informal
+		greek
+		financial
+		unhappy
+		id
+		squalid
+		intercepted
+		perilous
+		asylum
+		arrive
+		increase
+		humanitarian
+		child
+		visa
+		undocumented
+		relief
+		arrival
+		route
+		unicef
+		half
+		population
+		australia
+		nauru
+		pacific
+		languish
+		iom
+		italy
+		asia
+		mediterranean
+		africa
+		eu
+		port
+		informal
+		hundred
+		lebanon
+		living
+		total
+		third
+		turkey
+		unspecified
+		germany
+		citizen
+		illegal
+		refugees
+		staggering
+		makeshift
+		vast
+		impossible
+		voluntary
+		temporary
+		complete
+		neighbour
+		antipathy
+		unaccompanied
+		greece
+		assist
+		refuge
+		manus
+		limbo
+		overcrowded
+		bangladesh
+		offshore
+		greek
+		athens
+		euro
+		moria
+		lesbos
+		aegean
+		sub
+		spain
+		perilous
+		malaysia
+		libya
+		donor
+		financial
+		saharan
+		portugal
+		unregistered
+		stateless
+		id
+		kutupalong
+		cramped
+		repressive
+		transit
+		uganda
+		worldwide
+		mainland
+		accommodation
+		poverty
+		impending
+		squalid
+		algeria
+		hostile
+		ridden
+		ecuador
+		rwanda
+		balukhali
+		orphan
+		samos
+		sanctuary
+		dignified
+		png
+		resettlement
+		burial
+		spontaneous
+		unhappy
+		evict
+		tps
+		haitian
+		kakuma
+		intercepted
+		vain
+		ironic
+		decent
+		decommissioned
+		lorengau
+		dipayan
+		iraqis
+		refugeesgr
+		tindouf
+		MEAN OBJECTIVE SCORE:-0.08611111111111111
+Words closest to: ('migrant', 'immigrant') are:
+		austria
+		central
+		europe
+		hungarian
+		germany
+		hungary
+		serbia
+		croatia
+		hardline
+		italy
+		balkan
+		similar
+		greece
+		eu
+		italian
+		tough
+		controversial
+		anti
+		muslim
+		european
+		ban
+		integration
+		ng
+		ngo
+		illegal
+		separate
+		quota
+		mediterranean
+		legal
+		mandatory
+		czech
+		libya
+		populist
+		burden
+		individual
+		extreme
+		unaccompanied
+		minor
+		irregular
+		undocumented
+		aggressive
+		fit
+		orban
+		xenophobic
+		inhumane
+		racist
+		stringent
+		shameful
+		immigration
+		separate
+		american
+		aclu
+		legal
+		undocumented
+		mexico
+		anti
+		australia
+		controversial
+		adult
+		europe
+		italy
+		italian
+		populist
+		mediterranean
+		executive
+		central
+		eu
+		european
+		ship
+		individual
+		similar
+		aggressive
+		politician
+		germany
+		propaganda
+		illegal
+		islam
+		backlash
+		progressive
+		nationalist
+		semitic
+		rhetoric
+		critic
+		ngo
+		harassment
+		spread
+		mandatory
+		trinidad
+		honduran
+		caravan
+		irregular
+		matteo
+		salvini
+		stringent
+		racist
+		charity
+		ng
+		o
+		unaccompanied
+		minor
+		denial
+		exposed
+		greece
+		challenge
+		ban
+		extreme
+		muslim
+		offshore
+		association
+		spain
+		openly
+		balkan
+		serbia
+		hardline
+		fortune
+		naples
+		arbitrary
+		canada
+		libya
+		ne
+		nationalistic
+		xenophobic
+		hungary
+		poland
+		czech
+		slovakia
+		tough
+		repressive
+		hungarian
+		protected
+		austria
+		accommodation
+		shameful
+		afd
+		orban
+		evros
+		sentiment
+		soros
+		xenophobia
+		leftist
+		designated
+		hostile
+		discontent
+		fascist
+		contagious
+		inhumane
+		content
+		nicaraguan
+		civic
+		fit
+		resettlement
+		danish
+		detained
+		underage
+		incorrect
+		ineffective
+		osf
+		charlottesville
+		manipulative
+		antifa
+		explicit
+		racial
+		salvadoran
+		lgbtqi
+		islamophobic
+		squat
+		irineo
+		regressive
+		endangered
+		updated
+		nenareh
+		frontal
+		laszlo
+		literary
+		MEAN OBJECTIVE SCORE:-0.1084228855721393
 Words closest to: ('migrant', 'refugee') are:
-		('greece', 0.6304016709327698)
-		('italy', 0.5670497417449951)
-		('hostile', 0.5393849015235901)
-		('mainland', 0.5173993706703186)
-		('mediterranean', 0.5135515928268433)
-		('spain', 0.5118985176086426)
-		('arrival', 0.5096981525421143)
-		('route', 0.5025100708007812)
-		('europe', 0.499196857213974)
-		('accommodation', 0.47809529304504395)
-		('germany', 0.4723437428474426)
-		('repressive', 0.47007375955581665)
-		('unaccompanied', 0.4690292775630951)
-		('transit', 0.46003687381744385)
-		('uganda', 0.4595927596092224)
-		('port', 0.45108166337013245)
-		('aegean', 0.44026699662208557)
-		('adrift', 0.4347638189792633)
-		('immigrant', 0.4339863657951355)
-		('italian', 0.4320504069328308)
-		('limbo', 0.43125325441360474)
-		('africa', 0.42897140979766846)
-		('resettlement', 0.42411935329437256)
-		('balkan', 0.4180867075920105)
-		('canada', 0.41177499294281006)
-		('spread', 0.41045939922332764)
-		('european', 0.4099287986755371)
-		('ship', 0.4050586223602295)
-		('malta', 0.40275973081588745)
-		('minor', 0.39148157835006714)
-		('australia', 0.38949745893478394)
-		('saharan', 0.388094037771225)
-		('living', 0.3854502737522125)
-		('aquarius', 0.38461655378341675)
-		('evict', 0.37904369831085205)
-		('sanctuary', 0.3783048987388611)
-		('tunisia', 0.37544965744018555)
-		('irregular', 0.373733252286911)
-		('undocumented', 0.3695135712623596)
-		('immigration', 0.3626694977283478)
-		('desert', 0.35952940583229065)
-		('inflatable', 0.3585646450519562)
-		('turkey', 0.35847756266593933)
-		('euro', 0.35788989067077637)
-		('macedonian', 0.356707364320755)
-		('lifeline', 0.35522589087486267)
-		('athens', 0.3530636429786682)
-		('morocco', 0.35239601135253906)
-		('increase', 0.35177433490753174)
-		('rescue', 0.3513571619987488)
-		('offshore', 0.35039016604423523)
-		('central', 0.34891754388809204)
-		('pacific', 0.3475561738014221)
-		('voluntary', 0.345273494720459)
-		('ng', 0.3446979224681854)
-		('slave', 0.34345653653144836)
-		('charity', 0.33550021052360535)
-		('mandatory', 0.33464035391807556)
-		('dignified', 0.3326945900917053)
-		('valletta', 0.3301982581615448)
-		('asia', 0.32909080386161804)
-		('temporary', 0.3289419412612915)
-		('danish', 0.3262566328048706)
-		('worldwide', 0.3259267807006836)
-		('african', 0.3253445029258728)
-		('frontier', 0.32522404193878174)
-		('drown', 0.32318758964538574)
-		('libyan', 0.32231318950653076)
-		('caravan', 0.3210924565792084)
-		('half', 0.3207446336746216)
-		('unregistered', 0.32060179114341736)
-		('maritime', 0.31804123520851135)
-		('adult', 0.31801506876945496)
-		('common', 0.31697237491607666)
-		('endangered', 0.3162330090999603)
-		('regressive', 0.31604164838790894)
-		('safe', 0.313403457403183)
-		('vast', 0.31060224771499634)
-		('impossible', 0.3102291226387024)
-		('third', 0.3097790479660034)
-		('sail', 0.30974385142326355)
-		('north', 0.3070940375328064)
-		('spanish', 0.30654263496398926)
-		('neighbour', 0.30546149611473083)
-		('vessel', 0.3053201138973236)
-		MEAN OBJECTIVE SCORE:-0.11383116883116884
+		central
+		europe
+		hundred
+		asylum
+		peak
+		germany
+		hungary
+		serbia
+		croatia
+		italy
+		balkan
+		arrive
+		greece
+		eu
+		italian
+		european
+		voluntary
+		saharan
+		neighbour
+		enter
+		safe
+		ng
+		ngo
+		living
+		transit
+		third
+		impossible
+		turkey
+		inflatable
+		temporary
+		overcrowded
+		quota
+		frontier
+		mediterranean
+		dangerous
+		north
+		africa
+		african
+		mandatory
+		libya
+		vast
+		burden
+		morocco
+		unaccompanied
+		minor
+		irregular
+		undocumented
+		aegean
+		greek
+		macedonian
+		common
+		rescue
+		immigrant
+		intercepted
+		perilous
+		immigration
+		asylum
+		arrive
+		increase
+		immigrant
+		undocumented
+		safe
+		arrival
+		desert
+		route
+		frontier
+		half
+		australia
+		nauru
+		pacific
+		adult
+		europe
+		italy
+		italian
+		asia
+		african
+		mediterranean
+		africa
+		north
+		central
+		eu
+		european
+		port
+		sail
+		ship
+		hundred
+		colombia
+		living
+		third
+		turkey
+		germany
+		refugees
+		vast
+		dangerous
+		common
+		impossible
+		ngo
+		voluntary
+		temporary
+		neighbour
+		spread
+		mandatory
+		caravan
+		irregular
+		charity
+		ng
+		unaccompanied
+		minor
+		greece
+		refuge
+		lifeline
+		manus
+		limbo
+		overcrowded
+		bangladesh
+		offshore
+		greek
+		athens
+		euro
+		lesbos
+		aegean
+		sub
+		spanish
+		spain
+		rescue
+		perilous
+		balkan
+		serbia
+		malta
+		vessel
+		drown
+		canada
+		morocco
+		adrift
+		libya
+		aquarius
+		valletta
+		libyan
+		saharan
+		portugal
+		unregistered
+		maritime
+		hungary
+		repressive
+		tunisia
+		transit
+		uganda
+		worldwide
+		mainland
+		accommodation
+		peru
+		slave
+		evros
+		algeria
+		designated
+		hostile
+		ecuador
+		rwanda
+		pozzallo
+		samos
+		refused
+		sanctuary
+		dignified
+		png
+		resettlement
+		danish
+		niger
+		lampedusa
+		evict
+		inflatable
+		intercepted
+		regressive
+		misleading
+		endangered
+		macedonian
+		nenareh
+		lorengau
+		MEAN OBJECTIVE SCORE:-0.07384433962264152
+Words closest to: ('immigrant', 'refugee') are:
+		migrant
+		austria
+		asylum
+		germany
+		hungary
+		serbia
+		hardline
+		italy
+		similar
+		greece
+		eu
+		human
+		tough
+		controversial
+		anti
+		muslim
+		european
+		ban
+		integration
+		ng
+		illegal
+		child
+		uk
+		temporary
+		separate
+		quota
+		visa
+		legal
+		mandatory
+		populist
+		vast
+		burden
+		individual
+		equal
+		unaccompanied
+		minor
+		irregular
+		undocumented
+		orban
+		xenophobic
+		common
+		inhumane
+		administrative
+		racist
+		intercepted
+		immigration
+		asylum
+		separate
+		fear
+		trump
+		american
+		aclu
+		child
+		legal
+		visa
+		undocumented
+		migrant
+		human
+		anti
+		programme
+		devastating
+		australia
+		nauru
+		controversial
+		adult
+		italy
+		populist
+		executive
+		eu
+		european
+		restrict
+		individual
+		similar
+		longstanding
+		germany
+		citizen
+		illegal
+		refugees
+		islam
+		vast
+		backlash
+		progressive
+		semitic
+		common
+		rhetoric
+		critic
+		harassment
+		temporary
+		uk
+		spread
+		mandatory
+		trinidad
+		caravan
+		irregular
+		matteo
+		racist
+		antipathy
+		ng
+		unaccompanied
+		minor
+		denial
+		greece
+		challenge
+		refuge
+		ban
+		limbo
+		muslim
+		offshore
+		association
+		administrative
+		serbia
+		overwhelming
+		hardline
+		canada
+		ne
+		nationalistic
+		xenophobic
+		hungary
+		poland
+		slovakia
+		equal
+		making
+		tough
+		applicant
+		repressive
+		protected
+		austria
+		worldwide
+		mainland
+		accommodation
+		discriminatory
+		orban
+		sentiment
+		reproductive
+		soros
+		xenophobia
+		leftist
+		hostile
+		fascist
+		inhumane
+		sanctuary
+		png
+		unconstitutional
+		resettlement
+		separated
+		detained
+		visible
+		ineffective
+		harmful
+		environmental
+		osf
+		manipulative
+		antifa
+		tps
+		salvadoran
+		haitian
+		daca
+		intercepted
+		usa
+		regressive
+		endangered
+		frontal
+		nongovernmental
+		literary
+		MEAN OBJECTIVE SCORE:-0.18274869109947645
+Words closest to: ('migrant', 'immigrant', 'refugee') are:
+		austria
+		central
+		europe
+		hundred
+		asylum
+		germany
+		hungary
+		serbia
+		croatia
+		hardline
+		italy
+		balkan
+		similar
+		greece
+		eu
+		italian
+		tough
+		controversial
+		anti
+		muslim
+		european
+		integration
+		enter
+		ng
+		ngo
+		transit
+		illegal
+		child
+		inflatable
+		temporary
+		integrate
+		separate
+		quota
+		visa
+		mediterranean
+		africa
+		legal
+		mandatory
+		libya
+		populist
+		burden
+		individual
+		unaccompanied
+		minor
+		irregular
+		undocumented
+		aegean
+		orban
+		greek
+		macedonian
+		xenophobic
+		common
+		inhumane
+		stringent
+		perilous
+		immigration
+		asylum
+		separate
+		fear
+		increase
+		child
+		legal
+		visa
+		undocumented
+		mexico
+		arrival
+		route
+		anti
+		programme
+		australia
+		nauru
+		controversial
+		adult
+		europe
+		italy
+		italian
+		populist
+		mediterranean
+		africa
+		central
+		eu
+		european
+		port
+		ship
+		hundred
+		individual
+		similar
+		germany
+		illegal
+		refugees
+		islam
+		backlash
+		progressive
+		semitic
+		common
+		rhetoric
+		critic
+		ngo
+		harassment
+		temporary
+		spread
+		mandatory
+		trinidad
+		caravan
+		irregular
+		matteo
+		salvini
+		stringent
+		antipathy
+		charity
+		ng
+		o
+		unaccompanied
+		minor
+		denial
+		greece
+		challenge
+		manus
+		limbo
+		muslim
+		offshore
+		association
+		greek
+		aegean
+		spain
+		perilous
+		balkan
+		serbia
+		overwhelming
+		malta
+		hardline
+		naples
+		canada
+		adrift
+		libya
+		aquarius
+		portugal
+		ne
+		nationalistic
+		xenophobic
+		hungary
+		poland
+		slovakia
+		tough
+		applicant
+		repressive
+		transit
+		protected
+		austria
+		uganda
+		worldwide
+		mainland
+		accommodation
+		slave
+		orban
+		evros
+		sentiment
+		soros
+		xenophobia
+		algeria
+		leftist
+		designated
+		hostile
+		inhumane
+		refused
+		sanctuary
+		png
+		resettlement
+		detained
+		manipulative
+		antifa
+		explicit
+		tps
+		salvadoran
+		haitian
+		inflatable
+		usa
+		squat
+		regressive
+		misleading
+		endangered
+		macedonian
+		nenareh
+		frontal
+		MEAN OBJECTIVE SCORE:-0.1461590909090909

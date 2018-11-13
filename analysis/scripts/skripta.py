@@ -58,17 +58,9 @@ def label_point(x, y, val, ax):
     for i, point in a.iterrows():
         ax.text(point['x']+.02, point['y'], str(point['val']))
 
+'''
 def visualise_model(model,output_file_path, label_points=True,additional_data=None):
     vocab = list(model.wv.vocab)
-    word_context_class = None
-    if additional_data is not None:
-        relevant_row=additional_data.iloc[0]
-        positive=list(relevant_row['positive adjectives'])
-        negative=list(relevant_row['negative adjectives'])
-        neutral=list(relevant_row['neutral adjectives'])
-        keywords=relevant_row['keyword combo'][1:-1].replace(',',' ').replace('\'','').split()
-        #word_context_class = ['POSITIVE' if x in positive else 'NEGATIVE' if x in negative else 'NEUTRAL' if x in neutral else 'KEYWORD' if x in keywords else 'DISTANT' for x in vocab]
-        word_context_class = ['POSITIVE' if x in positive else 'NEGATIVE' if x in negative else 'KEYWORD' if x in keywords else 'other' for x in vocab]
 
     X = model[vocab]
     tsne = TSNE(n_components=2)
@@ -91,9 +83,10 @@ def visualise_model(model,output_file_path, label_points=True,additional_data=No
         label_point(df['x'], df['y'], df['vocab'], plt.gca())
     #plt.show()
     plt.savefig(output_file_path)
+'''
 
-words_of_interest_slovene=['azilant','migrant','prebežnik']
-words_of_interest_english=['migrant','refugee'] #'asylum seeker' #Handle phrases
+words_of_interest_slovene=['migrant','prebežnik','begunec']
+words_of_interest_english=['migrant','immigrant','refugee'] #'asylum seeker' #Handle phrases
 regions_slovene=['Slovenia']
 
 sentiWordNet=load_sentiWordNet()
@@ -103,15 +96,12 @@ sentiWordNet['objectiveScore']=sentiWordNet['PosScore'] - sentiWordNet['NegScore
 #remove neutral words
 #sentiWordNet = sentiWordNet[(sentiWordNet['PosScore'] != 0.0) & (sentiWordNet['NegScore'] != 0.0)]
 model_dir='../../data_modeling/models/'
-model_words_sentiment_by_region = {'REGION': [], 'WORD': [], 'SENTIMENT': []}
-regionNews_sentiment_scores={'region':[],'sentiment score':[], 'keyword combo':[], 'positive adjectives':[], 'negative adjectives':[], 'neutral adjectives':[]}
-tmp={'REGION':[],'WORD':[],'SENTIMENT':[]}
+word_info=pd.DataFrame({'WORD':[],'IS_ADJECTIVE':[],'IS_NOUN':[],'IS_VERB':[],'SENTI_SCORE':[],'SENTI_CLASS':[]})
+similar_words_byRegion_byKeywords=pd.DataFrame({'REGION':[],'KEYWORDS':[],'SIMILAR_WORD':[],'SIMILARITY_DISTANCE':[]})
+sentiScore_byRegion_byKeywords={'REGION':[],'KEYWORDS':[],'SENTI_SCORE':[]}
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
-
-        if region_name in ['Slovenia']:
-            continue
 
         #List POS tags, that each lemma's origin word in corpus is tagged with
         words2pos = words_to_pos(region_name)
@@ -121,21 +111,40 @@ for filename in os.listdir(model_dir):
         model=gensim.models.Word2Vec.load(model_file_path)
         print('\t...done.')
 
+        #Add description for new words
         print('\tClassifying words in model vocabulary based on their sentiment score.')
         vocab = list(model.wv.vocab)
-        for w in vocab:
-            sentiWordNet_score = sentiWordNet[sentiWordNet['SynsetTerms'] == w]
+        vocab_eng=slo_to_eng(vocab) if region_name in regions_slovene else vocab
+        for i in range(len(vocab_eng)):
+            w=vocab_eng[i]
+            w_true=vocab[i]
+            if w_true in word_info['WORD']:
+                continue
+            row={'WORD':[],'IS_ADJECTIVE':[],'IS_NOUN':[],'IS_VERB':[],'SENTI_SCORE':[],'SENTI_CLASS':[]}
+            row['WORD'].append(w_true)
+            row['IS_ADJECTIVE'].append(True if (region_name in regions_slovene and 'P' in words2pos[w_true]) or (region_name not in regions_slovene and 'J' in words2pos[w_true]) else False)
+            row['IS_NOUN'].append(True if (region_name in regions_slovene and 'S' in words2pos[w_true]) or (region_name not in regions_slovene and 'N' in words2pos[w_true]) else False)
+            row['IS_VERB'].append(True if (region_name in regions_slovene and 'G' in words2pos[w_true]) or (region_name not in regions_slovene and 'V' in words2pos[w_true]) else False)
+            sentiWordNet_score_word = sentiWordNet[(sentiWordNet['SynsetTerms'] == w)]
+            if sentiWordNet_score_word.shape[0] <= 1:
+                sentiWordNet_score=sentiWordNet_score_word
+            else:
+                pos_tag_filter = []  # append all-false vector
+                if row['IS_ADJECTIVE']:
+                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'a'))
+                if row['IS_NOUN']:
+                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'n'))
+                if row['IS_VERB']:
+                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'v'))
+                pos_tag_filter = np.array(sum(pos_tag_filter)).astype(bool)
+                sentiWordNet_score=sentiWordNet_score_word[pos_tag_filter]
             pos_score = sum(sentiWordNet_score['PosScore'])
             neg_score = sum(sentiWordNet_score['NegScore'])
-            model_words_sentiment_by_region['WORD'].append(w)
-            model_words_sentiment_by_region['REGION'].append(region_name)
-            if pos_score > neg_score:
-                model_words_sentiment_by_region['SENTIMENT'].append('POSITIVE')
-            elif pos_score < neg_score:
-                model_words_sentiment_by_region['SENTIMENT'].append('NEGATIVE')
-            else:
-                model_words_sentiment_by_region['SENTIMENT'].append('NEUTRAL')
+            row['SENTI_SCORE'].append(pos_score-neg_score)
+            row['SENTI_CLASS'].append('POSITIVE' if pos_score > neg_score else 'NEGATIVE' if pos_score < neg_score else 'NEUTRAL' if pos_score==neg_score else 'N/A')
+            word_info=word_info.append(pd.DataFrame(row))
         print('\t...done.')
+
         print('\tCreating all combinations of keywords for analysis...')
         words_of_interest=words_of_interest_slovene if region_name in regions_slovene else words_of_interest_english
         combinations_of_words_of_interest=list(chain.from_iterable([combinations(words_of_interest,i) for i in range(1,len(words_of_interest))]))#.append(tuple(words_of_interest))
@@ -144,75 +153,59 @@ for filename in os.listdir(model_dir):
         print('\t...done.')
 
         file=open('../word_neighborhood/'+region_name+'.txt','w')
+        similar_words_rows={'REGION':[],'KEYWORDS':[],'SIMILAR_WORD':[],'SIMILARITY_DISTANCE':[]}
         for words_of_interest_combo in combinations_of_words_of_interest:
-            print('\tWords closest to:',words_of_interest_combo,'are:')
+            print('\tAdjectives closest to:',words_of_interest_combo,'are:')
             #Finding closes/most similar words to those of interest
             similar_words = model.wv.most_similar(words_of_interest_combo, topn=250)
-            #Looking for english translations for words in other languages for later SentiWordNet scoring table lookup
-            similar_words_in_english=slo_to_eng([x[0] for x in similar_words]) if region_name in regions_slovene else [x[0] for x in similar_words]
-            #Find those of similar words, that are listed in SentiWordNet table
-            similar_words_with_sentiWord_score = [similar_words[x] for x in range(len(similar_words_in_english)) if similar_words_in_english[x] in list(sentiWordNet['SynsetTerms'])]
-            #similar_adjectives_with_sentiWord_score = [similar_words_with_sentiWord_score[x] for x in range(len(similar_words_with_sentiWord_score)) if (region_name in regions_slovene and 'P' in words2pos[similar_words_with_sentiWord_score[x][0]]) or (region_name not in regions_slovene and 'J' in words2pos[similar_words_with_sentiWord_score[x][0]])]
+            for word in similar_words:
+                similar_words_rows['REGION'].append(region_name)
+                similar_words_rows['KEYWORDS'].append(str(words_of_interest_combo))
+                similar_words_rows['SIMILAR_WORD'].append(word[0])
+                similar_words_rows['SIMILARITY_DISTANCE'].append(word[1])
 
-            similar_adjectives_with_sentiWord_score = []
-            similar_adjectives_positive = []
-            similar_adjectives_negative = []
-            similar_adjectives_neutral = []
-            for w in similar_words_with_sentiWord_score:
-                if (region_name in regions_slovene and 'P' in words2pos[w[0]]) or (region_name not in regions_slovene and 'J' in words2pos[w[0]]):
-                   #ADJECTIVE
-                    similar_adjectives_with_sentiWord_score.append(w)
-                    tmp['WORD'].append(w)
-                    tmp['REGION'].append(region_name)
-                    sentiWordNet_score=sentiWordNet[sentiWordNet['SynsetTerms']==w[0]]
-                    pos_score=sum(sentiWordNet_score['PosScore'])
-                    neg_score = sum(sentiWordNet_score['NegScore'])
-                    if pos_score>neg_score:
-                        similar_adjectives_positive.append(w[0])
-                        tmp['SENTIMENT'].append('POSITIVE')
-                    elif pos_score<neg_score:
-                        similar_adjectives_negative.append(w[0])
-                        tmp['SENTIMENT'].append('NEGATIVE')
-                    else:
-                        similar_adjectives_neutral.append(w[0])
-                        tmp['SENTIMENT'].append('NEUTRAL')
-
-            regionNews_sentiment_scores['positive adjectives'].append(similar_adjectives_positive)
-            regionNews_sentiment_scores['negative adjectives'].append(similar_adjectives_negative)
-            regionNews_sentiment_scores['neutral adjectives'].append(similar_adjectives_neutral)
-
+            similar_adjectives_with_sentiWord_score = list(word_info.loc[word_info['WORD'].isin([x[0] for x in similar_words]) & (word_info['IS_ADJECTIVE']),'WORD'])
+            similar_adjectives_positive = list(word_info.loc[word_info['WORD'].isin([x[0] for x in similar_words]) & (word_info['IS_ADJECTIVE']) & (word_info['SENTI_CLASS']=='POSITIVE'),'WORD'])
+            similar_adjectives_negative = list(word_info.loc[word_info['WORD'].isin([x[0] for x in similar_words]) & word_info['IS_ADJECTIVE'] & (word_info['SENTI_CLASS']=='NEGATIVE'),'WORD'])
+            similar_adjectives_neutral = list(word_info.loc[word_info['WORD'].isin([x[0] for x in similar_words]) & (word_info['IS_ADJECTIVE']) & (word_info['SENTI_CLASS']=='NEUTRAL'),'WORD'])
             similar_adjectives_with_sentiWord_score_str='\t\t'+'\n\t\t'.join([str(x) for x in similar_adjectives_with_sentiWord_score])
-            sentiWordNet_relevant_rows=sentiWordNet[(sentiWordNet['SynsetTerms'].isin([x[0] for x in similar_adjectives_with_sentiWord_score])) & (sentiWordNet['POS']=='a')]
-            objective_score_mean=np.nanmean(sentiWordNet_relevant_rows['objectiveScore'])
-            regionNews_sentiment_scores['region'].append(region_name)
-            regionNews_sentiment_scores['sentiment score'].append(objective_score_mean)
-            regionNews_sentiment_scores['keyword combo'].append(str(words_of_interest_combo))
+            #Calculate sentiment score
+            objective_score_mean = np.nanmean(word_info.loc[word_info['WORD'].isin(similar_adjectives_with_sentiWord_score),'SENTI_SCORE'].values)
+            sentiScore_byRegion_byKeywords['REGION'].append(region_name)
+            sentiScore_byRegion_byKeywords['KEYWORDS'].append(str(words_of_interest_combo))
+            sentiScore_byRegion_byKeywords['SENTI_SCORE'].append(objective_score_mean)
             print(similar_adjectives_with_sentiWord_score_str)
             print('\t\t\tMEAN OBJECTIVE SCORE:',objective_score_mean)
             file.write('\nWords closest to: '+str(words_of_interest_combo)+' are:\n'+similar_adjectives_with_sentiWord_score_str+'\n\t\tMEAN OBJECTIVE SCORE:'+str(objective_score_mean))
             print('\t...done.')
         file.close()
-        regionNews_sentiment_scores_df = pd.DataFrame.from_dict(regionNews_sentiment_scores)
-        if words_of_interest_combo == tuple(words_of_interest):
-            if not os.path.exists('../models_scatter_plots'):
-                os.makedirs('../models_scatter_plots')
-            data=regionNews_sentiment_scores_df.loc[(regionNews_sentiment_scores_df['keyword combo']==str(tuple(words_of_interest))) & (regionNews_sentiment_scores_df['region']==region_name)]
-            visualise_model(model, '../models_scatter_plots/' + region_name + '.png',additional_data=data)
+        similar_words_byRegion_byKeywords=similar_words_byRegion_byKeywords.append(pd.DataFrame(similar_words_rows))
     else:
         continue
-#
-df=pd.DataFrame(model_words_sentiment_by_region)
-sns.countplot(y="REGION", hue="SENTIMENT", data=df)
-plt.savefig('../region_wordCount_sentiment.png')
+sentiScore_byRegion_byKeywords=pd.DataFrame(sentiScore_byRegion_byKeywords)
 
-df=pd.DataFrame(tmp)
-sns.countplot(y="REGION", hue="SENTIMENT", data=df)
-plt.savefig('../region_wordCount_sentiment_similarAdjectives_250.png')
+df=similar_words_byRegion_byKeywords.copy(deep=True)
+df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'],axis=1)
+df=df[df['SENTI_CLASS']!='N/A']
+for keywords,group in df.groupby('KEYWORDS'):
+    sns.countplot(y="REGION", hue="SENTI_CLASS", data=group)
+    plt.savefig('../region_wordCount_sentiment_similarAdjectives_250_'+keywords+'.png')
+    plt.close()
 
+'''
+#DOPOLNI!!!!
+if not os.path.exists('../models_scatter_plots'):
+    os.makedirs('../models_scatter_plots')
+df['SENTI_CLASS']=df.apply(lambda row: 'KEYWORD' if row['SIMILAR_WORD'] in row['KEYWORDS'].replace('\'','')[1:-1].split(',') else row['SENTI_CLASS'],axis=1)
 
+for region_keywords,group in df.groupby(['REGION','KEYWORDS']):
+    visualise_model(group)
+'''
 #Visualize final sentiment by region
-data=pd.DataFrame(regionNews_sentiment_scores)
-data=data.sort_values(by=['sentiment score'])
-sns.catplot(x="region", y="sentiment score", hue='keyword combo', kind="point", data=data)
+sentiScore_byRegion_byKeywords=sentiScore_byRegion_byKeywords.sort_values(by=['SENTI_SCORE'])
+sns.catplot(x="REGION", y="SENTI_SCORE", hue='KEYWORDS', kind="point", data=sentiScore_byRegion_byKeywords)
 #plt.show()
 plt.savefig('../plot_region_sentimentScore.png')
+plt.close()
+
+
