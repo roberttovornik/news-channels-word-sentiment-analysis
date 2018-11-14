@@ -271,8 +271,15 @@ for region_keywords,group in df.groupby(['REGION','KEYWORDS']):
     visualise_model(group)
 '''
 #Visualize final sentiment by region
+plt.figure(figsize=(30,30))
 sentiScore_byRegion_byKeywords=sentiScore_byRegion_byKeywords.sort_values(by=['SENTI_SCORE'])
-sns.catplot(x="REGION", y="SENTI_SCORE", hue='KEYWORDS', kind="point", data=sentiScore_byRegion_byKeywords)
+g = sns.catplot(x="REGION", y="SENTI_SCORE", hue='KEYWORDS', kind="point", data=sentiScore_byRegion_byKeywords)
+# g.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
+# for ax in g.axes:
+# 	for label in ax.get_xticklabels():
+# 		label.set_rotation(45)
+
+plt.xticks(rotation=40)
 #plt.show()
 plt.savefig('../plot_region_sentimentScore.png')
 plt.close()
