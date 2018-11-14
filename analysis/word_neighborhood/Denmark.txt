@@ -1,191 +1,523 @@
 
 Words closest to: ('migrant',) are:
-		('valuable', 0.8779117465019226)
-		('temporary', 0.8577899932861328)
-		('syrian', 0.8497142791748047)
-		('permanent', 0.8391580581665039)
-		('shorten', 0.8259541988372803)
-		('toughen', 0.816899299621582)
-		('top', 0.8060348033905029)
-		('vast', 0.8026620149612427)
-		('monthly', 0.8017643690109253)
-		('sweden', 0.7966395020484924)
-		('disproportionate', 0.7897273302078247)
-		('europe', 0.7860211133956909)
-		('germany', 0.7845489382743835)
-		('torn', 0.7833958864212036)
-		('required', 0.7816038727760315)
-		('chilly', 0.7804638743400574)
-		('eligible', 0.7797253131866455)
-		('civil', 0.7761735320091248)
-		('greece', 0.7716383934020996)
-		('neighbour', 0.76554274559021)
-		('unprecedented', 0.7561103701591492)
-		('refugee', 0.7499803900718689)
-		('train', 0.7475791573524475)
-		('fourth', 0.7457568049430847)
-		('sixth', 0.7457560300827026)
-		('nordic', 0.7448104619979858)
-		('euro', 0.7414740324020386)
-		('peak', 0.7410868406295776)
-		('reasonable', 0.7401777505874634)
-		('high', 0.7400394082069397)
-		('february', 0.7399187684059143)
-		('flow', 0.7381499409675598)
-		('norway', 0.7379077672958374)
-		('illicit', 0.7343020439147949)
-		('scandinavian', 0.7329725027084351)
-		('equivalent', 0.7320535182952881)
-		('average', 0.731399416923523)
-		('turkey', 0.7278537750244141)
-		('november', 0.7219563722610474)
-		('immigrant', 0.7176744937896729)
-		('mediterranean', 0.7130282521247864)
-		('fourfold', 0.7115591764450073)
-		('ukrainian', 0.7104121446609497)
-		('registered', 0.7096551656723022)
-		('sea', 0.7067948579788208)
-		('enter', 0.7048304080963135)
-		('eritrean', 0.7019031047821045)
-		('numerous', 0.7003564834594727)
-		('sunday', 0.699088454246521)
-		('id', 0.698487401008606)
-		('january', 0.6984455585479736)
-		('italy', 0.6964505910873413)
-		('tiny', 0.6948827505111694)
-		('most', 0.6942282915115356)
-		('yearly', 0.6921870708465576)
-		('brutal', 0.6911123394966125)
-		('total', 0.6877747178077698)
-		('half', 0.6850787401199341)
-		('less', 0.6840590238571167)
-		('current', 0.6821364164352417)
-		('attractive', 0.6803123950958252)
-		('tight', 0.6799253225326538)
-		('unaccompanied', 0.678546130657196)
-		('absolute', 0.678209125995636)
-		('expected', 0.6746980547904968)
-		('regular', 0.6728797554969788)
-		('alpine', 0.672590970993042)
-		('eastern', 0.6723405122756958)
-		('rail', 0.6677005290985107)
-		('industrial', 0.6647152304649353)
-		('busy', 0.6644437313079834)
-		MEAN OBJECTIVE SCORE:-0.057196078431372546
+		syrian
+		sweden
+		november
+		germany
+		percent
+		refugee
+		top
+		europe
+		id
+		january
+		scandinavian
+		flow
+		most
+		enter
+		syria
+		half
+		neighbour
+		norway
+		high
+		nordic
+		unaccompanied
+		yearly
+		average
+		monthly
+		refugees
+		eritrean
+		total
+		regular
+		permanent
+		ten
+		ukrainian
+		february
+		peak
+		uropa
+		valuable
+		civil
+		less
+		fourth
+		train
+		brutal
+		current
+		temporary
+		attractive
+		immigrant
+		ii
+		greece
+		italy
+		eastern
+		registered
+		sunday
+		numerous
+		fourfold
+		monetary
+		vast
+		sixth
+		shorten
+		øresund
+		tight
+		required
+		alpine
+		euro
+		turkey
+		torn
+		relocated
+		eligible
+		tiny
+		equivalent
+		mediterranean
+		chilly
+		busy
+		rail
+		sea
+		expected
+		rødby
+		unprecedented
+		toughen
+		reasonable
+		frontline
+		romanian
+		disproportionate
+		stringent
+		perilous
+		sceptical
+		industrial
+		illicit
+		absolute
+		MEAN OBJECTIVE SCORE:-0.09545348837209301
+Words closest to: ('immigrant',) are:
+		failure
+		non
+		connect
+		initial
+		second
+		finger
+		major
+		monthly
+		eritrea
+		regular
+		unsuitable
+		similar
+		annual
+		huge
+		east
+		precarious
+		free
+		africa
+		aid
+		fourth
+		gay
+		current
+		immediate
+		financial
+		narrow
+		citizenship
+		eastern
+		introduction
+		numerous
+		monetary
+		user
+		irrelevant
+		authoritarian
+		oft
+		suspected
+		swiss
+		turkey
+		lebanon
+		famous
+		resettlement
+		uk
+		relocated
+		netherlands
+		western
+		distribute
+		mediterranean
+		unemployed
+		tranæs
+		harmful
+		ethnic
+		harbour
+		medical
+		birth
+		expected
+		unprecedented
+		stockholm
+		harsh
+		frontline
+		online
+		drastic
+		thorny
+		stringent
+		respectful
+		multiple
+		industrial
+		noir
+		estimated
+		MEAN OBJECTIVE SCORE:-0.12895522388059702
 Words closest to: ('refugee',) are:
-		('attractive', 0.8612059354782104)
-		('norway', 0.8422214984893799)
-		('less', 0.8125133514404297)
-		('significant', 0.7870498299598694)
-		('quota', 0.7790499925613403)
-		('europe', 0.7745180130004883)
-		('permanent', 0.7668633460998535)
-		('shorten', 0.7602409720420837)
-		('new', 0.7547609210014343)
-		('monthly', 0.747962236404419)
-		('chilly', 0.7468687891960144)
-		('generous', 0.7433935403823853)
-		('temporary', 0.7397162318229675)
-		('scandinavian', 0.7353233098983765)
-		('neighbour', 0.7341820001602173)
-		('low', 0.7236493825912476)
-		('sweden', 0.7144978046417236)
-		('citizenship', 0.7137095928192139)
-		('top', 0.7136733531951904)
-		('united', 0.7135205864906311)
-		('valuable', 0.7130852937698364)
-		('flow', 0.708972692489624)
-		('ukrainian', 0.7083263993263245)
-		('syrian', 0.7030911445617676)
-		('eritrean', 0.701312780380249)
-		('welfare', 0.6931974291801453)
-		('vast', 0.6922118663787842)
-		('different', 0.6906554102897644)
-		('nordic', 0.6898177862167358)
-		('reasonable', 0.6861581206321716)
-		('reduced', 0.6859558820724487)
-		('torn', 0.6824440956115723)
-		('disproportionate', 0.680885910987854)
-		('fourth', 0.6804076433181763)
-		('eligible', 0.6773001551628113)
-		('equivalent', 0.6772971749305725)
-		('sixth', 0.6763153076171875)
-		('straight', 0.6750271320343018)
-		('current', 0.6710516214370728)
-		('unprecedented', 0.6700026392936707)
-		('expected', 0.6694859266281128)
-		('undocumented', 0.6652184128761292)
-		('immigrant', 0.663453221321106)
-		('distribute', 0.661145806312561)
-		('fifth', 0.6610385179519653)
-		('bosnian', 0.6575199365615845)
-		('toughen', 0.6573867797851562)
-		('strategic', 0.653390645980835)
-		('immediate', 0.651748538017273)
-		('yearly', 0.6468310952186584)
-		('high', 0.6465498208999634)
-		('resettlement', 0.6464205980300903)
-		('enter', 0.6439624428749084)
-		MEAN OBJECTIVE SCORE:-0.041666666666666664
+		called
+		denmark
+		syrian
+		sweden
+		migrant
+		dublin
+		top
+		europe
+		scandinavian
+		flow
+		enter
+		neighbour
+		norway
+		high
+		significant
+		nordic
+		yearly
+		new
+		monthly
+		refugees
+		eritrean
+		eritrea
+		permanent
+		different
+		ten
+		ukrainian
+		low
+		aid
+		quota
+		valuable
+		less
+		fourth
+		straight
+		current
+		immediate
+		temporary
+		welfare
+		attractive
+		financial
+		immigrant
+		ii
+		united
+		citizenship
+		fifth
+		generous
+		monetary
+		vast
+		jobless
+		sixth
+		shorten
+		reduced
+		torn
+		resettlement
+		relocated
+		distribute
+		eligible
+		equivalent
+		ophold
+		strategic
+		infamous
+		chilly
+		expected
+		bosnian
+		unprecedented
+		toughen
+		reasonable
+		undocumented
+		frontline
+		unfazed
+		disproportionate
+		sceptical
+		MEAN OBJECTIVE SCORE:-0.05985915492957746
+Words closest to: ('migrant', 'immigrant') are:
+		syrian
+		top
+		id
+		connect
+		scandinavian
+		flow
+		most
+		initial
+		syria
+		norway
+		nordic
+		yearly
+		average
+		monthly
+		refugees
+		eritrean
+		eritrea
+		regular
+		permanent
+		ukrainian
+		february
+		precarious
+		aid
+		uropa
+		valuable
+		civil
+		fourth
+		brutal
+		current
+		immediate
+		temporary
+		financial
+		ii
+		greece
+		italy
+		citizenship
+		eastern
+		registered
+		sunday
+		introduction
+		numerous
+		monetary
+		vast
+		shorten
+		øresund
+		frontier
+		suspected
+		swiss
+		euro
+		turkey
+		lebanon
+		famous
+		torn
+		relocated
+		distribute
+		eligible
+		mediterranean
+		chilly
+		rail
+		sea
+		expected
+		rødby
+		pedestrian
+		unprecedented
+		stockholm
+		toughen
+		reasonable
+		frontline
+		drastic
+		disproportionate
+		stringent
+		perilous
+		industrial
+		noir
+		illicit
+		MEAN OBJECTIVE SCORE:-0.07778666666666666
 Words closest to: ('migrant', 'refugee') are:
-		('permanent', 0.8584593534469604)
-		('temporary', 0.8539077639579773)
-		('valuable', 0.8504284024238586)
-		('shorten', 0.8478617072105408)
-		('norway', 0.8446193337440491)
-		('europe', 0.8341479301452637)
-		('syrian', 0.830014169216156)
-		('monthly', 0.8283683657646179)
-		('attractive', 0.8239808678627014)
-		('chilly', 0.8163982033729553)
-		('top', 0.812322735786438)
-		('sweden', 0.8077414035797119)
-		('neighbour', 0.801641047000885)
-		('less', 0.7999560236930847)
-		('vast', 0.799048125743866)
-		('toughen', 0.7880434989929199)
-		('disproportionate', 0.7860801219940186)
-		('scandinavian', 0.7848415374755859)
-		('torn', 0.7835288047790527)
-		('eligible', 0.7788172364234924)
-		('flow', 0.7735238671302795)
-		('nordic', 0.7668452858924866)
-		('reasonable', 0.7624129056930542)
-		('fourth', 0.7623211145401001)
-		('unprecedented', 0.762293815612793)
-		('sixth', 0.7601333260536194)
-		('ukrainian', 0.7583519220352173)
-		('significant', 0.7572685480117798)
-		('equivalent', 0.7533338069915771)
-		('eritrean', 0.750054657459259)
-		('civil', 0.7500126957893372)
-		('high', 0.7411673069000244)
-		('greece', 0.7397321462631226)
-		('generous', 0.7383760809898376)
-		('immigrant', 0.7382479906082153)
-		('peak', 0.731200635433197)
-		('euro', 0.7278766632080078)
-		('turkey', 0.7278597354888916)
-		('citizenship', 0.7259684801101685)
-		('new', 0.7238726615905762)
-		('current', 0.7233134508132935)
-		('february', 0.7223929762840271)
-		('low', 0.7219451665878296)
-		('enter', 0.7209641337394714)
-		('expected', 0.7185004949569702)
-		('illicit', 0.7163842916488647)
-		('yearly', 0.7157393097877502)
-		('united', 0.7143300771713257)
-		('required', 0.7136427164077759)
-		('fourfold', 0.7117305994033813)
-		('mediterranean', 0.7017780542373657)
-		('tiny', 0.7005419135093689)
-		('average', 0.7004566788673401)
-		('italy', 0.6968549489974976)
-		('germany', 0.6920768022537231)
-		('numerous', 0.6908895373344421)
-		('absolute', 0.6904587745666504)
-		('distribute', 0.6899698972702026)
-		('fifth', 0.6892873048782349)
-		('unaccompanied', 0.688948929309845)
-		MEAN OBJECTIVE SCORE:-0.06363513513513513
+		syrian
+		sweden
+		germany
+		percent
+		top
+		europe
+		scandinavian
+		flow
+		enter
+		syria
+		neighbour
+		norway
+		high
+		significant
+		nordic
+		unaccompanied
+		yearly
+		average
+		new
+		monthly
+		refugees
+		eritrean
+		eritrea
+		permanent
+		ten
+		ukrainian
+		february
+		low
+		peak
+		valuable
+		civil
+		less
+		fourth
+		current
+		temporary
+		attractive
+		financial
+		immigrant
+		ii
+		greece
+		italy
+		united
+		citizenship
+		fifth
+		generous
+		numerous
+		fourfold
+		monetary
+		vast
+		jobless
+		sixth
+		shorten
+		required
+		euro
+		turkey
+		torn
+		relocated
+		distribute
+		eligible
+		tiny
+		equivalent
+		mediterranean
+		chilly
+		expected
+		unprecedented
+		toughen
+		reasonable
+		frontline
+		unfazed
+		disproportionate
+		stringent
+		perilous
+		sceptical
+		illicit
+		absolute
+		MEAN OBJECTIVE SCORE:-0.08278666666666666
+Words closest to: ('immigrant', 'refugee') are:
+		top
+		europe
+		scandinavian
+		flow
+		norway
+		significant
+		nordic
+		second
+		monthly
+		refugees
+		eritrean
+		eritrea
+		regular
+		permanent
+		different
+		ten
+		huge
+		ukrainian
+		precarious
+		africa
+		aid
+		less
+		fourth
+		straight
+		current
+		immediate
+		temporary
+		attractive
+		financial
+		united
+		citizenship
+		automatic
+		generous
+		introduction
+		numerous
+		monetary
+		vast
+		jobless
+		shorten
+		suspected
+		swiss
+		euro
+		turkey
+		lebanon
+		torn
+		resettlement
+		relocated
+		distribute
+		eligible
+		mediterranean
+		unemployed
+		infamous
+		chilly
+		expected
+		bosnian
+		unprecedented
+		stockholm
+		reasonable
+		undocumented
+		frontline
+		drastic
+		unfazed
+		stringent
+		sceptical
+		MEAN OBJECTIVE SCORE:-0.05859375
+Words closest to: ('migrant', 'immigrant', 'refugee') are:
+		syrian
+		top
+		europe
+		scandinavian
+		flow
+		neighbour
+		norway
+		high
+		significant
+		nordic
+		yearly
+		monthly
+		refugees
+		eritrean
+		eritrea
+		regular
+		permanent
+		different
+		ten
+		ukrainian
+		february
+		precarious
+		aid
+		valuable
+		civil
+		less
+		fourth
+		brutal
+		current
+		immediate
+		temporary
+		attractive
+		financial
+		ii
+		greece
+		italy
+		united
+		citizenship
+		eastern
+		generous
+		numerous
+		monetary
+		vast
+		shorten
+		frontier
+		swiss
+		euro
+		turkey
+		lebanon
+		famous
+		torn
+		relocated
+		distribute
+		eligible
+		mediterranean
+		chilly
+		expected
+		unprecedented
+		stockholm
+		toughen
+		reasonable
+		undocumented
+		frontline
+		drastic
+		unfazed
+		disproportionate
+		stringent
+		perilous
+		sceptical
+		illicit
+		MEAN OBJECTIVE SCORE:-0.061914285714285706

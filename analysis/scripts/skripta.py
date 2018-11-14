@@ -102,10 +102,12 @@ sentiScore_byRegion_byKeywords={'REGION':[],'KEYWORDS':[],'SENTI_SCORE':[]}
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
-        '''
-        if region_name not in ['Austria','Norway']:
+        
+        
+        if region_name in ['Slovenia']:
             continue
-        '''
+        
+        
         #List POS tags, that each lemma's origin word in corpus is tagged with
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
