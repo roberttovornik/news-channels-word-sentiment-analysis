@@ -250,16 +250,16 @@ if not os.path.isfile('../similar_words_byRegion_byKeywords.pkl') or not os.path
             continue
     sentiScore_byRegion_byKeywords=pd.DataFrame(sentiScore_byRegion_byKeywords)
 
-similar_words_byRegion_byKeywords.to_pickle('../similar_words_byRegion_byKeywords.pkl')
+    similar_words_byRegion_byKeywords.to_pickle('../similar_words_byRegion_byKeywords.pkl')
+    sentiScore_byRegion_byKeywords.to_pickle('../sentiScore_byRegion_byKeywords.pkl')
+    word_info.to_pickle('../word_info.pkl')
+
 similar_words_byRegion_byKeywords=pd.read_pickle('../similar_words_byRegion_byKeywords.pkl')
-sentiScore_byRegion_byKeywords.to_pickle('../sentiScore_byRegion_byKeywords.pkl')
 sentiScore_byRegion_byKeywords=pd.read_pickle('../sentiScore_byRegion_byKeywords.pkl')
-word_info.to_pickle('../word_info.pkl')
 word_info=pd.read_pickle('../word_info.pkl')
 
 df=similar_words_byRegion_byKeywords.copy(deep=True)
-#df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'],axis=1)
-df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'].values[0],axis=1)
+df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'].values[0] if len(word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'].values)>0 else 'NEUTRAL',axis=1)
 df=df[df['SENTI_CLASS']!='N/A']
 for keywords,group in df.groupby('KEYWORDS'):
     sns.countplot(y="REGION", hue="SENTI_CLASS", data=group)
