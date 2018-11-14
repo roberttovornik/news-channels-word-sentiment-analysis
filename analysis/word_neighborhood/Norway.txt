@@ -385,6 +385,10 @@ Words closest to: ('migrant',) are:
 		sudden
 		quiet
 		unlikely
+		due
+		sweden
+		afghan
+		vast
 		only
 		percent
 		last
@@ -834,6 +838,7 @@ Words closest to: ('immigrant',) are:
 		netanyahu
 		uncontrolled
 		neo
+		terror
 		political
 		green
 		public
@@ -963,7 +968,7 @@ Words closest to: ('immigrant',) are:
 		lithuanian
 		margaret
 		atomic
-		MEAN OBJECTIVE SCORE:0.02131924198250729
+		MEAN OBJECTIVE SCORE:0.012265512265512266
 Words closest to: ('refugee',) are:
 		other
 		due
@@ -1355,6 +1360,9 @@ Words closest to: ('refugee',) are:
 		sudden
 		quiet
 		unlikely
+		due
+		afghan
+		vast
 		only
 		last
 		most
@@ -1877,6 +1885,10 @@ Words closest to: ('migrant', 'immigrant') are:
 		sudden
 		lawless
 		steep
+		mission
+		sweden
+		afghan
+		second
 		most
 		germany
 		high
@@ -2029,7 +2041,7 @@ Words closest to: ('migrant', 'immigrant') are:
 		tunisian
 		numerous
 		terminal
-		MEAN OBJECTIVE SCORE:-0.04629032258064516
+		MEAN OBJECTIVE SCORE:-0.045875959079283886
 Words closest to: ('migrant', 'refugee') are:
 		other
 		due
@@ -2420,6 +2432,9 @@ Words closest to: ('migrant', 'refugee') are:
 		sudden
 		quiet
 		unlikely
+		due
+		afghan
+		vast
 		only
 		last
 		most
@@ -2940,6 +2955,10 @@ Words closest to: ('immigrant', 'refugee') are:
 		lawless
 		steep
 		minimum
+		un
+		mission
+		afghan
+		second
 		angela
 		most
 		germany
@@ -3091,7 +3110,7 @@ Words closest to: ('immigrant', 'refugee') are:
 		exhausted
 		tunisian
 		terminal
-		MEAN OBJECTIVE SCORE:-0.029460719041278297
+		MEAN OBJECTIVE SCORE:-0.029188654353562004
 Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		due
 		central
@@ -3499,6 +3518,12 @@ Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		quiet
 		lawless
 		unlikely
+		mission
+		due
+		sweden
+		afghan
+		second
+		vast
 		most
 		germany
 		high
@@ -3665,4 +3690,4 @@ Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		tunisian
 		numerous
 		terminal
-		MEAN OBJECTIVE SCORE:-0.04337686567164179
+		MEAN OBJECTIVE SCORE:-0.043002466091245375

@@ -420,6 +420,11 @@ Words closest to: ('migrant',) are:
 		balkan
 		hungarian
 		dramatic
+		mali
+		american
+		afghan
+		second
+		citizen
 		percent
 		last
 		most
@@ -1080,6 +1085,13 @@ Words closest to: ('immigrant',) are:
 		dramatic
 		lorry
 		commercial
+		fin
+		due
+		son
+		american
+		crowd
+		sweden
+		second
 		wide
 		skilled
 		serbia
@@ -1303,7 +1315,7 @@ Words closest to: ('immigrant',) are:
 		portuguese
 		albanian
 		india
-		MEAN OBJECTIVE SCORE:-0.012060301507537688
+		MEAN OBJECTIVE SCORE:-0.011928429423459244
 Words closest to: ('refugee',) are:
 		west
 		agree
@@ -1668,6 +1680,12 @@ Words closest to: ('refugee',) are:
 		emotional
 		nazi
 		logistical
+		mali
+		fin
+		son
+		american
+		second
+		vast
 		most
 		germany
 		wide
@@ -1860,7 +1878,7 @@ Words closest to: ('refugee',) are:
 		fatal
 		portuguese
 		india
-		MEAN OBJECTIVE SCORE:0.0305745164960182
+		MEAN OBJECTIVE SCORE:0.030196629213483147
 Words closest to: ('migrant', 'immigrant') are:
 		west
 		syrian
@@ -2292,6 +2310,12 @@ Words closest to: ('migrant', 'immigrant') are:
 		nazi
 		headline
 		dramatic
+		mali
+		fin
+		american
+		crowd
+		second
+		citizen
 		most
 		germany
 		july
@@ -2526,7 +2550,7 @@ Words closest to: ('migrant', 'immigrant') are:
 		portuguese
 		india
 		papua
-		MEAN OBJECTIVE SCORE:0.015500992063492064
+		MEAN OBJECTIVE SCORE:0.015439723320158102
 Words closest to: ('migrant', 'refugee') are:
 		west
 		syrian
@@ -2937,6 +2961,10 @@ Words closest to: ('migrant', 'refugee') are:
 		hungarian
 		nazi
 		dramatic
+		mali
+		fin
+		american
+		second
 		most
 		germany
 		july
@@ -3159,7 +3187,7 @@ Words closest to: ('migrant', 'refugee') are:
 		portuguese
 		india
 		papua
-		MEAN OBJECTIVE SCORE:0.03091684434968017
+		MEAN OBJECTIVE SCORE:0.03078556263269639
 Words closest to: ('immigrant', 'refugee') are:
 		due
 		west
@@ -3559,6 +3587,12 @@ Words closest to: ('immigrant', 'refugee') are:
 		lesbos
 		emotional
 		nazi
+		mali
+		fin
+		due
+		son
+		american
+		second
 		germany
 		wide
 		skilled
@@ -3761,7 +3795,7 @@ Words closest to: ('immigrant', 'refugee') are:
 		portugal
 		portuguese
 		india
-		MEAN OBJECTIVE SCORE:0.018499486125385406
+		MEAN OBJECTIVE SCORE:0.018292682926829267
 Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		due
 		west
@@ -4182,6 +4216,12 @@ Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		nazi
 		headline
 		dramatic
+		mali
+		fin
+		due
+		son
+		american
+		second
 		most
 		germany
 		wide
@@ -4404,4 +4444,4 @@ Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		portuguese
 		india
 		papua
-		MEAN OBJECTIVE SCORE:0.03377016129032258
+		MEAN OBJECTIVE SCORE:0.03339980059820538

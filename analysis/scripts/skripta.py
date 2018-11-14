@@ -107,8 +107,8 @@ if not os.path.isfile('../similar_words_byRegion_byKeywords.pkl') or not os.path
             if region_name not in ['Austria','Norway']:
                 continue
             '''
-            if region_name not in regions_slovene:
-                continue
+            # if region_name not in regions_slovene:
+                # continue
 
             #List POS tags, that each lemma's origin word in corpus is tagged with
             words2pos = words_to_pos(region_name)
@@ -121,7 +121,8 @@ if not os.path.isfile('../similar_words_byRegion_byKeywords.pkl') or not os.path
             #Add description for new words
             print('\tClassifying words in model vocabulary based on their sentiment score.')
             vocab = list(model.wv.vocab)
-            vocab.remove('_') #Quick&dirty fix
+            if '_' in vocab:
+            	vocab.remove('_') #Quick&dirty fix
             if not region_name in regions_slovene: #googletrans API limit reached:P
                 vocab_eng=slo_to_eng(vocab) if region_name in regions_slovene else vocab
             for i in range(len(vocab)):

@@ -331,6 +331,10 @@ Words closest to: ('migrant',) are:
 		crowded
 		flat
 		flimsy
+		uman
+		minor
+		off
+		transit
 		serbia
 		total
 		temporary
@@ -987,6 +991,10 @@ Words closest to: ('immigrant',) are:
 		restrictive
 		minimum
 		undocumented
+		due
+		american
+		minor
+		citizen
 		asylum
 		visa
 		immediate
@@ -1680,6 +1688,11 @@ Words closest to: ('refugee',) are:
 		displacement
 		uganda
 		stricken
+		un
+		fin
+		due
+		minor
+		citizen
 		asylum
 		only
 		most
@@ -2096,7 +2109,7 @@ Words closest to: ('refugee',) are:
 		kobani
 		doha
 		seasonal
-		MEAN OBJECTIVE SCORE:0.04095833333333334
+		MEAN OBJECTIVE SCORE:0.0407057268722467
 Words closest to: ('migrant', 'immigrant') are:
 		asylum
 		deportation
@@ -2368,6 +2381,9 @@ Words closest to: ('migrant', 'immigrant') are:
 		immediate
 		restrictive
 		undocumented
+		due
+		minor
+		citizen
 		asylum
 		visa
 		immediate
@@ -3055,6 +3071,8 @@ Words closest to: ('migrant', 'refugee') are:
 		alessandro
 		aegean
 		uganda
+		minor
+		transit
 		asylum
 		most
 		visa
@@ -3781,6 +3799,10 @@ Words closest to: ('immigrant', 'refugee') are:
 		minimum
 		undocumented
 		uganda
+		fin
+		due
+		minor
+		citizen
 		asylum
 		percent
 		most
@@ -4174,7 +4196,7 @@ Words closest to: ('immigrant', 'refugee') are:
 		overseen
 		suitable
 		seasonal
-		MEAN OBJECTIVE SCORE:-0.01941310824230387
+		MEAN OBJECTIVE SCORE:-0.019279092702169622
 Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		asylum
 		deportation
@@ -4471,6 +4493,9 @@ Words closest to: ('migrant', 'immigrant', 'refugee') are:
 		immediate
 		undocumented
 		uganda
+		due
+		minor
+		citizen
 		asylum
 		stay
 		most
