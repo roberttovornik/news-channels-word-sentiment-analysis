@@ -102,7 +102,10 @@ sentiScore_byRegion_byKeywords={'REGION':[],'KEYWORDS':[],'SENTI_SCORE':[]}
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
-
+        '''
+        if region_name not in ['Austria','Norway']:
+            continue
+        '''
         #List POS tags, that each lemma's origin word in corpus is tagged with
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
@@ -185,7 +188,8 @@ for filename in os.listdir(model_dir):
 sentiScore_byRegion_byKeywords=pd.DataFrame(sentiScore_byRegion_byKeywords)
 
 df=similar_words_byRegion_byKeywords.copy(deep=True)
-df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'],axis=1)
+#df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'],axis=1)
+df['SENTI_CLASS']=df.apply(lambda row: word_info.loc[word_info['WORD']==row['SIMILAR_WORD'],'SENTI_CLASS'].values[0],axis=1)
 df=df[df['SENTI_CLASS']!='N/A']
 for keywords,group in df.groupby('KEYWORDS'):
     sns.countplot(y="REGION", hue="SENTI_CLASS", data=group)
