@@ -284,7 +284,7 @@ g = sns.catplot(x="REGION", y="SENTI_SCORE", hue='KEYWORDS', kind="point", data=
 # 	for label in ax.get_xticklabels():
 # 		label.set_rotation(45)
 
-plt.xticks(rotation=40)
+plt.xticks(rotation=60, fontsize=7)
 #plt.show()
 plt.savefig('../plot_region_sentimentScore.png')
 plt.close()
