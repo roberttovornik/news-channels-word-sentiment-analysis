@@ -51,7 +51,7 @@ def slo_to_eng(slo_word_list):
         translator = Translator()
         translations.append(translator.translate(w,src='sl',dest='en'))
     '''
-    return [translation.text for translation in translations if len(translation.text.split())==1] #REMOVE CONDITION WHEN WORKING WITH PHRASES
+    return [translation.text if len(translation.text.split())==1 else translations.text.split[-1] for translation in translations if len(translation.text.split())==1] #REMOVE CONDITION WHEN WORKING WITH PHRASES
 
 def label_point(x, y, val, ax):
     a = pd.concat({'x': x, 'y': y, 'val': val}, axis=1)
@@ -102,10 +102,14 @@ sentiScore_byRegion_byKeywords={'REGION':[],'KEYWORDS':[],'SENTI_SCORE':[]}
 for filename in os.listdir(model_dir):
     if filename.endswith(".model"):
         region_name = filename[:filename.index('_word2vec.model')]
+
         '''
         if region_name not in ['Austria','Norway']:
             continue
         '''
+        if region_name not in regions_slovene:
+            continue
+
         #List POS tags, that each lemma's origin word in corpus is tagged with
         words2pos = words_to_pos(region_name)
         model_file_path = os.path.join(model_dir, filename)
@@ -117,9 +121,12 @@ for filename in os.listdir(model_dir):
         #Add description for new words
         print('\tClassifying words in model vocabulary based on their sentiment score.')
         vocab = list(model.wv.vocab)
-        vocab_eng=slo_to_eng(vocab) if region_name in regions_slovene else vocab
-        for i in range(len(vocab_eng)):
-            w=vocab_eng[i]
+        vocab.remove('_') #Quick&dirty fix
+        if not region_name in regions_slovene: #googletrans API limit reached:P
+            vocab_eng=slo_to_eng(vocab) if region_name in regions_slovene else vocab
+        for i in range(len(vocab)):
+            if not region_name in regions_slovene:  # googletrans API limit reached:P
+                w=vocab_eng[i]
             w_true=vocab[i]
             if w_true in word_info['WORD']:
                 continue
@@ -128,23 +135,27 @@ for filename in os.listdir(model_dir):
             row['IS_ADJECTIVE'].append(True if (region_name in regions_slovene and 'P' in words2pos[w_true]) or (region_name not in regions_slovene and 'J' in words2pos[w_true]) else False)
             row['IS_NOUN'].append(True if (region_name in regions_slovene and 'S' in words2pos[w_true]) or (region_name not in regions_slovene and 'N' in words2pos[w_true]) else False)
             row['IS_VERB'].append(True if (region_name in regions_slovene and 'G' in words2pos[w_true]) or (region_name not in regions_slovene and 'V' in words2pos[w_true]) else False)
-            sentiWordNet_score_word = sentiWordNet[(sentiWordNet['SynsetTerms'] == w)]
-            if sentiWordNet_score_word.shape[0] <= 1:
-                sentiWordNet_score=sentiWordNet_score_word
+            if not region_name in regions_slovene:  # googletrans API limit reached:P
+                sentiWordNet_score_word = sentiWordNet[(sentiWordNet['SynsetTerms'] == w)]
+                if sentiWordNet_score_word.shape[0] <= 1:
+                    sentiWordNet_score=sentiWordNet_score_word
+                else:
+                    pos_tag_filter = []  # append all-false vector
+                    if row['IS_ADJECTIVE']:
+                        pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'a'))
+                    if row['IS_NOUN']:
+                        pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'n'))
+                    if row['IS_VERB']:
+                        pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'v'))
+                    pos_tag_filter = np.array(sum(pos_tag_filter)).astype(bool)
+                    sentiWordNet_score=sentiWordNet_score_word[pos_tag_filter]
+                pos_score = sum(sentiWordNet_score['PosScore'])
+                neg_score = sum(sentiWordNet_score['NegScore'])
+                row['SENTI_SCORE'].append(pos_score-neg_score)
+                row['SENTI_CLASS'].append('POSITIVE' if pos_score > neg_score else 'NEGATIVE' if pos_score < neg_score else 'NEUTRAL' if pos_score==neg_score else 'N/A')
             else:
-                pos_tag_filter = []  # append all-false vector
-                if row['IS_ADJECTIVE']:
-                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'a'))
-                if row['IS_NOUN']:
-                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'n'))
-                if row['IS_VERB']:
-                    pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'v'))
-                pos_tag_filter = np.array(sum(pos_tag_filter)).astype(bool)
-                sentiWordNet_score=sentiWordNet_score_word[pos_tag_filter]
-            pos_score = sum(sentiWordNet_score['PosScore'])
-            neg_score = sum(sentiWordNet_score['NegScore'])
-            row['SENTI_SCORE'].append(pos_score-neg_score)
-            row['SENTI_CLASS'].append('POSITIVE' if pos_score > neg_score else 'NEGATIVE' if pos_score < neg_score else 'NEUTRAL' if pos_score==neg_score else 'N/A')
+                row['SENTI_SCORE'].append(np.nan)
+                row['SENTI_CLASS'].append(np.nan)
             word_info=word_info.append(pd.DataFrame(row))
         print('\t...done.')
 
@@ -152,6 +163,9 @@ for filename in os.listdir(model_dir):
         words_of_interest=words_of_interest_slovene if region_name in regions_slovene else words_of_interest_english
         combinations_of_words_of_interest=list(chain.from_iterable([combinations(words_of_interest,i) for i in range(1,len(words_of_interest))]))#.append(tuple(words_of_interest))
         combinations_of_words_of_interest.append(tuple(words_of_interest))
+
+        if region_name in regions_slovene:  # googletrans API limit reached:P
+            combinations_of_words_of_interest=combinations_of_words_of_interest[-2:]
         print('\tcombos:',combinations_of_words_of_interest)
         print('\t...done.')
 
@@ -161,6 +175,57 @@ for filename in os.listdir(model_dir):
             print('\tAdjectives closest to:',words_of_interest_combo,'are:')
             #Finding closes/most similar words to those of interest
             similar_words = model.wv.most_similar(words_of_interest_combo, topn=250)
+
+            if region_name in regions_slovene: # googletrans API limit reached:P
+                for w_true,distance in similar_words:
+                    if w_true in word_info['WORD'].values and not any((word_info['WORD']==w_true) & word_info['SENTI_CLASS'].notnull()):
+                        print('WORD ALREADY IN WORD INFO:',w_true in word_info['WORD'].values)
+                        print('W_TRUE\'s SENTI CLASS IS NOT NULL',any((word_info['WORD']==w_true) & word_info['SENTI_CLASS'].notnull()))
+                        w=slo_to_eng([w_true])
+                        if len(w)==0:
+                            #neuspesen prevod --> nepravilna beseda?, ali pa vecbeseden prevod?
+                            #fallback: random word with neutral score:P
+                            fallback_translation='macedonian'
+                            print('Failed translation!!',w)
+                            print('Substitution with fallback neutral word',fallback_translation)
+                            w=fallback_translation
+
+                        else:
+                            w=w[0]
+                        print('***TRANSLATION:',w)
+                        row=word_info.loc[word_info['WORD']==w_true].iloc[0]
+                        #print('ROW',row)
+
+                        sentiWordNet_score_word = sentiWordNet.loc[sentiWordNet['SynsetTerms'] == w]
+                        if sentiWordNet_score_word.shape[0] <= 1:
+                            sentiWordNet_score = sentiWordNet_score_word
+                        else:
+                            pos_tag_filter = []  # append all-false vector
+                            if row['IS_ADJECTIVE']:
+                                pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'a'))
+                            if row['IS_NOUN']:
+                                pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'n'))
+                            if row['IS_VERB']:
+                                pos_tag_filter.append((sentiWordNet_score_word['POS'] == 'v'))
+                            if len(pos_tag_filter)==0:
+                                #word is not ADJECTIVE,NOUN or VERB
+                                #Quick&dirty: word sentiment is NEUTRAL
+                                word_info.loc[word_info['WORD'] == w_true, 'SENTI_SCORE'] = 0
+                                word_info.loc[word_info['WORD'] == w_true, 'SENTI_CLASS'] = 'NEUTRAL'
+                                continue
+                            else:
+                                #print('POS TAG FILTER BEFORE SUMMATION',pos_tag_filter)
+                                pos_tag_filter = np.array(sum(pos_tag_filter)).astype(bool)
+                                #print('POS TAG FILTER',pos_tag_filter)
+                                #print('SENTI WORD NET CORE WORD', sentiWordNet_score_word)
+                                #print('LEN POS TAG FILTER',len(pos_tag_filter))
+                                sentiWordNet_score = sentiWordNet_score_word[pos_tag_filter]
+                        pos_score = sum(sentiWordNet_score['PosScore'])
+                        neg_score = sum(sentiWordNet_score['NegScore'])
+                        word_info.loc[word_info['WORD'] == w_true, 'SENTI_SCORE']=pos_score - neg_score
+                        word_info.loc[word_info['WORD'] == w_true, 'SENTI_CLASS']='POSITIVE' if pos_score > neg_score else 'NEGATIVE' if pos_score < neg_score else 'NEUTRAL' if pos_score == neg_score else 'N/A'
+
+
             for word in similar_words:
                 similar_words_rows['REGION'].append(region_name)
                 similar_words_rows['KEYWORDS'].append(str(words_of_interest_combo))
